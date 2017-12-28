@@ -1,0 +1,35 @@
+{
+  "sntp": {
+    "enable": true, 
+    "server": "pool.ntp.org", 
+    "retry_min": 1, 
+    "retry_max": 30, 
+    "update_interval": 7200
+  }, 
+  "device": {
+    "id": "esp32_??????", 
+    "password": ""
+  }, 
+  "debug": {
+    "udp_log_addr": "", 
+    "level": 2, 
+    "filter": "", 
+    "stdout_uart": 0, 
+    "stderr_uart": 0, 
+    "factory_reset_gpio": -1, 
+    "mg_mgr_hexdump_file": "", 
+    "mbedtls_level": 0
+  }, 
+  "sys": {
+    "mount": {
+      "path": "", 
+      "dev_type": "", 
+      "dev_opts": "", 
+      "fs_type": "", 
+      "fs_opts": ""
+    }, 
+    "wdt_timeout": 30, 
+    "tz_spec": ""
+  }, 
+  "conf_acl": "*"
+}

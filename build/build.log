@@ -1,0 +1,1650 @@
+The flag --repo is not given, going to use mongoose-os repository
+Repository "/Users/bcouchman/.mos/modules-1.22.1/mongoose-os-1.22.1" is dirty, leaving it intact
+
+Sources: [/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/src/mgos_SD_c.c /Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/src/SD.cpp /Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/src/mgos_SD.cpp /Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/include/wear_levelling/Partition.cpp /Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/include/wear_levelling/SPI_Flash.cpp /Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/include/wear_levelling/WL_Ext_Perf.cpp /Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/include/wear_levelling/WL_Ext_Safe.cpp /Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/include/wear_levelling/WL_Flash.cpp /Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/include/wear_levelling/crc32.cpp /Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/include/wear_levelling/wear_levelling.cpp /Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/include/sdmmc/sdmmc_cmd.c]
+Include dirs: [/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/include/fatfs/src /Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/include/vfs/include /Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/include/wear_levelling/include /Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/include/wear_levelling/private_include /Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/include/driver/include /Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/include/sdmmc/include]
+Binary libs: []
+Building...
+mount from "/Users/bcouchman/.mos/apps-1.22.1/meeio" to "/app"
+mount from "/Users/bcouchman/.mos/modules-1.22.1/mongoose-os-1.22.1" to "/mongoose-os"
+mount from "/Users/bcouchman/.mos/modules-1.22.1/mongoose-os-1.22.1" to "/Users/bcouchman/.mos/modules-1.22.1/mongoose-os-1.22.1"
+mount from "/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build" to "/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build"
+mount from "/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/src" to "/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/src"
+mount from "/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/include/vfs" to "/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/include/vfs"
+mount from "/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/include/wear_levelling" to "/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/include/wear_levelling"
+mount from "/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/include/sdmmc" to "/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/include/sdmmc"
+mount from "/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/include/fatfs/src" to "/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/include/fatfs/src"
+mount from "/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/include/vfs/include" to "/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/include/vfs/include"
+mount from "/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/include/wear_levelling/include" to "/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/include/wear_levelling/include"
+mount from "/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/include/wear_levelling/private_include" to "/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/include/wear_levelling/private_include"
+mount from "/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/include/driver/include" to "/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/include/driver/include"
+mount from "/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/include/sdmmc/include" to "/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/include/sdmmc/include"
+Docker arguments: run --name mos_build_2017-12-28T15-14-53-00_2412942995991037263 --rm -i -v /Users/bcouchman/.mos/modules-1.22.1/mongoose-os-1.22.1:/Users/bcouchman/.mos/modules-1.22.1/mongoose-os-1.22.1 -v /Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/src:/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/src -v /Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/include/vfs/include:/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/include/vfs/include -v /Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/include/wear_levelling/private_include:/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/include/wear_levelling/private_include -v /Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/include/wear_levelling:/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/include/wear_levelling -v /Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/include/wear_levelling/include:/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/include/wear_levelling/include -v /Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/include/driver/include:/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/include/driver/include -v /Users/bcouchman/.mos/apps-1.22.1/meeio:/app -v /Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build:/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build -v /Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/include/sdmmc:/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/include/sdmmc -v /Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/include/fatfs/src:/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/include/fatfs/src -v /Users/bcouchman/.mos/modules-1.22.1/mongoose-os-1.22.1:/mongoose-os -v /Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/include/vfs:/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/include/vfs -v /Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/include/sdmmc/include:/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/include/sdmmc/include docker.cesanta.com/esp32-build:2.1-r8 /bin/bash -c nice make '-j' '8' '-C' '/app/deps/SD' '-f' '/mongoose-os/fw/platforms/esp32/Makefile.build' '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/moslib/libmoslib.a' 'FS_STAGING_DIR=build/fs' 'APP_CXXFLAGS=' 'APP_FS_FILES=' 'APP_CFLAGS=' 'ESP_IDF_SDKCONFIG_OPTS=' 'GEN_DIR=/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/gen' 'APP_BIN_LIBS=' 'FFI_SYMBOLS=' 'BUILD_DIR=/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs' 'APP=SD' 'APP_INCLUDES=/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/include/fatfs/src /Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/include/vfs/include /Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/include/wear_levelling/include /Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/include/wear_levelling/private_include /Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/include/driver/include /Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/include/sdmmc/include' 'MGOS_PATH=/mongoose-os' 'APP_SOURCES=/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/src/mgos_SD_c.c /Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/src/SD.cpp /Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/src/mgos_SD.cpp /Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/include/wear_levelling/Partition.cpp /Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/include/wear_levelling/SPI_Flash.cpp /Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/include/wear_levelling/WL_Ext_Perf.cpp /Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/include/wear_levelling/WL_Ext_Safe.cpp /Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/include/wear_levelling/WL_Flash.cpp /Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/include/wear_levelling/crc32.cpp /Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/include/wear_levelling/wear_levelling.cpp /Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/include/sdmmc/sdmmc_cmd.c' 'MANIFEST_FINAL=/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/gen/mos_final.yml' 'PLATFORM=esp32' 'ESP_IDF_EXTRA_COMPONENTS=' 'FW_DIR=build/fw' 'APP_VERSION=1.0' 'MGOS_MAIN_COMPONENT=moslib'
+make: Entering directory '/app/deps/SD'
+including /opt/Espressif/esp-idf/components/bootloader/Makefile.projbuild...
+including /opt/Espressif/esp-idf/components/bootloader_support/Makefile.projbuild...
+including /opt/Espressif/esp-idf/components/esp32/Makefile.projbuild...
+including /opt/Espressif/esp-idf/components/esptool_py/Makefile.projbuild...
+including /opt/Espressif/esp-idf/components/partition_table/Makefile.projbuild...
+/mongoose-os/fw/platforms/esp32/Makefile.build:177: warning: overriding recipe for target 'defconfig'
+/opt/Espressif/esp-idf/make/project_config.mk:71: warning: ignoring old recipe for target 'defconfig'
+/mongoose-os/fw/platforms/esp32/Makefile.build:177: warning: overriding recipe for target 'menuconfig'
+/opt/Espressif/esp-idf/make/project_config.mk:58: warning: ignoring old recipe for target 'menuconfig'
+#
+# configuration written to /Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/gen/sdkconfig
+#
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/tcpip_adapter'
+make[1]: stat: /Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/include/config/auto.conf: Bad file descriptor
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/cs_mbedtls'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/xtensa-debug-module'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/vfs'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/xtensa-debug-module'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/cryptoauthlib'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/spiffs'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/cs_mbedtls'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/tcpip_adapter'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/vfs'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/pthread'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/partition_table'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/soc'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/wpa_supplicant'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/spi_flash'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/partition_table'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/spiffs'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/cryptoauthlib'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/newlib'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/spi_flash'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/pthread'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/nvs_flash'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/wpa_supplicant'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/soc'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/micro-ecc'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/heap'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/log'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/newlib'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/moslib'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/nvs_flash'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/micro-ecc'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/freertos'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/esptool_py'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/expat'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/ethernet'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/esptool_py'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/heap'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/log'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/moslib'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/freertos'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/esp_adc_cal'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/ethernet'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/expat'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/bootloader'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/cxx'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/driver'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/app_update'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/lwip'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/bootloader'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/bootloader_support'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/esp_adc_cal'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/app_trace'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/esp32'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/app_update'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/lwip'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/cxx'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/driver'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/esp32'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/app_trace'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/bootloader_support'
+including /opt/Espressif/esp-idf/components/bootloader/Makefile.projbuild...
+including /opt/Espressif/esp-idf/components/bootloader_support/Makefile.projbuild...
+including /opt/Espressif/esp-idf/components/esp32/Makefile.projbuild...
+including /opt/Espressif/esp-idf/components/esptool_py/Makefile.projbuild...
+including /opt/Espressif/esp-idf/components/partition_table/Makefile.projbuild...
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/cs_mbedtls'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/vfs'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/tcpip_adapter'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/xtensa-debug-module'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/spiffs'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/cs_mbedtls'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/cryptoauthlib'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/tcpip_adapter'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/spi_flash'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/spiffs'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/wpa_supplicant'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/soc'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/xtensa-debug-module'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/pthread'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/vfs'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/moslib'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/partition_table'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/cryptoauthlib'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/partition_table'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/nvs_flash'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/wpa_supplicant'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/soc'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/micro-ecc'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/newlib'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/pthread'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/moslib'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/spi_flash'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/log'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/heap'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/nvs_flash'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/expat'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/newlib'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/micro-ecc'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/ethernet'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/freertos'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/esptool_py'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/log'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/esptool_py'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/heap'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/expat'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/esp_adc_cal'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/cxx'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/ethernet'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/freertos'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/bootloader_support'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/lwip'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/app_update'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/esp32'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/esp_adc_cal'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/driver'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/bootloader'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/cxx'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/bootloader'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/app_update'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/app_trace'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/lwip'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/bootloader_support'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/esp32'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/driver'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/app_trace'
+including /opt/Espressif/esp-idf/components/bootloader/Makefile.projbuild...
+including /opt/Espressif/esp-idf/components/bootloader_support/Makefile.projbuild...
+including /opt/Espressif/esp-idf/components/esp32/Makefile.projbuild...
+including /opt/Espressif/esp-idf/components/esptool_py/Makefile.projbuild...
+including /opt/Espressif/esp-idf/components/partition_table/Makefile.projbuild...
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/cs_mbedtls'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/xtensa-debug-module'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/vfs'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/tcpip_adapter'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/spiffs'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/cs_mbedtls'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/vfs'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/cryptoauthlib'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/xtensa-debug-module'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/tcpip_adapter'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/wpa_supplicant'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/spi_flash'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/soc'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/spiffs'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/partition_table'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/pthread'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/partition_table'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/cryptoauthlib'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/nvs_flash'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/newlib'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/wpa_supplicant'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/micro-ecc'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/moslib'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/soc'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/pthread'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/spi_flash'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/log'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/heap'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/nvs_flash'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/freertos'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/newlib'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/moslib'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/micro-ecc'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/esptool_py'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/expat'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/esptool_py'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/log'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/heap'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/ethernet'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/esp_adc_cal'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/freertos'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/expat'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/cxx'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/bootloader'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/ethernet'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/driver'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/lwip'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/bootloader'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/esp_adc_cal'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/esp32'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/bootloader_support'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/app_update'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/app_trace'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/cxx'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/driver'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/lwip'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/bootloader_support'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/esp32'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/app_update'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/app_trace'
+including /opt/Espressif/esp-idf/components/bootloader/Makefile.projbuild...
+including /opt/Espressif/esp-idf/components/bootloader_support/Makefile.projbuild...
+including /opt/Espressif/esp-idf/components/esp32/Makefile.projbuild...
+including /opt/Espressif/esp-idf/components/esptool_py/Makefile.projbuild...
+including /opt/Espressif/esp-idf/components/partition_table/Makefile.projbuild...
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/cs_mbedtls'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/xtensa-debug-module'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/vfs'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/cs_mbedtls'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/tcpip_adapter'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/cryptoauthlib'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/spiffs'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/spi_flash'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/xtensa-debug-module'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/vfs'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/cryptoauthlib'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/wpa_supplicant'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/tcpip_adapter'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/soc'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/partition_table'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/pthread'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/partition_table'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/spi_flash'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/spiffs'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/nvs_flash'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/micro-ecc'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/moslib'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/wpa_supplicant'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/newlib'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/soc'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/pthread'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/log'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/heap'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/micro-ecc'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/nvs_flash'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/moslib'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/freertos'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/esptool_py'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/esptool_py'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/newlib'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/log'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/ethernet'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/expat'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/esp_adc_cal'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/heap'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/lwip'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/cxx'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/driver'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/freertos'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/ethernet'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/esp_adc_cal'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/expat'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/esp32'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/bootloader'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/bootloader'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/lwip'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/app_update'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/cxx'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/app_trace'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/bootloader_support'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/driver'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/esp32'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/app_update'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/app_trace'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/bootloader_support'
+including /opt/Espressif/esp-idf/components/bootloader/Makefile.projbuild...
+including /opt/Espressif/esp-idf/components/bootloader_support/Makefile.projbuild...
+including /opt/Espressif/esp-idf/components/esp32/Makefile.projbuild...
+including /opt/Espressif/esp-idf/components/esptool_py/Makefile.projbuild...
+including /opt/Espressif/esp-idf/components/partition_table/Makefile.projbuild...
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/cs_mbedtls'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/xtensa-debug-module'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/tcpip_adapter'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/vfs'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/spiffs'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/cs_mbedtls'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/cryptoauthlib'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/spi_flash'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/xtensa-debug-module'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/tcpip_adapter'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/wpa_supplicant'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/vfs'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/spiffs'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/pthread'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/soc'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/partition_table'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/nvs_flash'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/spi_flash'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/cryptoauthlib'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/partition_table'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/wpa_supplicant'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/moslib'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/pthread'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/micro-ecc'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/newlib'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/soc'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/heap'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/nvs_flash'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/log'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/expat'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/micro-ecc'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/moslib'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/newlib'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/heap'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/esptool_py'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/ethernet'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/freertos'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/esptool_py'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/log'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/esp_adc_cal'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/cxx'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/expat'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/ethernet'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/freertos'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/bootloader'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/bootloader'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/driver'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/cxx'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/app_update'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/bootloader_support'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/esp_adc_cal'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/app_trace'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/lwip'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/esp32'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/driver'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/bootloader_support'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/app_update'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/esp32'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/app_trace'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/lwip'
+including /opt/Espressif/esp-idf/components/bootloader/Makefile.projbuild...
+including /opt/Espressif/esp-idf/components/bootloader_support/Makefile.projbuild...
+including /opt/Espressif/esp-idf/components/esp32/Makefile.projbuild...
+including /opt/Espressif/esp-idf/components/esptool_py/Makefile.projbuild...
+including /opt/Espressif/esp-idf/components/partition_table/Makefile.projbuild...
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/cs_mbedtls'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/xtensa-debug-module'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/vfs'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/tcpip_adapter'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/spiffs'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/cs_mbedtls'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/cryptoauthlib'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/xtensa-debug-module'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/spi_flash'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/tcpip_adapter'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/spiffs'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/soc'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/vfs'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/wpa_supplicant'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/pthread'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/partition_table'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/partition_table'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/cryptoauthlib'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/nvs_flash'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/spi_flash'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/micro-ecc'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/pthread'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/soc'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/wpa_supplicant'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/newlib'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/moslib'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/log'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/heap'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/nvs_flash'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/micro-ecc'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/freertos'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/moslib'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/newlib'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/expat'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/heap'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/log'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/ethernet'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/esptool_py'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/esptool_py'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/esp_adc_cal'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/lwip'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/cxx'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/freertos'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/expat'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/ethernet'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/driver'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/bootloader_support'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/app_update'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/bootloader'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/cxx'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/bootloader'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/lwip'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/esp_adc_cal'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/app_trace'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/esp32'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/driver'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/bootloader_support'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/app_update'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/esp32'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/app_trace'
+including /opt/Espressif/esp-idf/components/bootloader/Makefile.projbuild...
+including /opt/Espressif/esp-idf/components/bootloader_support/Makefile.projbuild...
+including /opt/Espressif/esp-idf/components/esp32/Makefile.projbuild...
+including /opt/Espressif/esp-idf/components/esptool_py/Makefile.projbuild...
+including /opt/Espressif/esp-idf/components/partition_table/Makefile.projbuild...
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/cs_mbedtls'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/xtensa-debug-module'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/tcpip_adapter'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/vfs'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/spiffs'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/cs_mbedtls'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/cryptoauthlib'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/tcpip_adapter'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/xtensa-debug-module'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/vfs'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/spi_flash'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/spiffs'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/soc'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/wpa_supplicant'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/partition_table'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/pthread'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/cryptoauthlib'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/partition_table'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/nvs_flash'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/micro-ecc'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/moslib'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/newlib'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/spi_flash'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/wpa_supplicant'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/soc'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/pthread'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/nvs_flash'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/heap'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/log'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/micro-ecc'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/newlib'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/esptool_py'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/moslib'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/expat'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/esptool_py'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/log'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/ethernet'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/freertos'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/heap'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/esp_adc_cal'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/expat'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/cxx'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/driver'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/freertos'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/ethernet'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/bootloader_support'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/bootloader'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/bootloader'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/app_update'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/esp_adc_cal'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/lwip'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/driver'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/app_trace'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/esp32'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/cxx'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/bootloader_support'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/app_update'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/app_trace'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/esp32'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/lwip'
+including /opt/Espressif/esp-idf/components/bootloader/Makefile.projbuild...
+including /opt/Espressif/esp-idf/components/bootloader_support/Makefile.projbuild...
+including /opt/Espressif/esp-idf/components/esp32/Makefile.projbuild...
+including /opt/Espressif/esp-idf/components/esptool_py/Makefile.projbuild...
+including /opt/Espressif/esp-idf/components/partition_table/Makefile.projbuild...
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/cs_mbedtls'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/xtensa-debug-module'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/vfs'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/tcpip_adapter'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/spiffs'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/cryptoauthlib'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/cs_mbedtls'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/spi_flash'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/tcpip_adapter'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/xtensa-debug-module'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/wpa_supplicant'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/vfs'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/spiffs'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/cryptoauthlib'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/soc'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/pthread'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/partition_table'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/nvs_flash'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/spi_flash'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/partition_table'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/newlib'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/micro-ecc'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/wpa_supplicant'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/moslib'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/pthread'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/nvs_flash'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/log'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/soc'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/heap'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/micro-ecc'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/newlib'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/moslib'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/log'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/expat'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/freertos'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/esptool_py'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/ethernet'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/esptool_py'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/esp_adc_cal'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/heap'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/lwip'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/cxx'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/expat'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/ethernet'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/freertos'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/esp32'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/app_update'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/bootloader'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/driver'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/esp_adc_cal'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/bootloader'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/lwip'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/bootloader_support'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/cxx'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/app_trace'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/app_update'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/driver'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/esp32'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/bootloader_support'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/app_trace'
+including /opt/Espressif/esp-idf/components/bootloader/Makefile.projbuild...
+including /opt/Espressif/esp-idf/components/bootloader_support/Makefile.projbuild...
+including /opt/Espressif/esp-idf/components/esp32/Makefile.projbuild...
+including /opt/Espressif/esp-idf/components/esptool_py/Makefile.projbuild...
+including /opt/Espressif/esp-idf/components/partition_table/Makefile.projbuild...
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/cs_mbedtls'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/vfs'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/xtensa-debug-module'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/tcpip_adapter'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/spiffs'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/cryptoauthlib'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/tcpip_adapter'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/wpa_supplicant'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/cs_mbedtls'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/xtensa-debug-module'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/spi_flash'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/vfs'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/spiffs'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/pthread'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/partition_table'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/soc'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/partition_table'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/nvs_flash'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/cryptoauthlib'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/micro-ecc'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/newlib'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/spi_flash'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/wpa_supplicant'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/pthread'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/nvs_flash'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/heap'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/moslib'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/soc'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/micro-ecc'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/log'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/heap'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/freertos'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/expat'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/moslib'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/ethernet'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/newlib'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/esptool_py'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/esptool_py'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/esp_adc_cal'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/freertos'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/log'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/ethernet'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/expat'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/cxx'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/esp_adc_cal'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/bootloader_support'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/bootloader'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/driver'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/lwip'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/bootloader'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/app_update'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/app_trace'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/cxx'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/esp32'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/bootloader_support'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/driver'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/lwip'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/app_update'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/app_trace'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/esp32'
+including /opt/Espressif/esp-idf/components/bootloader/Makefile.projbuild...
+including /opt/Espressif/esp-idf/components/bootloader_support/Makefile.projbuild...
+including /opt/Espressif/esp-idf/components/esp32/Makefile.projbuild...
+including /opt/Espressif/esp-idf/components/esptool_py/Makefile.projbuild...
+including /opt/Espressif/esp-idf/components/partition_table/Makefile.projbuild...
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/cs_mbedtls'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/xtensa-debug-module'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/vfs'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/tcpip_adapter'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/spiffs'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/cryptoauthlib'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/cs_mbedtls'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/xtensa-debug-module'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/vfs'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/wpa_supplicant'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/tcpip_adapter'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/spi_flash'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/soc'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/spiffs'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/cryptoauthlib'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/pthread'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/partition_table'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/partition_table'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/newlib'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/soc'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/wpa_supplicant'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/nvs_flash'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/micro-ecc'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/pthread'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/moslib'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/spi_flash'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/log'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/heap'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/newlib'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/micro-ecc'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/nvs_flash'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/freertos'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/esptool_py'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/moslib'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/ethernet'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/log'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/esptool_py'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/expat'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/heap'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/esp_adc_cal'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/freertos'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/cxx'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/ethernet'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/expat'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/bootloader'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/bootloader'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/lwip'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/driver'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/app_update'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/bootloader_support'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/app_trace'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/esp_adc_cal'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/cxx'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/esp32'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/lwip'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/bootloader_support'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/app_update'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/driver'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/app_trace'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/esp32'
+including /opt/Espressif/esp-idf/components/bootloader/Makefile.projbuild...
+including /opt/Espressif/esp-idf/components/bootloader_support/Makefile.projbuild...
+including /opt/Espressif/esp-idf/components/esp32/Makefile.projbuild...
+including /opt/Espressif/esp-idf/components/esptool_py/Makefile.projbuild...
+including /opt/Espressif/esp-idf/components/partition_table/Makefile.projbuild...
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/cs_mbedtls'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/xtensa-debug-module'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/vfs'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/tcpip_adapter'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/spiffs'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/cryptoauthlib'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/tcpip_adapter'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/xtensa-debug-module'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/cs_mbedtls'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/wpa_supplicant'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/pthread'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/spiffs'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/vfs'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/cryptoauthlib'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/spi_flash'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/soc'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/partition_table'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/partition_table'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/newlib'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/nvs_flash'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/moslib'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/micro-ecc'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/wpa_supplicant'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/pthread'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/log'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/soc'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/spi_flash'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/newlib'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/nvs_flash'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/moslib'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/micro-ecc'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/heap'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/ethernet'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/expat'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/esptool_py'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/freertos'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/esptool_py'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/log'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/heap'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/expat'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/ethernet'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/cxx'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/esp_adc_cal'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/bootloader'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/esp32'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/bootloader'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/freertos'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/bootloader_support'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/driver'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/app_update'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/lwip'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/esp_adc_cal'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/cxx'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/app_trace'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/esp32'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/bootloader_support'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/app_update'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/driver'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/lwip'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/app_trace'
+including /opt/Espressif/esp-idf/components/bootloader/Makefile.projbuild...
+including /opt/Espressif/esp-idf/components/bootloader_support/Makefile.projbuild...
+including /opt/Espressif/esp-idf/components/esp32/Makefile.projbuild...
+including /opt/Espressif/esp-idf/components/esptool_py/Makefile.projbuild...
+including /opt/Espressif/esp-idf/components/partition_table/Makefile.projbuild...
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/cs_mbedtls'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/xtensa-debug-module'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/vfs'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/cryptoauthlib'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/spiffs'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/tcpip_adapter'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/cs_mbedtls'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/spi_flash'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/xtensa-debug-module'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/spiffs'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/tcpip_adapter'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/vfs'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/cryptoauthlib'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/soc'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/wpa_supplicant'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/partition_table'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/pthread'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/nvs_flash'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/spi_flash'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/newlib'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/partition_table'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/moslib'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/micro-ecc'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/soc'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/wpa_supplicant'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/log'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/nvs_flash'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/pthread'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/heap'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/newlib'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/moslib'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/micro-ecc'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/expat'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/log'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/esptool_py'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/ethernet'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/freertos'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/esptool_py'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/heap'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/esp_adc_cal'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/expat'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/lwip'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/cxx'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/freertos'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/ethernet'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/esp_adc_cal'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/bootloader'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/driver'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/bootloader_support'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/bootloader'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/app_update'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/lwip'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/esp32'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/app_trace'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/cxx'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/driver'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/bootloader_support'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/app_update'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/esp32'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/app_trace'
+including /opt/Espressif/esp-idf/components/bootloader/Makefile.projbuild...
+including /opt/Espressif/esp-idf/components/bootloader_support/Makefile.projbuild...
+including /opt/Espressif/esp-idf/components/esp32/Makefile.projbuild...
+including /opt/Espressif/esp-idf/components/esptool_py/Makefile.projbuild...
+including /opt/Espressif/esp-idf/components/partition_table/Makefile.projbuild...
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/cs_mbedtls'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/xtensa-debug-module'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/vfs'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/tcpip_adapter'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/spiffs'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/cryptoauthlib'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/cs_mbedtls'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/xtensa-debug-module'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/vfs'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/spi_flash'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/pthread'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/tcpip_adapter'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/cryptoauthlib'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/spiffs'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/soc'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/wpa_supplicant'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/partition_table'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/partition_table'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/newlib'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/nvs_flash'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/moslib'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/spi_flash'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/micro-ecc'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/pthread'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/wpa_supplicant'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/soc'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/heap'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/log'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/newlib'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/micro-ecc'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/moslib'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/nvs_flash'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/ethernet'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/esptool_py'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/heap'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/lwip'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/esptool_py'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/esp_adc_cal'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/freertos'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/expat'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/log'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/ethernet'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/driver'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/cxx'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/lwip'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/freertos'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/expat'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/bootloader_support'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/esp_adc_cal'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/bootloader'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/bootloader'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/esp32'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/app_update'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/driver'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/app_trace'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/cxx'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/bootloader_support'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/esp32'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/app_update'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/app_trace'
+including /opt/Espressif/esp-idf/components/bootloader/Makefile.projbuild...
+including /opt/Espressif/esp-idf/components/bootloader_support/Makefile.projbuild...
+including /opt/Espressif/esp-idf/components/esp32/Makefile.projbuild...
+including /opt/Espressif/esp-idf/components/esptool_py/Makefile.projbuild...
+including /opt/Espressif/esp-idf/components/partition_table/Makefile.projbuild...
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/cs_mbedtls'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/xtensa-debug-module'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/vfs'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/spiffs'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/tcpip_adapter'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/cs_mbedtls'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/cryptoauthlib'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/xtensa-debug-module'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/vfs'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/spi_flash'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/tcpip_adapter'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/spiffs'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/pthread'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/wpa_supplicant'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/soc'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/partition_table'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/partition_table'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/cryptoauthlib'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/nvs_flash'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/pthread'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/micro-ecc'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/spi_flash'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/newlib'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/soc'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/moslib'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/log'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/nvs_flash'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/wpa_supplicant'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/heap'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/newlib'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/micro-ecc'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/log'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/moslib'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/expat'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/freertos'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/esptool_py'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/esptool_py'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/heap'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/esp_adc_cal'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/ethernet'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/cxx'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/freertos'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/expat'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/bootloader'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/bootloader'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/lwip'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/bootloader_support'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/esp_adc_cal'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/app_update'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/cxx'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/ethernet'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/esp32'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/driver'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/app_trace'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/bootloader_support'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/app_update'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/lwip'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/app_trace'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/esp32'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/driver'
+including /opt/Espressif/esp-idf/components/bootloader/Makefile.projbuild...
+including /opt/Espressif/esp-idf/components/bootloader_support/Makefile.projbuild...
+including /opt/Espressif/esp-idf/components/esp32/Makefile.projbuild...
+including /opt/Espressif/esp-idf/components/esptool_py/Makefile.projbuild...
+including /opt/Espressif/esp-idf/components/partition_table/Makefile.projbuild...
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/cs_mbedtls'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/vfs'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/xtensa-debug-module'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/spiffs'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/tcpip_adapter'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/cryptoauthlib'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/cs_mbedtls'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/wpa_supplicant'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/xtensa-debug-module'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/vfs'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/spi_flash'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/tcpip_adapter'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/spiffs'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/cryptoauthlib'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/soc'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/moslib'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/pthread'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/nvs_flash'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/partition_table'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/wpa_supplicant'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/spi_flash'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/partition_table'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/newlib'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/micro-ecc'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/log'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/pthread'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/nvs_flash'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/moslib'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/soc'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/heap'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/newlib'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/log'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/micro-ecc'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/ethernet'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/expat'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/esptool_py'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/freertos'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/esptool_py'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/esp_adc_cal'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/heap'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/expat'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/ethernet'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/cxx'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/driver'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/bootloader'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/lwip'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/freertos'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/bootloader'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/esp_adc_cal'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/bootloader_support'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/app_update'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/esp32'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/app_trace'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/driver'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/cxx'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/lwip'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/bootloader_support'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/esp32'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/app_update'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/app_trace'
+including /opt/Espressif/esp-idf/components/bootloader/Makefile.projbuild...
+including /opt/Espressif/esp-idf/components/bootloader_support/Makefile.projbuild...
+including /opt/Espressif/esp-idf/components/esp32/Makefile.projbuild...
+including /opt/Espressif/esp-idf/components/esptool_py/Makefile.projbuild...
+including /opt/Espressif/esp-idf/components/partition_table/Makefile.projbuild...
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/cs_mbedtls'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/xtensa-debug-module'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/tcpip_adapter'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/vfs'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/cs_mbedtls'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/spiffs'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/cryptoauthlib'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/xtensa-debug-module'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/spi_flash'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/tcpip_adapter'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/vfs'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/wpa_supplicant'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/spiffs'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/pthread'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/partition_table'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/soc'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/partition_table'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/moslib'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/nvs_flash'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/cryptoauthlib'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/wpa_supplicant'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/micro-ecc'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/spi_flash'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/pthread'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/newlib'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/log'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/soc'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/nvs_flash'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/heap'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/moslib'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/ethernet'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/micro-ecc'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/freertos'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/expat'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/newlib'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/log'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/heap'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/esptool_py'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/esptool_py'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/esp_adc_cal'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/cxx'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/freertos'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/ethernet'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/expat'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/lwip'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/app_update'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/driver'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/esp_adc_cal'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/bootloader'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/bootloader_support'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/bootloader'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/esp32'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/cxx'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/lwip'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/app_trace'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/app_update'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/driver'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/bootloader_support'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/esp32'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/app_trace'
+including /opt/Espressif/esp-idf/components/bootloader/Makefile.projbuild...
+including /opt/Espressif/esp-idf/components/bootloader_support/Makefile.projbuild...
+including /opt/Espressif/esp-idf/components/esp32/Makefile.projbuild...
+including /opt/Espressif/esp-idf/components/esptool_py/Makefile.projbuild...
+including /opt/Espressif/esp-idf/components/partition_table/Makefile.projbuild...
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/cs_mbedtls'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/tcpip_adapter'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/vfs'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/xtensa-debug-module'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/spiffs'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/cs_mbedtls'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/cryptoauthlib'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/vfs'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/tcpip_adapter'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/xtensa-debug-module'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/spi_flash'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/spiffs'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/partition_table'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/pthread'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/partition_table'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/wpa_supplicant'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/cryptoauthlib'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/soc'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/nvs_flash'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/micro-ecc'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/newlib'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/spi_flash'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/pthread'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/moslib'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/wpa_supplicant'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/log'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/soc'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/nvs_flash'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/micro-ecc'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/heap'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/newlib'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/moslib'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/esptool_py'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/log'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/ethernet'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/esptool_py'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/expat'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/freertos'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/heap'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/esp_adc_cal'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/cxx'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/driver'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/ethernet'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/freertos'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/expat'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/lwip'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/esp_adc_cal'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/bootloader'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/app_update'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/bootloader'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/cxx'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/bootloader_support'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/app_trace'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/driver'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/esp32'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/lwip'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/bootloader_support'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/app_update'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/app_trace'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/esp32'
+including /opt/Espressif/esp-idf/components/bootloader/Makefile.projbuild...
+including /opt/Espressif/esp-idf/components/bootloader_support/Makefile.projbuild...
+including /opt/Espressif/esp-idf/components/esp32/Makefile.projbuild...
+including /opt/Espressif/esp-idf/components/esptool_py/Makefile.projbuild...
+including /opt/Espressif/esp-idf/components/partition_table/Makefile.projbuild...
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/cs_mbedtls'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/xtensa-debug-module'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/tcpip_adapter'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/vfs'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/cs_mbedtls'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/spiffs'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/xtensa-debug-module'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/spi_flash'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/spiffs'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/soc'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/tcpip_adapter'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/vfs'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/pthread'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/cryptoauthlib'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/partition_table'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/spi_flash'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/soc'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/partition_table'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/nvs_flash'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/moslib'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/wpa_supplicant'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/pthread'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/micro-ecc'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/newlib'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/cryptoauthlib'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/log'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/nvs_flash'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/moslib'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/wpa_supplicant'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/micro-ecc'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/log'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/newlib'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/expat'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/heap'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/esptool_py'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/ethernet'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/freertos'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/esp_adc_cal'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/esptool_py'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/lwip'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/expat'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/ethernet'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/heap'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/freertos'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/esp_adc_cal'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/cxx'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/bootloader'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/app_update'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/bootloader'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/driver'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/app_trace'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/lwip'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/bootloader_support'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/cxx'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/app_update'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/app_trace'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/esp32'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/driver'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/bootloader_support'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/esp32'
+including /opt/Espressif/esp-idf/components/bootloader/Makefile.projbuild...
+including /opt/Espressif/esp-idf/components/bootloader_support/Makefile.projbuild...
+including /opt/Espressif/esp-idf/components/esp32/Makefile.projbuild...
+including /opt/Espressif/esp-idf/components/esptool_py/Makefile.projbuild...
+including /opt/Espressif/esp-idf/components/partition_table/Makefile.projbuild...
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/cs_mbedtls'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/xtensa-debug-module'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/vfs'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/tcpip_adapter'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/cs_mbedtls'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/spiffs'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/cryptoauthlib'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/tcpip_adapter'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/xtensa-debug-module'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/spi_flash'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/soc'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/vfs'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/wpa_supplicant'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/partition_table'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/pthread'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/spiffs'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/moslib'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/cryptoauthlib'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/partition_table'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/spi_flash'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/soc'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/micro-ecc'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/nvs_flash'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/newlib'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/wpa_supplicant'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/moslib'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/log'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/pthread'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/micro-ecc'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/nvs_flash'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/newlib'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/esptool_py'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/esptool_py'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/heap'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/log'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/ethernet'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/lwip'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/expat'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/esp_adc_cal'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/freertos'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/heap'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/lwip'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/ethernet'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/expat'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/cxx'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/driver'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/freertos'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/bootloader'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/esp_adc_cal'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/app_update'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/bootloader'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/esp32'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/bootloader_support'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/app_trace'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/driver'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/cxx'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/app_update'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/esp32'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/bootloader_support'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/app_trace'
+including /opt/Espressif/esp-idf/components/bootloader/Makefile.projbuild...
+including /opt/Espressif/esp-idf/components/bootloader_support/Makefile.projbuild...
+including /opt/Espressif/esp-idf/components/esp32/Makefile.projbuild...
+including /opt/Espressif/esp-idf/components/esptool_py/Makefile.projbuild...
+including /opt/Espressif/esp-idf/components/partition_table/Makefile.projbuild...
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/cs_mbedtls'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/xtensa-debug-module'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/vfs'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/tcpip_adapter'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/spiffs'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/cryptoauthlib'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/cs_mbedtls'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/spi_flash'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/xtensa-debug-module'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/wpa_supplicant'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/cryptoauthlib'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/vfs'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/tcpip_adapter'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/spiffs'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/partition_table'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/pthread'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/partition_table'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/spi_flash'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/soc'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/newlib'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/nvs_flash'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/micro-ecc'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/wpa_supplicant'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/log'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/pthread'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/moslib'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/micro-ecc'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/heap'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/nvs_flash'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/soc'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/newlib'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/log'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/moslib'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/esptool_py'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/expat'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/esptool_py'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/ethernet'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/freertos'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/esp_adc_cal'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/heap'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/expat'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/lwip'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/ethernet'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/freertos'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/driver'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/cxx'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/esp32'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/bootloader'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/app_update'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/esp_adc_cal'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/bootloader'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/bootloader_support'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/lwip'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/app_trace'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/cxx'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/esp32'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/driver'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/app_update'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/bootloader_support'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/app_trace'
+including /opt/Espressif/esp-idf/components/bootloader/Makefile.projbuild...
+including /opt/Espressif/esp-idf/components/bootloader_support/Makefile.projbuild...
+including /opt/Espressif/esp-idf/components/esp32/Makefile.projbuild...
+including /opt/Espressif/esp-idf/components/esptool_py/Makefile.projbuild...
+including /opt/Espressif/esp-idf/components/partition_table/Makefile.projbuild...
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/cs_mbedtls'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/xtensa-debug-module'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/vfs'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/tcpip_adapter'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/spi_flash'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/spiffs'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/cs_mbedtls'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/cryptoauthlib'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/partition_table'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/xtensa-debug-module'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/partition_table'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/tcpip_adapter'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/vfs'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/spi_flash'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/wpa_supplicant'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/spiffs'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/cryptoauthlib'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/wpa_supplicant'
+including /opt/Espressif/esp-idf/components/bootloader/Makefile.projbuild...
+including /opt/Espressif/esp-idf/components/bootloader_support/Makefile.projbuild...
+including /opt/Espressif/esp-idf/components/esp32/Makefile.projbuild...
+including /opt/Espressif/esp-idf/components/esptool_py/Makefile.projbuild...
+including /opt/Espressif/esp-idf/components/partition_table/Makefile.projbuild...
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/moslib'
+  GEN   /Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/gen/mgos_config.c
+  GEN   /Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/gen/mgos_ro_vars.c
+CXX Partition.o
+CXX SD.o
+CXX SPI_Flash.o
+CXX WL_Flash.o
+CC mgos_SD_c.o
+CXX mgos_SD.o
+CXX WL_Ext_Safe.o
+CXX WL_Ext_Perf.o
+In file included from /opt/Espressif/esp-idf/components/newlib/platform_include/assert.h:20:0,
+                 from /opt/Espressif/esp-idf/components/esp32/include/esp_err.h:18,
+                 from /Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/src/SD.h:7,
+                 from /Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/src/mgos_SD.h:1,
+                 from /Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/src/mgos_SD.cpp:1:
+/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/include/sdkconfig.h:18:0: warning: "CONFIG_ESPTOOLPY_FLASHSIZE" redefined
+ #define CONFIG_ESPTOOLPY_FLASHSIZE "4MB"
+ ^
+In file included from /Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/src/SD.h:6:0,
+                 from /Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/src/mgos_SD.h:1,
+                 from /Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/src/mgos_SD.cpp:1:
+/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/src/sdkconfig.h:25:0: note: this is the location of the previous definition
+ #define CONFIG_ESPTOOLPY_FLASHSIZE "2MB"
+ ^
+In file included from /opt/Espressif/esp-idf/components/newlib/platform_include/assert.h:20:0,
+                 from /opt/Espressif/esp-idf/components/esp32/include/esp_err.h:18,
+                 from /Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/src/SD.h:7,
+                 from /Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/src/mgos_SD.h:1,
+                 from /Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/src/mgos_SD.cpp:1:
+/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/include/sdkconfig.h:35:0: warning: "CONFIG_TIMER_TASK_STACK_DEPTH" redefined
+ #define CONFIG_TIMER_TASK_STACK_DEPTH 3072
+ ^
+In file included from /Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/src/SD.h:6:0,
+                 from /Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/src/mgos_SD.h:1,
+                 from /Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/src/mgos_SD.cpp:1:
+/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/src/sdkconfig.h:56:0: note: this is the location of the previous definition
+ #define CONFIG_TIMER_TASK_STACK_DEPTH 2048
+ ^
+In file included from /opt/Espressif/esp-idf/components/newlib/platform_include/assert.h:20:0,
+                 from /opt/Espressif/esp-idf/components/esp32/include/esp_err.h:18,
+                 from /Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/src/SD.h:7,
+                 from /Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/src/mgos_SD.h:1,
+                 from /Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/src/mgos_SD.cpp:1:
+/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/include/sdkconfig.h:57:0: warning: "CONFIG_TCPIP_TASK_STACK_SIZE" redefined
+ #define CONFIG_TCPIP_TASK_STACK_SIZE 3072
+ ^
+In file included from /Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/src/SD.h:6:0,
+                 from /Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/src/mgos_SD.h:1,
+                 from /Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/src/mgos_SD.cpp:1:
+/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/src/sdkconfig.h:88:0: note: this is the location of the previous definition
+ #define CONFIG_TCPIP_TASK_STACK_SIZE 2048
+ ^
+In file included from /opt/Espressif/esp-idf/components/newlib/platform_include/assert.h:20:0,
+                 from /opt/Espressif/esp-idf/components/esp32/include/esp_err.h:18,
+                 from /Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/src/SD.h:7,
+                 from /Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/src/mgos_SD.h:1,
+                 from /Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/src/mgos_SD.cpp:1:
+/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/include/sdkconfig.h:69:0: warning: "CONFIG_ESP32_WIFI_DYNAMIC_RX_BUFFER_NUM" redefined
+ #define CONFIG_ESP32_WIFI_DYNAMIC_RX_BUFFER_NUM 0
+ ^
+In file included from /Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/src/SD.h:6:0,
+                 from /Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/src/mgos_SD.h:1,
+                 from /Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/src/mgos_SD.cpp:1:
+/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/src/sdkconfig.h:104:0: note: this is the location of the previous definition
+ #define CONFIG_ESP32_WIFI_DYNAMIC_RX_BUFFER_NUM 32
+ ^
+In file included from /opt/Espressif/esp-idf/components/newlib/platform_include/assert.h:20:0,
+                 from /opt/Espressif/esp-idf/components/esp32/include/esp_err.h:18,
+                 from /Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/src/SD.h:7,
+                 from /Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/src/mgos_SD.h:1,
+                 from /Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/src/mgos_SD.cpp:1:
+/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/include/sdkconfig.h:80:0: warning: "CONFIG_PARTITION_TABLE_FILENAME" redefined
+ #define CONFIG_PARTITION_TABLE_FILENAME "src/partitions_mgos.csv"
+ ^
+In file included from /Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/src/SD.h:6:0,
+                 from /Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/src/mgos_SD.h:1,
+                 from /Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/src/mgos_SD.cpp:1:
+/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/src/sdkconfig.h:120:0: note: this is the location of the previous definition
+ #define CONFIG_PARTITION_TABLE_FILENAME "partitions_singleapp.csv"
+ ^
+In file included from /opt/Espressif/esp-idf/components/newlib/platform_include/assert.h:20:0,
+                 from /opt/Espressif/esp-idf/components/esp32/include/esp_err.h:18,
+                 from /Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/src/SD.h:7,
+                 from /Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/src/mgos_SD.h:1,
+                 from /Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/src/mgos_SD.cpp:1:
+/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/include/sdkconfig.h:86:0: warning: "CONFIG_SYSTEM_EVENT_TASK_STACK_SIZE" redefined
+ #define CONFIG_SYSTEM_EVENT_TASK_STACK_SIZE 3072
+ ^
+In file included from /Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/src/SD.h:6:0,
+                 from /Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/src/mgos_SD.h:1,
+                 from /Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/src/mgos_SD.cpp:1:
+/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/src/sdkconfig.h:132:0: note: this is the location of the previous definition
+ #define CONFIG_SYSTEM_EVENT_TASK_STACK_SIZE 2048
+ ^
+In file included from /opt/Espressif/esp-idf/components/newlib/platform_include/assert.h:20:0,
+                 from /opt/Espressif/esp-idf/components/esp32/include/esp_err.h:18,
+                 from /Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/src/SD.h:7,
+                 from /Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/src/mgos_SD.h:1,
+                 from /Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/src/mgos_SD.cpp:1:
+/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/include/sdkconfig.h:87:0: warning: "CONFIG_ESP32_DEEP_SLEEP_WAKEUP_DELAY" redefined
+ #define CONFIG_ESP32_DEEP_SLEEP_WAKEUP_DELAY 0
+ ^
+In file included from /Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/src/SD.h:6:0,
+                 from /Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/src/mgos_SD.h:1,
+                 from /Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/src/mgos_SD.cpp:1:
+/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/src/sdkconfig.h:133:0: note: this is the location of the previous definition
+ #define CONFIG_ESP32_DEEP_SLEEP_WAKEUP_DELAY 2000
+ ^
+In file included from /opt/Espressif/esp-idf/components/newlib/platform_include/assert.h:20:0,
+                 from /opt/Espressif/esp-idf/components/esp32/include/esp_err.h:18,
+                 from /Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/src/SD.h:7,
+                 from /Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/src/mgos_SD.h:1,
+                 from /Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/src/mgos_SD.cpp:1:
+/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/include/sdkconfig.h:98:0: warning: "CONFIG_ESP32_XTAL_FREQ" redefined
+ #define CONFIG_ESP32_XTAL_FREQ 0
+ ^
+In file included from /Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/src/SD.h:6:0,
+                 from /Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/src/mgos_SD.h:1,
+                 from /Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/src/mgos_SD.cpp:1:
+/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/src/sdkconfig.h:153:0: note: this is the location of the previous definition
+ #define CONFIG_ESP32_XTAL_FREQ 40
+ ^
+In file included from /opt/Espressif/esp-idf/components/newlib/platform_include/assert.h:20:0,
+                 from /opt/Espressif/esp-idf/components/esp32/include/esp_err.h:18,
+                 from /Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/src/SD.h:7,
+                 from /Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/src/mgos_SD.h:1,
+                 from /Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/src/mgos_SD.cpp:1:
+/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/include/sdkconfig.h:116:0: warning: "CONFIG_PARTITION_TABLE_CUSTOM_FILENAME" redefined
+ #define CONFIG_PARTITION_TABLE_CUSTOM_FILENAME "src/partitions_mgos.csv"
+ ^
+In file included from /Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/src/SD.h:6:0,
+                 from /Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/src/mgos_SD.h:1,
+                 from /Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/src/mgos_SD.cpp:1:
+/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/src/sdkconfig.h:180:0: note: this is the location of the previous definition
+ #define CONFIG_PARTITION_TABLE_CUSTOM_FILENAME "partitions.csv"
+ ^
+In file included from /opt/Espressif/esp-idf/components/newlib/platform_include/assert.h:20:0,
+                 from /opt/Espressif/esp-idf/components/esp32/include/esp_err.h:18,
+                 from /Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/src/SD.h:7,
+                 from /Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/src/mgos_SD.h:1,
+                 from /Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/src/mgos_SD.cpp:1:
+/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/include/sdkconfig.h:130:0: warning: "CONFIG_ESP32_PTHREAD_TASK_STACK_SIZE_DEFAULT" redefined
+ #define CONFIG_ESP32_PTHREAD_TASK_STACK_SIZE_DEFAULT 2048
+ ^
+In file included from /Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/src/SD.h:6:0,
+                 from /Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/src/mgos_SD.h:1,
+                 from /Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/src/mgos_SD.cpp:1:
+/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/src/sdkconfig.h:204:0: note: this is the location of the previous definition
+ #define CONFIG_ESP32_PTHREAD_TASK_STACK_SIZE_DEFAULT 3072
+ ^
+CXX crc32.o
+In file included from /opt/Espressif/esp-idf/components/newlib/platform_include/assert.h:20:0,
+                 from /opt/Espressif/esp-idf/components/esp32/include/esp_err.h:18,
+                 from /Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/src/SD.h:7,
+                 from /Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/src/SD.cpp:1:
+/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/include/sdkconfig.h:18:0: warning: "CONFIG_ESPTOOLPY_FLASHSIZE" redefined
+ #define CONFIG_ESPTOOLPY_FLASHSIZE "4MB"
+ ^
+In file included from /Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/src/SD.h:6:0,
+                 from /Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/src/SD.cpp:1:
+/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/src/sdkconfig.h:25:0: note: this is the location of the previous definition
+ #define CONFIG_ESPTOOLPY_FLASHSIZE "2MB"
+ ^
+In file included from /opt/Espressif/esp-idf/components/newlib/platform_include/assert.h:20:0,
+                 from /opt/Espressif/esp-idf/components/esp32/include/esp_err.h:18,
+                 from /Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/src/SD.h:7,
+                 from /Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/src/SD.cpp:1:
+/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/include/sdkconfig.h:35:0: warning: "CONFIG_TIMER_TASK_STACK_DEPTH" redefined
+ #define CONFIG_TIMER_TASK_STACK_DEPTH 3072
+ ^
+In file included from /Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/src/SD.h:6:0,
+                 from /Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/src/SD.cpp:1:
+/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/src/sdkconfig.h:56:0: note: this is the location of the previous definition
+ #define CONFIG_TIMER_TASK_STACK_DEPTH 2048
+ ^
+In file included from /opt/Espressif/esp-idf/components/newlib/platform_include/assert.h:20:0,
+                 from /opt/Espressif/esp-idf/components/esp32/include/esp_err.h:18,
+                 from /Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/src/SD.h:7,
+                 from /Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/src/SD.cpp:1:
+/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/include/sdkconfig.h:57:0: warning: "CONFIG_TCPIP_TASK_STACK_SIZE" redefined
+ #define CONFIG_TCPIP_TASK_STACK_SIZE 3072
+ ^
+In file included from /Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/src/SD.h:6:0,
+                 from /Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/src/SD.cpp:1:
+/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/src/sdkconfig.h:88:0: note: this is the location of the previous definition
+ #define CONFIG_TCPIP_TASK_STACK_SIZE 2048
+ ^
+In file included from /opt/Espressif/esp-idf/components/newlib/platform_include/assert.h:20:0,
+                 from /opt/Espressif/esp-idf/components/esp32/include/esp_err.h:18,
+                 from /Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/src/SD.h:7,
+                 from /Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/src/SD.cpp:1:
+/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/include/sdkconfig.h:69:0: warning: "CONFIG_ESP32_WIFI_DYNAMIC_RX_BUFFER_NUM" redefined
+ #define CONFIG_ESP32_WIFI_DYNAMIC_RX_BUFFER_NUM 0
+ ^
+In file included from /Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/src/SD.h:6:0,
+                 from /Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/src/SD.cpp:1:
+/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/src/sdkconfig.h:104:0: note: this is the location of the previous definition
+ #define CONFIG_ESP32_WIFI_DYNAMIC_RX_BUFFER_NUM 32
+ ^
+In file included from /opt/Espressif/esp-idf/components/newlib/platform_include/assert.h:20:0,
+                 from /opt/Espressif/esp-idf/components/esp32/include/esp_err.h:18,
+                 from /Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/src/SD.h:7,
+                 from /Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/src/SD.cpp:1:
+/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/include/sdkconfig.h:80:0: warning: "CONFIG_PARTITION_TABLE_FILENAME" redefined
+ #define CONFIG_PARTITION_TABLE_FILENAME "src/partitions_mgos.csv"
+ ^
+In file included from /Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/src/SD.h:6:0,
+                 from /Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/src/SD.cpp:1:
+/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/src/sdkconfig.h:120:0: note: this is the location of the previous definition
+ #define CONFIG_PARTITION_TABLE_FILENAME "partitions_singleapp.csv"
+ ^
+In file included from /opt/Espressif/esp-idf/components/newlib/platform_include/assert.h:20:0,
+                 from /opt/Espressif/esp-idf/components/esp32/include/esp_err.h:18,
+                 from /Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/src/SD.h:7,
+                 from /Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/src/SD.cpp:1:
+/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/include/sdkconfig.h:86:0: warning: "CONFIG_SYSTEM_EVENT_TASK_STACK_SIZE" redefined
+ #define CONFIG_SYSTEM_EVENT_TASK_STACK_SIZE 3072
+ ^
+In file included from /Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/src/SD.h:6:0,
+                 from /Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/src/SD.cpp:1:
+/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/src/sdkconfig.h:132:0: note: this is the location of the previous definition
+ #define CONFIG_SYSTEM_EVENT_TASK_STACK_SIZE 2048
+ ^
+In file included from /opt/Espressif/esp-idf/components/newlib/platform_include/assert.h:20:0,
+                 from /opt/Espressif/esp-idf/components/esp32/include/esp_err.h:18,
+                 from /Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/src/SD.h:7,
+                 from /Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/src/SD.cpp:1:
+/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/include/sdkconfig.h:87:0: warning: "CONFIG_ESP32_DEEP_SLEEP_WAKEUP_DELAY" redefined
+ #define CONFIG_ESP32_DEEP_SLEEP_WAKEUP_DELAY 0
+ ^
+In file included from /Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/src/SD.h:6:0,
+                 from /Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/src/SD.cpp:1:
+/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/src/sdkconfig.h:133:0: note: this is the location of the previous definition
+ #define CONFIG_ESP32_DEEP_SLEEP_WAKEUP_DELAY 2000
+ ^
+In file included from /opt/Espressif/esp-idf/components/newlib/platform_include/assert.h:20:0,
+                 from /opt/Espressif/esp-idf/components/esp32/include/esp_err.h:18,
+                 from /Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/src/SD.h:7,
+                 from /Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/src/SD.cpp:1:
+/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/include/sdkconfig.h:98:0: warning: "CONFIG_ESP32_XTAL_FREQ" redefined
+ #define CONFIG_ESP32_XTAL_FREQ 0
+ ^
+In file included from /Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/src/SD.h:6:0,
+                 from /Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/src/SD.cpp:1:
+/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/src/sdkconfig.h:153:0: note: this is the location of the previous definition
+ #define CONFIG_ESP32_XTAL_FREQ 40
+ ^
+In file included from /opt/Espressif/esp-idf/components/newlib/platform_include/assert.h:20:0,
+                 from /opt/Espressif/esp-idf/components/esp32/include/esp_err.h:18,
+                 from /Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/src/SD.h:7,
+                 from /Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/src/SD.cpp:1:
+/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/include/sdkconfig.h:116:0: warning: "CONFIG_PARTITION_TABLE_CUSTOM_FILENAME" redefined
+ #define CONFIG_PARTITION_TABLE_CUSTOM_FILENAME "src/partitions_mgos.csv"
+ ^
+In file included from /Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/src/SD.h:6:0,
+                 from /Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/src/SD.cpp:1:
+/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/src/sdkconfig.h:180:0: note: this is the location of the previous definition
+ #define CONFIG_PARTITION_TABLE_CUSTOM_FILENAME "partitions.csv"
+ ^
+In file included from /opt/Espressif/esp-idf/components/newlib/platform_include/assert.h:20:0,
+                 from /opt/Espressif/esp-idf/components/esp32/include/esp_err.h:18,
+                 from /Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/src/SD.h:7,
+                 from /Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/src/SD.cpp:1:
+/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/include/sdkconfig.h:130:0: warning: "CONFIG_ESP32_PTHREAD_TASK_STACK_SIZE_DEFAULT" redefined
+ #define CONFIG_ESP32_PTHREAD_TASK_STACK_SIZE_DEFAULT 2048
+ ^
+In file included from /Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/src/SD.h:6:0,
+                 from /Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/src/SD.cpp:1:
+/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/src/sdkconfig.h:204:0: note: this is the location of the previous definition
+ #define CONFIG_ESP32_PTHREAD_TASK_STACK_SIZE_DEFAULT 3072
+ ^
+CXX wear_levelling.o
+CC sdmmc_cmd.o
+/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/src/SD.cpp: In member function 'int SD::write(const char*, uint32_t)':
+/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/src/SD.cpp:86:10: warning: unused variable 'len' [-Wunused-variable]
+   size_t len = 0;
+          ^
+/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/src/SD.cpp:88:15: warning: unused variable '_stat' [-Wunused-variable]
+   struct stat _stat;
+               ^
+In file included from /Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/src/mgos_SD.h:1:0,
+                 from /Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/src/mgos_SD.cpp:1:
+/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/src/SD.h:39:20: warning: 'TAG' defined but not used [-Wunused-variable]
+ static const char *TAG = "sd";
+                    ^
+AR /Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/moslib/libmoslib.a
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/moslib'
+Target 'component-moslib-build' responsible for '/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/moslib/libmoslib.a'
+make: Leaving directory '/app/deps/SD'
+Lib saved to build/lib.a
