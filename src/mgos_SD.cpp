@@ -21,14 +21,14 @@ int mgos_SD_init(SD *sd, int pin_num_miso, int pin_num_mosi, int pin_num_clk, in
   return sd->init(pin_num_miso, pin_num_mosi, pin_num_clk, pin_num_cs);
 }
 
-int mgos_SD_read(SD *sd, const char *filename, int bufsize) {
+int mgos_SD_read(SD *sd, const char *filename) {
   if (sd == nullptr) return 0;
-  return sd->read(filename, bufsize);
+  return sd->read(filename);
 }
 
-int mgos_SD_write(SD *sd, const char *filename, int bufsize) {
+int mgos_SD_write(SD *sd, const char *filename) {
   if (sd == nullptr) return 0;
-  return sd->write(filename, bufsize);
+  return sd->write(filename);
 }
 
 void mgos_SD_listFiles(SD *sd) {

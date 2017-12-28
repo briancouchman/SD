@@ -43,8 +43,8 @@ class SD{
     SD();
     int init();
     int init(int pin_num_miso, int pin_num_mosi, int pin_num_clk, int pin_num_cs);
-    int read(const char *filename, uint32_t bufsize);
-    int write(const char *filename, uint32_t bufsize);
+    int read(const char *filename);
+    int write(const char *filename);
     void listFiles();
     void close();
 };

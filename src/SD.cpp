@@ -52,8 +52,9 @@ int SD::init(){
   return init(PIN_NUM_MISO, PIN_NUM_MOSI, PIN_NUM_CLK, PIN_NUM_CS);
 }
 
-int SD::read(const char *filename, uint32_t bufsize){
+int SD::read(const char *filename){
   FILE* f;
+  uint32_t bufsize = 32;
   static uint8_t buf[MAX_BUFSIZE];
   size_t len = 0;
   struct stat _stat;
@@ -80,8 +81,9 @@ int SD::read(const char *filename, uint32_t bufsize){
 }
 
 
-int SD::write(const char *filename, uint32_t bufsize){
+int SD::write(const char *filename){
   FILE* f;
+  uint32_t bufsize = 32;
   static uint8_t buf[MAX_BUFSIZE];
   size_t len = 0;
   uint32_t loops;
