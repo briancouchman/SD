@@ -36,6 +36,8 @@
 #define MAX_BUFSIZE 16384
 #endif //USE_SPI_MODE
 
+#define CONFIG_WL_SECTOR_SIZE 4096
+
 static const char *TAG = "sd";
 
 class SD{
