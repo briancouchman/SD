@@ -11,24 +11,25 @@ platforms:
 author: Brian Couchman
 description: SD card reader
 sources:
-- /Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/src/mgos_SD_c.c
-- /Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/src/SD.cpp
-- /Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/src/mgos_SD.cpp
-- /Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/include/wear_levelling/Partition.cpp
-- /Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/include/wear_levelling/SPI_Flash.cpp
-- /Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/include/wear_levelling/WL_Ext_Perf.cpp
-- /Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/include/wear_levelling/WL_Ext_Safe.cpp
-- /Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/include/wear_levelling/WL_Flash.cpp
-- /Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/include/wear_levelling/crc32.cpp
-- /Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/include/wear_levelling/wear_levelling.cpp
-- /Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/include/sdmmc/sdmmc_cmd.c
+- /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/src/mgos_SD_c.c
+- /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/src/SD.cpp
+- /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/src/mgos_SD.cpp
+- /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/wear_levelling/Partition.cpp
+- /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/wear_levelling/SPI_Flash.cpp
+- /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/wear_levelling/WL_Ext_Perf.cpp
+- /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/wear_levelling/WL_Ext_Safe.cpp
+- /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/wear_levelling/WL_Flash.cpp
+- /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/wear_levelling/crc32.cpp
+- /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/wear_levelling/wear_levelling.cpp
+- /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/sdmmc/sdmmc_cmd.c
 includes:
-- /Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/include/fatfs/src
-- /Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/include/vfs/include
-- /Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/include/wear_levelling/include
-- /Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/include/wear_levelling/private_include
-- /Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/include/driver/include
-- /Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/include/sdmmc/include
+- /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include
+- /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/fatfs/src
+- /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/vfs/include
+- /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/wear_levelling/include
+- /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/wear_levelling/private_include
+- /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/driver/include
+- /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/sdmmc/include
 build_vars:
   ESP_IDF_EXTRA_COMPONENTS: ""
   ESP_IDF_SDKCONFIG_OPTS: ""
@@ -37,8 +38,7 @@ tags:
 - c
 - js
 - hw
-libs_version: 1.22.1
-modules_version: 1.22.1
-mongoose_os_version: 1.22.1
-manifest_version: 2017-05-18
-skeleton_version: 2017-05-18
+libs_version: "1.23"
+modules_version: "1.23"
+mongoose_os_version: "1.23"
+manifest_version: 2017-09-29

@@ -1,6 +1,6 @@
 /*
  * Generated file - do not edit.
- * Command: /mongoose-os/fw/tools/gen_sys_config.py --c_name=mgos_ro_vars --c_global_name=mgos_sys_ro_vars --dest_dir=/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/gen/ /mongoose-os/fw/src/mgos_ro_vars_schema.yaml
+ * Command: /mongoose-os/fw/tools/gen_sys_config.py --c_name=mgos_ro_vars --c_global_name=mgos_sys_ro_vars --dest_dir=/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/gen/ /mongoose-os/fw/src/mgos_ro_vars_schema.yaml
  */
 
 #ifndef MGOS_RO_VARS_H_

@@ -1,5 +1,5 @@
-SD.o: /Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/src/SD.cpp \
- /Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/src/SD.h \
+SD.o: /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/src/SD.cpp \
+ /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/SD.h \
  /opt/Espressif/esp-idf/components/newlib/include/stdio.h \
  /opt/Espressif/esp-idf/components/newlib/include/_ansi.h \
  /opt/Espressif/esp-idf/components/newlib/include/newlib.h \
@@ -27,10 +27,10 @@ SD.o: /Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/src/SD.cpp \
  /opt/Espressif/esp-idf/components/vfs/include/sys/dirent.h \
  /opt/Espressif/esp-idf/components/newlib/include/stdint.h \
  /opt/Espressif/esp-idf/components/newlib/include/sys/_intsup.h \
- /Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/src/sdkconfig.h \
+ /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/sdkconfig.h \
  /opt/Espressif/esp-idf/components/esp32/include/esp_err.h \
  /opt/Espressif/esp-idf/components/newlib/platform_include/assert.h \
- /Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/include/sdkconfig.h \
+ /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/objs/include/sdkconfig.h \
  /opt/Espressif/esp-idf/components/newlib/include/stdlib.h \
  /opt/Espressif/esp-idf/components/newlib/include/machine/stdlib.h \
  /opt/Espressif/esp-idf/components/newlib/include/alloca.h \
@@ -40,7 +40,7 @@ SD.o: /Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/src/SD.cpp \
  /opt/Espressif/esp-idf/components/soc/esp32/include/soc/soc.h \
  /opt/Espressif/esp-idf/components/esp32/include/esp_assert.h \
  /opt/Espressif/esp-idf/components/log/include/esp_log_internal.h \
- /Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/include/fatfs/src/esp_vfs_fat.h \
+ /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/fatfs/src/esp_vfs_fat.h \
  /opt/Espressif/esp-idf/components/driver/include/driver/gpio.h \
  /opt/Espressif/esp-idf/components/esp32/include/esp_types.h \
  /opt/Espressif/esp-idf/components/soc/esp32/include/soc/gpio_reg.h \
@@ -96,22 +96,22 @@ SD.o: /Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/src/SD.cpp \
  /opt/Espressif/esp-idf/components/soc/esp32/include/soc/spi_struct.h \
  /opt/Espressif/esp-idf/components/esp32/include/rom/lldesc.h \
  /opt/Espressif/esp-idf/components/esp32/include/rom/queue.h \
- /Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/include/fatfs/src/ff.h \
- /Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/include/fatfs/src/integer.h \
- /Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/include/fatfs/src/ffconf.h \
+ /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/fatfs/src/ff.h \
+ /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/fatfs/src/integer.h \
+ /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/fatfs/src/ffconf.h \
  /opt/Espressif/esp-idf/components/newlib/include/sys/param.h \
  /opt/Espressif/esp-idf/components/newlib/include/sys/syslimits.h \
  /opt/Espressif/esp-idf/components/newlib/include/machine/endian.h \
  /opt/Espressif/esp-idf/components/newlib/include/machine/param.h \
- /Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/include/wear_levelling/include/wear_levelling.h \
+ /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/wear_levelling/include/wear_levelling.h \
  /opt/Espressif/esp-idf/components/spi_flash/include/esp_partition.h \
  /opt/Espressif/esp-idf/components/spi_flash/include/esp_spi_flash.h \
  /opt/Espressif/esp-idf/components/freertos/include/freertos/task.h \
  /opt/Espressif/esp-idf/components/newlib/include/limits.h \
  /opt/Espressif/esp-idf/components/freertos/include/freertos/list.h \
- /Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/include/sdmmc/include/sdmmc_cmd.h
+ /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/sdmmc/include/sdmmc_cmd.h
 
-/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/src/SD.h:
+/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/SD.h:
 
 /opt/Espressif/esp-idf/components/newlib/include/stdio.h:
 
@@ -167,13 +167,13 @@ SD.o: /Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/src/SD.cpp \
 
 /opt/Espressif/esp-idf/components/newlib/include/sys/_intsup.h:
 
-/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/src/sdkconfig.h:
+/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/sdkconfig.h:
 
 /opt/Espressif/esp-idf/components/esp32/include/esp_err.h:
 
 /opt/Espressif/esp-idf/components/newlib/platform_include/assert.h:
 
-/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/build/objs/include/sdkconfig.h:
+/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/objs/include/sdkconfig.h:
 
 /opt/Espressif/esp-idf/components/newlib/include/stdlib.h:
 
@@ -193,7 +193,7 @@ SD.o: /Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/src/SD.cpp \
 
 /opt/Espressif/esp-idf/components/log/include/esp_log_internal.h:
 
-/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/include/fatfs/src/esp_vfs_fat.h:
+/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/fatfs/src/esp_vfs_fat.h:
 
 /opt/Espressif/esp-idf/components/driver/include/driver/gpio.h:
 
@@ -305,11 +305,11 @@ SD.o: /Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/src/SD.cpp \
 
 /opt/Espressif/esp-idf/components/esp32/include/rom/queue.h:
 
-/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/include/fatfs/src/ff.h:
+/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/fatfs/src/ff.h:
 
-/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/include/fatfs/src/integer.h:
+/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/fatfs/src/integer.h:
 
-/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/include/fatfs/src/ffconf.h:
+/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/fatfs/src/ffconf.h:
 
 /opt/Espressif/esp-idf/components/newlib/include/sys/param.h:
 
@@ -319,7 +319,7 @@ SD.o: /Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/src/SD.cpp \
 
 /opt/Espressif/esp-idf/components/newlib/include/machine/param.h:
 
-/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/include/wear_levelling/include/wear_levelling.h:
+/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/wear_levelling/include/wear_levelling.h:
 
 /opt/Espressif/esp-idf/components/spi_flash/include/esp_partition.h:
 
@@ -331,4 +331,4 @@ SD.o: /Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/src/SD.cpp \
 
 /opt/Espressif/esp-idf/components/freertos/include/freertos/list.h:
 
-/Users/bcouchman/.mos/apps-1.22.1/meeio/deps/SD/include/sdmmc/include/sdmmc_cmd.h:
+/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/sdmmc/include/sdmmc_cmd.h:
