@@ -20,7 +20,7 @@ mount from "/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/wear_levelling
 mount from "/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/wear_levelling/private_include" to "/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/wear_levelling/private_include"
 mount from "/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/driver/include" to "/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/driver/include"
 mount from "/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/sdmmc/include" to "/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/sdmmc/include"
-Docker arguments: run --name mos_build_2018-01-02T18-52-02-00_9103624042240813736 --rm -i -v /Users/bcouchman/.mos/modules-1.23/mongoose-os-1.23:/mongoose-os -v /Users/bcouchman/.mos/modules-1.23/mongoose-os-1.23:/Users/bcouchman/.mos/modules-1.23/mongoose-os-1.23 -v /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD:/app -v /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/wear_levelling:/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/wear_levelling -v /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include:/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include -v /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/wear_levelling/include:/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/wear_levelling/include -v /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/wear_levelling/private_include:/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/wear_levelling/private_include -v /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/src:/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/src -v /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/vfs:/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/vfs -v /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/sdmmc:/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/sdmmc -v /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/fatfs/src:/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/fatfs/src -v /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/vfs/include:/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/vfs/include -v /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build:/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build -v /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/sdmmc/include:/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/sdmmc/include -v /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/driver/include:/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/driver/include docker.cesanta.com/esp32-build:2.1-r8 /bin/bash -c nice make '-j' '8' '-C' '/app' '-f' '/mongoose-os/fw/platforms/esp32/Makefile.build' '/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/objs/moslib/libmoslib.a' 'APP_VERSION=1.0' 'APP_FS_FILES=' 'APP_CFLAGS=' 'GEN_DIR=/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/gen' 'APP_CXXFLAGS=' 'APP=SD' 'FFI_SYMBOLS=' 'BUILD_DIR=/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/objs' 'APP_SOURCES=/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/src/mgos_SD_c.c /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/src/SD.cpp /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/src/mgos_SD.cpp /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/wear_levelling/Partition.cpp /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/wear_levelling/SPI_Flash.cpp /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/wear_levelling/WL_Ext_Perf.cpp /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/wear_levelling/WL_Ext_Safe.cpp /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/wear_levelling/WL_Flash.cpp /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/wear_levelling/crc32.cpp /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/wear_levelling/wear_levelling.cpp /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/sdmmc/sdmmc_cmd.c' 'MGOS_PATH=/mongoose-os' 'ESP_IDF_SDKCONFIG_OPTS=' 'FS_STAGING_DIR=build/fs' 'PLATFORM=esp32' 'APP_INCLUDES=/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/fatfs/src /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/vfs/include /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/wear_levelling/include /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/wear_levelling/private_include /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/driver/include /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/sdmmc/include' 'APP_BIN_LIBS=' 'FW_DIR=build/fw' 'MANIFEST_FINAL=/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/gen/mos_final.yml' 'ESP_IDF_EXTRA_COMPONENTS=' 'MGOS_MAIN_COMPONENT=moslib'
+Docker arguments: run --name mos_build_2018-01-02T18-56-03-00_2523989065634584453 --rm -i -v /Users/bcouchman/.mos/modules-1.23/mongoose-os-1.23:/Users/bcouchman/.mos/modules-1.23/mongoose-os-1.23 -v /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/vfs:/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/vfs -v /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/sdmmc:/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/sdmmc -v /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include:/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include -v /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/fatfs/src:/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/fatfs/src -v /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/sdmmc/include:/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/sdmmc/include -v /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD:/app -v /Users/bcouchman/.mos/modules-1.23/mongoose-os-1.23:/mongoose-os -v /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/src:/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/src -v /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/wear_levelling:/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/wear_levelling -v /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/vfs/include:/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/vfs/include -v /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/wear_levelling/include:/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/wear_levelling/include -v /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build:/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build -v /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/wear_levelling/private_include:/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/wear_levelling/private_include -v /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/driver/include:/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/driver/include docker.cesanta.com/esp32-build:2.1-r8 /bin/bash -c nice make '-j' '8' '-C' '/app' '-f' '/mongoose-os/fw/platforms/esp32/Makefile.build' '/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/objs/moslib/libmoslib.a' 'FFI_SYMBOLS=' 'PLATFORM=esp32' 'APP_INCLUDES=/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/fatfs/src /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/vfs/include /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/wear_levelling/include /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/wear_levelling/private_include /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/driver/include /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/sdmmc/include' 'APP_FS_FILES=' 'APP_CFLAGS=' 'ESP_IDF_SDKCONFIG_OPTS=' 'GEN_DIR=/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/gen' 'FW_DIR=build/fw' 'ESP_IDF_EXTRA_COMPONENTS=' 'BUILD_DIR=/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/objs' 'APP_BIN_LIBS=' 'MANIFEST_FINAL=/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/gen/mos_final.yml' 'APP_VERSION=1.0' 'FS_STAGING_DIR=build/fs' 'APP=SD' 'APP_SOURCES=/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/src/mgos_SD_c.c /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/src/SD.cpp /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/src/mgos_SD.cpp /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/wear_levelling/Partition.cpp /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/wear_levelling/SPI_Flash.cpp /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/wear_levelling/WL_Ext_Perf.cpp /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/wear_levelling/WL_Ext_Safe.cpp /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/wear_levelling/WL_Flash.cpp /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/wear_levelling/crc32.cpp /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/wear_levelling/wear_levelling.cpp /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/sdmmc/sdmmc_cmd.c' 'APP_CXXFLAGS=' 'MGOS_PATH=/mongoose-os' 'MGOS_MAIN_COMPONENT=moslib'
 make: Entering directory '/app'
 including /opt/Espressif/esp-idf/components/bootloader/Makefile.projbuild...
 including /opt/Espressif/esp-idf/components/bootloader_support/Makefile.projbuild...
@@ -35,130 +35,65 @@ including /opt/Espressif/esp-idf/components/partition_table/Makefile.projbuild..
 # configuration written to /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/gen/sdkconfig
 #
 make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/objs/cs_mbedtls'
-make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/objs/xtensa-debug-module'
 make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/objs/tcpip_adapter'
 make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/objs/vfs'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/objs/xtensa-debug-module'
 make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/objs/spiffs'
-make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/objs/cs_mbedtls'
 make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/objs/xtensa-debug-module'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/objs/cs_mbedtls'
 make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/objs/vfs'
 make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/objs/tcpip_adapter'
 make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/objs/wpa_supplicant'
 make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/objs/cryptoauthlib'
-make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/objs/spi_flash'
 make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/objs/partition_table'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/objs/spi_flash'
 make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/objs/pthread'
-make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/objs/soc'
 make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/objs/partition_table'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/objs/soc'
 make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/objs/spiffs'
 make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/objs/nvs_flash'
-make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/objs/soc'
-make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/objs/cryptoauthlib'
 make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/objs/wpa_supplicant'
-make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/objs/spi_flash'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/objs/cryptoauthlib'
 make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/objs/newlib'
-make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/objs/moslib'
-make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/objs/pthread'
 make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/objs/micro-ecc'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/objs/pthread'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/objs/spi_flash'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/objs/soc'
 make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/objs/log'
 make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/objs/heap'
 make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/objs/nvs_flash'
-make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/objs/freertos'
 make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/objs/newlib'
-make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/objs/moslib'
-make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/objs/log'
-make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/objs/expat'
-make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/objs/esptool_py'
-make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/objs/ethernet'
 make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/objs/micro-ecc'
-make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/objs/esptool_py'
-make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/objs/freertos'
-make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/objs/esp_adc_cal'
-make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/objs/heap'
-make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/objs/cxx'
-make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/objs/expat'
-make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/objs/ethernet'
-make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/objs/bootloader_support'
-make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/objs/lwip'
-make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/objs/bootloader'
-make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/objs/app_update'
-make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/objs/driver'
-make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/objs/bootloader'
-make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/objs/esp32'
-make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/objs/esp_adc_cal'
-make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/objs/cxx'
-make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/objs/app_trace'
-make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/objs/app_update'
-make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/objs/lwip'
-make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/objs/bootloader_support'
-make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/objs/driver'
-make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/objs/esp32'
-make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/objs/app_trace'
-including /opt/Espressif/esp-idf/components/bootloader/Makefile.projbuild...
-including /opt/Espressif/esp-idf/components/bootloader_support/Makefile.projbuild...
-including /opt/Espressif/esp-idf/components/esp32/Makefile.projbuild...
-including /opt/Espressif/esp-idf/components/esptool_py/Makefile.projbuild...
-including /opt/Espressif/esp-idf/components/partition_table/Makefile.projbuild...
-make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/objs/cs_mbedtls'
-make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/objs/xtensa-debug-module'
-make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/objs/tcpip_adapter'
-make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/objs/vfs'
-make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/objs/cryptoauthlib'
-make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/objs/spiffs'
-make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/objs/cs_mbedtls'
-make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/objs/xtensa-debug-module'
-make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/objs/tcpip_adapter'
-make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/objs/cryptoauthlib'
-make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/objs/soc'
-make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/objs/pthread'
-make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/objs/wpa_supplicant'
-make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/objs/partition_table'
-make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/objs/vfs'
-make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/objs/spi_flash'
-make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/objs/spiffs'
-make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/objs/partition_table'
-make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/objs/micro-ecc'
-make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/objs/newlib'
-make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/objs/pthread'
-make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/objs/soc'
-make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/objs/wpa_supplicant'
-make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/objs/log'
-make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/objs/nvs_flash'
 make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/objs/moslib'
-make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/objs/micro-ecc'
-make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/objs/spi_flash'
-make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/objs/heap'
-make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/objs/newlib'
-make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/objs/expat'
 make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/objs/freertos'
-make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/objs/moslib'
-make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/objs/log'
-make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/objs/nvs_flash'
 make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/objs/esptool_py'
-make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/objs/lwip'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/objs/expat'
 make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/objs/ethernet'
 make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/objs/esptool_py'
 make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/objs/heap'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/objs/log'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/objs/moslib'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/objs/freertos'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/objs/expat'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/objs/lwip'
 make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/objs/esp_adc_cal'
 make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/objs/cxx'
-make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/objs/expat'
-make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/objs/freertos'
-make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/objs/driver'
 make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/objs/ethernet'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/objs/bootloader'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/objs/bootloader'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/objs/bootloader_support'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/objs/app_update'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/objs/driver'
 make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/objs/esp32'
 make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/objs/lwip'
-make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/objs/bootloader'
-make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/objs/bootloader_support'
-make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/objs/bootloader'
-make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/objs/app_trace'
-make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/objs/app_update'
-make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/objs/cxx'
 make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/objs/esp_adc_cal'
-make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/objs/driver'
-make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/objs/esp32'
-make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/objs/bootloader_support'
-make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/objs/app_trace'
+make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/objs/app_trace'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/objs/cxx'
 make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/objs/app_update'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/objs/bootloader_support'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/objs/esp32'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/objs/driver'
+make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/objs/app_trace'
 including /opt/Espressif/esp-idf/components/bootloader/Makefile.projbuild...
 including /opt/Espressif/esp-idf/components/bootloader_support/Makefile.projbuild...
 including /opt/Espressif/esp-idf/components/esp32/Makefile.projbuild...
@@ -167,10 +102,10 @@ including /opt/Espressif/esp-idf/components/partition_table/Makefile.projbuild..
 make[1]: Entering directory '/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/objs/moslib'
   GEN   /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/gen/mgos_config.c
   GEN   /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/gen/mgos_ro_vars.c
-CC mgos_SD_c.o
-CXX mgos_SD.o
 CXX SD.o
+CC mgos_SD_c.o
 CXX Partition.o
+CXX mgos_SD.o
 CXX SPI_Flash.o
 CXX WL_Ext_Perf.o
 CXX WL_Flash.o
@@ -191,39 +126,10 @@ In file included from /opt/Espressif/esp-idf/components/newlib/platform_include/
  #define CONFIG_ESPTOOLPY_FLASHSIZE "4MB"
  ^
 In file included from /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/SD.h:6:0,
-                 from /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/src/SD.cpp:1:
-/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/sdkconfig.h:25:0: note: this is the location of the previous definition
- #define CONFIG_ESPTOOLPY_FLASHSIZE "2MB"
- ^
-In file included from /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/SD.h:6:0,
                  from /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/mgos_SD.h:1,
                  from /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/src/mgos_SD.cpp:1:
 /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/sdkconfig.h:25:0: note: this is the location of the previous definition
  #define CONFIG_ESPTOOLPY_FLASHSIZE "2MB"
- ^
-In file included from /opt/Espressif/esp-idf/components/newlib/platform_include/assert.h:20:0,
-                 from /opt/Espressif/esp-idf/components/esp32/include/esp_err.h:18,
-                 from /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/SD.h:7,
-                 from /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/src/SD.cpp:1:
-/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/objs/include/sdkconfig.h:35:0: warning: "CONFIG_TIMER_TASK_STACK_DEPTH" redefined
- #define CONFIG_TIMER_TASK_STACK_DEPTH 3072
- ^
-In file included from /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/SD.h:6:0,
-                 from /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/src/SD.cpp:1:
-/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/sdkconfig.h:56:0: note: this is the location of the previous definition
- #define CONFIG_TIMER_TASK_STACK_DEPTH 2048
- ^
-In file included from /opt/Espressif/esp-idf/components/newlib/platform_include/assert.h:20:0,
-                 from /opt/Espressif/esp-idf/components/esp32/include/esp_err.h:18,
-                 from /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/SD.h:7,
-                 from /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/src/SD.cpp:1:
-/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/objs/include/sdkconfig.h:57:0: warning: "CONFIG_TCPIP_TASK_STACK_SIZE" redefined
- #define CONFIG_TCPIP_TASK_STACK_SIZE 3072
- ^
-In file included from /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/SD.h:6:0,
-                 from /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/src/SD.cpp:1:
-/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/sdkconfig.h:88:0: note: this is the location of the previous definition
- #define CONFIG_TCPIP_TASK_STACK_SIZE 2048
  ^
 In file included from /opt/Espressif/esp-idf/components/newlib/platform_include/assert.h:20:0,
                  from /opt/Espressif/esp-idf/components/esp32/include/esp_err.h:18,
@@ -233,23 +139,11 @@ In file included from /opt/Espressif/esp-idf/components/newlib/platform_include/
 /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/objs/include/sdkconfig.h:35:0: warning: "CONFIG_TIMER_TASK_STACK_DEPTH" redefined
  #define CONFIG_TIMER_TASK_STACK_DEPTH 3072
  ^
-In file included from /opt/Espressif/esp-idf/components/newlib/platform_include/assert.h:20:0,
-                 from /opt/Espressif/esp-idf/components/esp32/include/esp_err.h:18,
-                 from /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/SD.h:7,
-                 from /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/src/SD.cpp:1:
-/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/objs/include/sdkconfig.h:69:0: warning: "CONFIG_ESP32_WIFI_DYNAMIC_RX_BUFFER_NUM" redefined
- #define CONFIG_ESP32_WIFI_DYNAMIC_RX_BUFFER_NUM 0
- ^
 In file included from /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/SD.h:6:0,
                  from /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/mgos_SD.h:1,
                  from /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/src/mgos_SD.cpp:1:
 /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/sdkconfig.h:56:0: note: this is the location of the previous definition
  #define CONFIG_TIMER_TASK_STACK_DEPTH 2048
- ^
-In file included from /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/SD.h:6:0,
-                 from /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/src/SD.cpp:1:
-/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/sdkconfig.h:104:0: note: this is the location of the previous definition
- #define CONFIG_ESP32_WIFI_DYNAMIC_RX_BUFFER_NUM 32
  ^
 In file included from /opt/Espressif/esp-idf/components/newlib/platform_include/assert.h:20:0,
                  from /opt/Espressif/esp-idf/components/esp32/include/esp_err.h:18,
@@ -268,18 +162,6 @@ In file included from /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/SD.h
 In file included from /opt/Espressif/esp-idf/components/newlib/platform_include/assert.h:20:0,
                  from /opt/Espressif/esp-idf/components/esp32/include/esp_err.h:18,
                  from /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/SD.h:7,
-                 from /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/src/SD.cpp:1:
-/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/objs/include/sdkconfig.h:80:0: warning: "CONFIG_PARTITION_TABLE_FILENAME" redefined
- #define CONFIG_PARTITION_TABLE_FILENAME "src/partitions_mgos.csv"
- ^
-In file included from /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/SD.h:6:0,
-                 from /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/src/SD.cpp:1:
-/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/sdkconfig.h:120:0: note: this is the location of the previous definition
- #define CONFIG_PARTITION_TABLE_FILENAME "partitions_singleapp.csv"
- ^
-In file included from /opt/Espressif/esp-idf/components/newlib/platform_include/assert.h:20:0,
-                 from /opt/Espressif/esp-idf/components/esp32/include/esp_err.h:18,
-                 from /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/SD.h:7,
                  from /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/mgos_SD.h:1,
                  from /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/src/mgos_SD.cpp:1:
 /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/objs/include/sdkconfig.h:69:0: warning: "CONFIG_ESP32_WIFI_DYNAMIC_RX_BUFFER_NUM" redefined
@@ -294,29 +176,10 @@ In file included from /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/SD.h
 In file included from /opt/Espressif/esp-idf/components/newlib/platform_include/assert.h:20:0,
                  from /opt/Espressif/esp-idf/components/esp32/include/esp_err.h:18,
                  from /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/SD.h:7,
-                 from /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/src/SD.cpp:1:
-/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/objs/include/sdkconfig.h:86:0: warning: "CONFIG_SYSTEM_EVENT_TASK_STACK_SIZE" redefined
- #define CONFIG_SYSTEM_EVENT_TASK_STACK_SIZE 3072
- ^
-In file included from /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/SD.h:6:0,
-                 from /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/src/SD.cpp:1:
-/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/sdkconfig.h:132:0: note: this is the location of the previous definition
- #define CONFIG_SYSTEM_EVENT_TASK_STACK_SIZE 2048
- ^
-In file included from /opt/Espressif/esp-idf/components/newlib/platform_include/assert.h:20:0,
-                 from /opt/Espressif/esp-idf/components/esp32/include/esp_err.h:18,
-                 from /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/SD.h:7,
                  from /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/mgos_SD.h:1,
                  from /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/src/mgos_SD.cpp:1:
 /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/objs/include/sdkconfig.h:80:0: warning: "CONFIG_PARTITION_TABLE_FILENAME" redefined
  #define CONFIG_PARTITION_TABLE_FILENAME "src/partitions_mgos.csv"
- ^
-In file included from /opt/Espressif/esp-idf/components/newlib/platform_include/assert.h:20:0,
-                 from /opt/Espressif/esp-idf/components/esp32/include/esp_err.h:18,
-                 from /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/SD.h:7,
-                 from /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/src/SD.cpp:1:
-/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/objs/include/sdkconfig.h:87:0: warning: "CONFIG_ESP32_DEEP_SLEEP_WAKEUP_DELAY" redefined
- #define CONFIG_ESP32_DEEP_SLEEP_WAKEUP_DELAY 0
  ^
 In file included from /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/SD.h:6:0,
                  from /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/mgos_SD.h:1,
@@ -324,11 +187,6 @@ In file included from /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/SD.h
 /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/sdkconfig.h:120:0: note: this is the location of the previous definition
  #define CONFIG_PARTITION_TABLE_FILENAME "partitions_singleapp.csv"
  ^
-In file included from /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/SD.h:6:0,
-                 from /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/src/SD.cpp:1:
-/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/sdkconfig.h:133:0: note: this is the location of the previous definition
- #define CONFIG_ESP32_DEEP_SLEEP_WAKEUP_DELAY 2000
- ^
 In file included from /opt/Espressif/esp-idf/components/newlib/platform_include/assert.h:20:0,
                  from /opt/Espressif/esp-idf/components/esp32/include/esp_err.h:18,
                  from /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/SD.h:7,
@@ -337,23 +195,11 @@ In file included from /opt/Espressif/esp-idf/components/newlib/platform_include/
 /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/objs/include/sdkconfig.h:86:0: warning: "CONFIG_SYSTEM_EVENT_TASK_STACK_SIZE" redefined
  #define CONFIG_SYSTEM_EVENT_TASK_STACK_SIZE 3072
  ^
-In file included from /opt/Espressif/esp-idf/components/newlib/platform_include/assert.h:20:0,
-                 from /opt/Espressif/esp-idf/components/esp32/include/esp_err.h:18,
-                 from /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/SD.h:7,
-                 from /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/src/SD.cpp:1:
-/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/objs/include/sdkconfig.h:98:0: warning: "CONFIG_ESP32_XTAL_FREQ" redefined
- #define CONFIG_ESP32_XTAL_FREQ 0
- ^
 In file included from /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/SD.h:6:0,
                  from /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/mgos_SD.h:1,
                  from /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/src/mgos_SD.cpp:1:
 /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/sdkconfig.h:132:0: note: this is the location of the previous definition
  #define CONFIG_SYSTEM_EVENT_TASK_STACK_SIZE 2048
- ^
-In file included from /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/SD.h:6:0,
-                 from /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/src/SD.cpp:1:
-/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/sdkconfig.h:153:0: note: this is the location of the previous definition
- #define CONFIG_ESP32_XTAL_FREQ 40
  ^
 In file included from /opt/Espressif/esp-idf/components/newlib/platform_include/assert.h:20:0,
                  from /opt/Espressif/esp-idf/components/esp32/include/esp_err.h:18,
@@ -372,29 +218,10 @@ In file included from /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/SD.h
 In file included from /opt/Espressif/esp-idf/components/newlib/platform_include/assert.h:20:0,
                  from /opt/Espressif/esp-idf/components/esp32/include/esp_err.h:18,
                  from /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/SD.h:7,
-                 from /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/src/SD.cpp:1:
-/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/objs/include/sdkconfig.h:116:0: warning: "CONFIG_PARTITION_TABLE_CUSTOM_FILENAME" redefined
- #define CONFIG_PARTITION_TABLE_CUSTOM_FILENAME "src/partitions_mgos.csv"
- ^
-In file included from /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/SD.h:6:0,
-                 from /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/src/SD.cpp:1:
-/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/sdkconfig.h:180:0: note: this is the location of the previous definition
- #define CONFIG_PARTITION_TABLE_CUSTOM_FILENAME "partitions.csv"
- ^
-In file included from /opt/Espressif/esp-idf/components/newlib/platform_include/assert.h:20:0,
-                 from /opt/Espressif/esp-idf/components/esp32/include/esp_err.h:18,
-                 from /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/SD.h:7,
                  from /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/mgos_SD.h:1,
                  from /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/src/mgos_SD.cpp:1:
 /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/objs/include/sdkconfig.h:98:0: warning: "CONFIG_ESP32_XTAL_FREQ" redefined
  #define CONFIG_ESP32_XTAL_FREQ 0
- ^
-In file included from /opt/Espressif/esp-idf/components/newlib/platform_include/assert.h:20:0,
-                 from /opt/Espressif/esp-idf/components/esp32/include/esp_err.h:18,
-                 from /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/SD.h:7,
-                 from /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/src/SD.cpp:1:
-/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/objs/include/sdkconfig.h:130:0: warning: "CONFIG_ESP32_PTHREAD_TASK_STACK_SIZE_DEFAULT" redefined
- #define CONFIG_ESP32_PTHREAD_TASK_STACK_SIZE_DEFAULT 2048
  ^
 In file included from /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/SD.h:6:0,
                  from /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/mgos_SD.h:1,
@@ -429,6 +256,114 @@ In file included from /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/SD.h
                  from /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/src/mgos_SD.cpp:1:
 /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/sdkconfig.h:204:0: note: this is the location of the previous definition
  #define CONFIG_ESP32_PTHREAD_TASK_STACK_SIZE_DEFAULT 3072
+ ^
+In file included from /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/SD.h:6:0,
+                 from /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/src/SD.cpp:1:
+/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/sdkconfig.h:25:0: note: this is the location of the previous definition
+ #define CONFIG_ESPTOOLPY_FLASHSIZE "2MB"
+ ^
+In file included from /opt/Espressif/esp-idf/components/newlib/platform_include/assert.h:20:0,
+                 from /opt/Espressif/esp-idf/components/esp32/include/esp_err.h:18,
+                 from /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/SD.h:7,
+                 from /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/src/SD.cpp:1:
+/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/objs/include/sdkconfig.h:35:0: warning: "CONFIG_TIMER_TASK_STACK_DEPTH" redefined
+ #define CONFIG_TIMER_TASK_STACK_DEPTH 3072
+ ^
+In file included from /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/SD.h:6:0,
+                 from /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/src/SD.cpp:1:
+/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/sdkconfig.h:56:0: note: this is the location of the previous definition
+ #define CONFIG_TIMER_TASK_STACK_DEPTH 2048
+ ^
+In file included from /opt/Espressif/esp-idf/components/newlib/platform_include/assert.h:20:0,
+                 from /opt/Espressif/esp-idf/components/esp32/include/esp_err.h:18,
+                 from /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/SD.h:7,
+                 from /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/src/SD.cpp:1:
+/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/objs/include/sdkconfig.h:57:0: warning: "CONFIG_TCPIP_TASK_STACK_SIZE" redefined
+ #define CONFIG_TCPIP_TASK_STACK_SIZE 3072
+ ^
+In file included from /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/SD.h:6:0,
+                 from /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/src/SD.cpp:1:
+/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/sdkconfig.h:88:0: note: this is the location of the previous definition
+ #define CONFIG_TCPIP_TASK_STACK_SIZE 2048
+ ^
+In file included from /opt/Espressif/esp-idf/components/newlib/platform_include/assert.h:20:0,
+                 from /opt/Espressif/esp-idf/components/esp32/include/esp_err.h:18,
+                 from /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/SD.h:7,
+                 from /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/src/SD.cpp:1:
+/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/objs/include/sdkconfig.h:69:0: warning: "CONFIG_ESP32_WIFI_DYNAMIC_RX_BUFFER_NUM" redefined
+ #define CONFIG_ESP32_WIFI_DYNAMIC_RX_BUFFER_NUM 0
+ ^
+In file included from /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/SD.h:6:0,
+                 from /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/src/SD.cpp:1:
+/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/sdkconfig.h:104:0: note: this is the location of the previous definition
+ #define CONFIG_ESP32_WIFI_DYNAMIC_RX_BUFFER_NUM 32
+ ^
+In file included from /opt/Espressif/esp-idf/components/newlib/platform_include/assert.h:20:0,
+                 from /opt/Espressif/esp-idf/components/esp32/include/esp_err.h:18,
+                 from /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/SD.h:7,
+                 from /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/src/SD.cpp:1:
+/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/objs/include/sdkconfig.h:80:0: warning: "CONFIG_PARTITION_TABLE_FILENAME" redefined
+ #define CONFIG_PARTITION_TABLE_FILENAME "src/partitions_mgos.csv"
+ ^
+In file included from /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/SD.h:6:0,
+                 from /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/src/SD.cpp:1:
+/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/sdkconfig.h:120:0: note: this is the location of the previous definition
+ #define CONFIG_PARTITION_TABLE_FILENAME "partitions_singleapp.csv"
+ ^
+In file included from /opt/Espressif/esp-idf/components/newlib/platform_include/assert.h:20:0,
+                 from /opt/Espressif/esp-idf/components/esp32/include/esp_err.h:18,
+                 from /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/SD.h:7,
+                 from /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/src/SD.cpp:1:
+/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/objs/include/sdkconfig.h:86:0: warning: "CONFIG_SYSTEM_EVENT_TASK_STACK_SIZE" redefined
+ #define CONFIG_SYSTEM_EVENT_TASK_STACK_SIZE 3072
+ ^
+In file included from /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/SD.h:6:0,
+                 from /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/src/SD.cpp:1:
+/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/sdkconfig.h:132:0: note: this is the location of the previous definition
+ #define CONFIG_SYSTEM_EVENT_TASK_STACK_SIZE 2048
+ ^
+In file included from /opt/Espressif/esp-idf/components/newlib/platform_include/assert.h:20:0,
+                 from /opt/Espressif/esp-idf/components/esp32/include/esp_err.h:18,
+                 from /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/SD.h:7,
+                 from /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/src/SD.cpp:1:
+/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/objs/include/sdkconfig.h:87:0: warning: "CONFIG_ESP32_DEEP_SLEEP_WAKEUP_DELAY" redefined
+ #define CONFIG_ESP32_DEEP_SLEEP_WAKEUP_DELAY 0
+ ^
+In file included from /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/SD.h:6:0,
+                 from /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/src/SD.cpp:1:
+/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/sdkconfig.h:133:0: note: this is the location of the previous definition
+ #define CONFIG_ESP32_DEEP_SLEEP_WAKEUP_DELAY 2000
+ ^
+In file included from /opt/Espressif/esp-idf/components/newlib/platform_include/assert.h:20:0,
+                 from /opt/Espressif/esp-idf/components/esp32/include/esp_err.h:18,
+                 from /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/SD.h:7,
+                 from /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/src/SD.cpp:1:
+/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/objs/include/sdkconfig.h:98:0: warning: "CONFIG_ESP32_XTAL_FREQ" redefined
+ #define CONFIG_ESP32_XTAL_FREQ 0
+ ^
+In file included from /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/SD.h:6:0,
+                 from /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/src/SD.cpp:1:
+/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/sdkconfig.h:153:0: note: this is the location of the previous definition
+ #define CONFIG_ESP32_XTAL_FREQ 40
+ ^
+In file included from /opt/Espressif/esp-idf/components/newlib/platform_include/assert.h:20:0,
+                 from /opt/Espressif/esp-idf/components/esp32/include/esp_err.h:18,
+                 from /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/SD.h:7,
+                 from /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/src/SD.cpp:1:
+/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/objs/include/sdkconfig.h:116:0: warning: "CONFIG_PARTITION_TABLE_CUSTOM_FILENAME" redefined
+ #define CONFIG_PARTITION_TABLE_CUSTOM_FILENAME "src/partitions_mgos.csv"
+ ^
+In file included from /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/SD.h:6:0,
+                 from /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/src/SD.cpp:1:
+/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/sdkconfig.h:180:0: note: this is the location of the previous definition
+ #define CONFIG_PARTITION_TABLE_CUSTOM_FILENAME "partitions.csv"
+ ^
+In file included from /opt/Espressif/esp-idf/components/newlib/platform_include/assert.h:20:0,
+                 from /opt/Espressif/esp-idf/components/esp32/include/esp_err.h:18,
+                 from /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/SD.h:7,
+                 from /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/src/SD.cpp:1:
+/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/objs/include/sdkconfig.h:130:0: warning: "CONFIG_ESP32_PTHREAD_TASK_STACK_SIZE_DEFAULT" redefined
+ #define CONFIG_ESP32_PTHREAD_TASK_STACK_SIZE_DEFAULT 2048
  ^
 In file included from /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/SD.h:6:0,
                  from /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/src/SD.cpp:1:
@@ -438,6 +373,11 @@ In file included from /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/SD.h
 CXX crc32.o
 CXX wear_levelling.o
 CC sdmmc_cmd.o
+In file included from /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/mgos_SD.h:1:0,
+                 from /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/src/mgos_SD.cpp:1:
+/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/SD.h:40:20: warning: 'TAG' defined but not used [-Wunused-variable]
+ static const char *TAG = "sd";
+                    ^
 /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/src/SD.cpp: In member function 'int SD::write(const char*)':
 /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/src/SD.cpp:88:10: warning: unused variable 'len' [-Wunused-variable]
    size_t len = 0;
@@ -445,11 +385,6 @@ CC sdmmc_cmd.o
 /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/src/SD.cpp:90:15: warning: unused variable '_stat' [-Wunused-variable]
    struct stat _stat;
                ^
-In file included from /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/mgos_SD.h:1:0,
-                 from /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/src/mgos_SD.cpp:1:
-/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/SD.h:40:20: warning: 'TAG' defined but not used [-Wunused-variable]
- static const char *TAG = "sd";
-                    ^
 AR /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/objs/moslib/libmoslib.a
 make[1]: Leaving directory '/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/objs/moslib'
 Target 'component-moslib-build' responsible for '/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/objs/moslib/libmoslib.a'
