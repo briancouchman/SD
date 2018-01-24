@@ -50,7 +50,7 @@ tags:
 - c
 - js
 - hw
-libs_version: "1.23"
-modules_version: "1.23"
-mongoose_os_version: "1.23"
+libs_version: "1.24"
+modules_version: "1.24"
+mongoose_os_version: "1.24"
 manifest_version: 2017-09-29

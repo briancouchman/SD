@@ -15,7 +15,6 @@ extern "C" {
 struct mgos_config_device {
   char *id;
   char *password;
-  char *shadow_impl;
 };
 
 struct mgos_config_debug {
@@ -39,8 +38,9 @@ struct mgos_config_sys_mount {
 
 struct mgos_config_sys {
   struct mgos_config_sys_mount mount;
-  int wdt_timeout;
   char *tz_spec;
+  int wdt_timeout;
+  char *pref_ota_lib;
 };
 
 struct mgos_config {
@@ -54,7 +54,6 @@ struct mgos_config {
 const struct mgos_config_device *mgos_config_get_device(struct mgos_config *cfg);
 const char *mgos_config_get_device_id(struct mgos_config *cfg);
 const char *mgos_config_get_device_password(struct mgos_config *cfg);
-const char *mgos_config_get_device_shadow_impl(struct mgos_config *cfg);
 const struct mgos_config_debug *mgos_config_get_debug(struct mgos_config *cfg);
 const char *mgos_config_get_debug_udp_log_addr(struct mgos_config *cfg);
 int         mgos_config_get_debug_level(struct mgos_config *cfg);
@@ -71,13 +70,13 @@ const char *mgos_config_get_sys_mount_dev_type(struct mgos_config *cfg);
 const char *mgos_config_get_sys_mount_dev_opts(struct mgos_config *cfg);
 const char *mgos_config_get_sys_mount_fs_type(struct mgos_config *cfg);
 const char *mgos_config_get_sys_mount_fs_opts(struct mgos_config *cfg);
-int         mgos_config_get_sys_wdt_timeout(struct mgos_config *cfg);
 const char *mgos_config_get_sys_tz_spec(struct mgos_config *cfg);
+int         mgos_config_get_sys_wdt_timeout(struct mgos_config *cfg);
+const char *mgos_config_get_sys_pref_ota_lib(struct mgos_config *cfg);
 const char *mgos_config_get_conf_acl(struct mgos_config *cfg);
 
 void mgos_config_set_device_id(struct mgos_config *cfg, const char *val);
 void mgos_config_set_device_password(struct mgos_config *cfg, const char *val);
-void mgos_config_set_device_shadow_impl(struct mgos_config *cfg, const char *val);
 void mgos_config_set_debug_udp_log_addr(struct mgos_config *cfg, const char *val);
 void mgos_config_set_debug_level(struct mgos_config *cfg, int         val);
 void mgos_config_set_debug_filter(struct mgos_config *cfg, const char *val);
@@ -91,8 +90,9 @@ void mgos_config_set_sys_mount_dev_type(struct mgos_config *cfg, const char *val
 void mgos_config_set_sys_mount_dev_opts(struct mgos_config *cfg, const char *val);
 void mgos_config_set_sys_mount_fs_type(struct mgos_config *cfg, const char *val);
 void mgos_config_set_sys_mount_fs_opts(struct mgos_config *cfg, const char *val);
-void mgos_config_set_sys_wdt_timeout(struct mgos_config *cfg, int         val);
 void mgos_config_set_sys_tz_spec(struct mgos_config *cfg, const char *val);
+void mgos_config_set_sys_wdt_timeout(struct mgos_config *cfg, int         val);
+void mgos_config_set_sys_pref_ota_lib(struct mgos_config *cfg, const char *val);
 void mgos_config_set_conf_acl(struct mgos_config *cfg, const char *val);
 /* }}} */
 
@@ -101,7 +101,6 @@ extern struct mgos_config mgos_sys_config;
 static inline const struct mgos_config_device *mgos_sys_config_get_device(void) { return mgos_config_get_device(&mgos_sys_config); }
 static inline const char *mgos_sys_config_get_device_id(void) { return mgos_config_get_device_id(&mgos_sys_config); }
 static inline const char *mgos_sys_config_get_device_password(void) { return mgos_config_get_device_password(&mgos_sys_config); }
-static inline const char *mgos_sys_config_get_device_shadow_impl(void) { return mgos_config_get_device_shadow_impl(&mgos_sys_config); }
 static inline const struct mgos_config_debug *mgos_sys_config_get_debug(void) { return mgos_config_get_debug(&mgos_sys_config); }
 static inline const char *mgos_sys_config_get_debug_udp_log_addr(void) { return mgos_config_get_debug_udp_log_addr(&mgos_sys_config); }
 static inline int         mgos_sys_config_get_debug_level(void) { return mgos_config_get_debug_level(&mgos_sys_config); }
@@ -118,13 +117,13 @@ static inline const char *mgos_sys_config_get_sys_mount_dev_type(void) { return 
 static inline const char *mgos_sys_config_get_sys_mount_dev_opts(void) { return mgos_config_get_sys_mount_dev_opts(&mgos_sys_config); }
 static inline const char *mgos_sys_config_get_sys_mount_fs_type(void) { return mgos_config_get_sys_mount_fs_type(&mgos_sys_config); }
 static inline const char *mgos_sys_config_get_sys_mount_fs_opts(void) { return mgos_config_get_sys_mount_fs_opts(&mgos_sys_config); }
-static inline int         mgos_sys_config_get_sys_wdt_timeout(void) { return mgos_config_get_sys_wdt_timeout(&mgos_sys_config); }
 static inline const char *mgos_sys_config_get_sys_tz_spec(void) { return mgos_config_get_sys_tz_spec(&mgos_sys_config); }
+static inline int         mgos_sys_config_get_sys_wdt_timeout(void) { return mgos_config_get_sys_wdt_timeout(&mgos_sys_config); }
+static inline const char *mgos_sys_config_get_sys_pref_ota_lib(void) { return mgos_config_get_sys_pref_ota_lib(&mgos_sys_config); }
 static inline const char *mgos_sys_config_get_conf_acl(void) { return mgos_config_get_conf_acl(&mgos_sys_config); }
 
 static inline void mgos_sys_config_set_device_id(const char *val) { mgos_config_set_device_id(&mgos_sys_config, val); }
 static inline void mgos_sys_config_set_device_password(const char *val) { mgos_config_set_device_password(&mgos_sys_config, val); }
-static inline void mgos_sys_config_set_device_shadow_impl(const char *val) { mgos_config_set_device_shadow_impl(&mgos_sys_config, val); }
 static inline void mgos_sys_config_set_debug_udp_log_addr(const char *val) { mgos_config_set_debug_udp_log_addr(&mgos_sys_config, val); }
 static inline void mgos_sys_config_set_debug_level(int         val) { mgos_config_set_debug_level(&mgos_sys_config, val); }
 static inline void mgos_sys_config_set_debug_filter(const char *val) { mgos_config_set_debug_filter(&mgos_sys_config, val); }
@@ -138,8 +137,9 @@ static inline void mgos_sys_config_set_sys_mount_dev_type(const char *val) { mgo
 static inline void mgos_sys_config_set_sys_mount_dev_opts(const char *val) { mgos_config_set_sys_mount_dev_opts(&mgos_sys_config, val); }
 static inline void mgos_sys_config_set_sys_mount_fs_type(const char *val) { mgos_config_set_sys_mount_fs_type(&mgos_sys_config, val); }
 static inline void mgos_sys_config_set_sys_mount_fs_opts(const char *val) { mgos_config_set_sys_mount_fs_opts(&mgos_sys_config, val); }
-static inline void mgos_sys_config_set_sys_wdt_timeout(int         val) { mgos_config_set_sys_wdt_timeout(&mgos_sys_config, val); }
 static inline void mgos_sys_config_set_sys_tz_spec(const char *val) { mgos_config_set_sys_tz_spec(&mgos_sys_config, val); }
+static inline void mgos_sys_config_set_sys_wdt_timeout(int         val) { mgos_config_set_sys_wdt_timeout(&mgos_sys_config, val); }
+static inline void mgos_sys_config_set_sys_pref_ota_lib(const char *val) { mgos_config_set_sys_pref_ota_lib(&mgos_sys_config, val); }
 static inline void mgos_sys_config_set_conf_acl(const char *val) { mgos_config_set_conf_acl(&mgos_sys_config, val); }
 
 

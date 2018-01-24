@@ -1,8 +1,7 @@
 {
   "device": {
     "id": "esp32_??????", 
-    "password": "", 
-    "shadow_impl": ""
+    "password": ""
   }, 
   "debug": {
     "udp_log_addr": "", 
@@ -22,8 +21,9 @@
       "fs_type": "", 
       "fs_opts": ""
     }, 
+    "tz_spec": "", 
     "wdt_timeout": 30, 
-    "tz_spec": ""
+    "pref_ota_lib": ""
   }, 
   "conf_acl": "*"
 }
