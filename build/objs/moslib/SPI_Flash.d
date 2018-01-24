@@ -1,12 +1,14 @@
 SPI_Flash.o: \
- /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/wear_levelling/SPI_Flash.cpp \
+ /Users/bcouchman/esp/esp-idf/components/wear_levelling/SPI_Flash.cpp \
  /opt/Espressif/esp-idf/components/log/include/esp_log.h \
  /opt/Espressif/esp-idf/components/newlib/include/stdint.h \
  /opt/Espressif/esp-idf/components/newlib/include/machine/_default_types.h \
  /opt/Espressif/esp-idf/components/newlib/include/sys/features.h \
  /opt/Espressif/esp-idf/components/newlib/include/sys/_intsup.h \
- /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/objs/include/sdkconfig.h \
+ /Users/bcouchman/esp/xtensa-esp32-elf/lib/gcc/xtensa-esp32-elf/5.2.0/include/stdarg.h \
+ /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/include/sdkconfig.h \
  /opt/Espressif/esp-idf/components/esp32/include/rom/ets_sys.h \
+ /Users/bcouchman/esp/xtensa-esp32-elf/lib/gcc/xtensa-esp32-elf/5.2.0/include/stdbool.h \
  /opt/Espressif/esp-idf/components/soc/esp32/include/soc/soc.h \
  /opt/Espressif/esp-idf/components/esp32/include/esp_assert.h \
  /opt/Espressif/esp-idf/components/newlib/platform_include/assert.h \
@@ -16,6 +18,7 @@ SPI_Flash.o: \
  /opt/Espressif/esp-idf/components/newlib/include/newlib.h \
  /opt/Espressif/esp-idf/components/newlib/include/sys/config.h \
  /opt/Espressif/esp-idf/components/esp32/include/xtensa/config/core-isa.h \
+ /Users/bcouchman/esp/xtensa-esp32-elf/lib/gcc/xtensa-esp32-elf/5.2.0/include/stddef.h \
  /opt/Espressif/esp-idf/components/newlib/include/sys/reent.h \
  /opt/Espressif/esp-idf/components/newlib/include/_ansi.h \
  /opt/Espressif/esp-idf/components/newlib/include/sys/_types.h \
@@ -26,14 +29,14 @@ SPI_Flash.o: \
  /opt/Espressif/esp-idf/components/newlib/include/alloca.h \
  /opt/Espressif/esp-idf/components/newlib/include/assert.h \
  /opt/Espressif/esp-idf/components/log/include/esp_log_internal.h \
- /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/wear_levelling/private_include/SPI_Flash.h \
+ /Users/bcouchman/esp/esp-idf/components/wear_levelling/private_include/SPI_Flash.h \
  /opt/Espressif/esp-idf/components/esp32/include/esp_err.h \
  /opt/Espressif/esp-idf/components/newlib/include/stdio.h \
  /opt/Espressif/esp-idf/components/newlib/include/sys/types.h \
  /opt/Espressif/esp-idf/components/newlib/include/machine/types.h \
  /opt/Espressif/esp-idf/components/newlib/include/sys/sched.h \
  /opt/Espressif/esp-idf/components/newlib/include/sys/stdio.h \
- /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/wear_levelling/private_include/Flash_Access.h \
+ /Users/bcouchman/esp/esp-idf/components/wear_levelling/private_include/Flash_Access.h \
  /opt/Espressif/esp-idf/components/spi_flash/include/esp_spi_flash.h
 
 /opt/Espressif/esp-idf/components/log/include/esp_log.h:
@@ -46,9 +49,13 @@ SPI_Flash.o: \
 
 /opt/Espressif/esp-idf/components/newlib/include/sys/_intsup.h:
 
-/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/objs/include/sdkconfig.h:
+/Users/bcouchman/esp/xtensa-esp32-elf/lib/gcc/xtensa-esp32-elf/5.2.0/include/stdarg.h:
+
+/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/include/sdkconfig.h:
 
 /opt/Espressif/esp-idf/components/esp32/include/rom/ets_sys.h:
+
+/Users/bcouchman/esp/xtensa-esp32-elf/lib/gcc/xtensa-esp32-elf/5.2.0/include/stdbool.h:
 
 /opt/Espressif/esp-idf/components/soc/esp32/include/soc/soc.h:
 
@@ -67,6 +74,8 @@ SPI_Flash.o: \
 /opt/Espressif/esp-idf/components/newlib/include/sys/config.h:
 
 /opt/Espressif/esp-idf/components/esp32/include/xtensa/config/core-isa.h:
+
+/Users/bcouchman/esp/xtensa-esp32-elf/lib/gcc/xtensa-esp32-elf/5.2.0/include/stddef.h:
 
 /opt/Espressif/esp-idf/components/newlib/include/sys/reent.h:
 
@@ -88,7 +97,7 @@ SPI_Flash.o: \
 
 /opt/Espressif/esp-idf/components/log/include/esp_log_internal.h:
 
-/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/wear_levelling/private_include/SPI_Flash.h:
+/Users/bcouchman/esp/esp-idf/components/wear_levelling/private_include/SPI_Flash.h:
 
 /opt/Espressif/esp-idf/components/esp32/include/esp_err.h:
 
@@ -102,6 +111,6 @@ SPI_Flash.o: \
 
 /opt/Espressif/esp-idf/components/newlib/include/sys/stdio.h:
 
-/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/wear_levelling/private_include/Flash_Access.h:
+/Users/bcouchman/esp/esp-idf/components/wear_levelling/private_include/Flash_Access.h:
 
 /opt/Espressif/esp-idf/components/spi_flash/include/esp_spi_flash.h:

@@ -1,14 +1,8 @@
 {
-  "sntp": {
-    "enable": true, 
-    "server": "pool.ntp.org", 
-    "retry_min": 1, 
-    "retry_max": 30, 
-    "update_interval": 7200
-  }, 
   "device": {
     "id": "esp32_??????", 
-    "password": ""
+    "password": "", 
+    "shadow_impl": ""
   }, 
   "debug": {
     "udp_log_addr": "", 

@@ -2,25 +2,37 @@ author: Brian Couchman
 type: lib
 description: SD card reader
 version: 1.0
+platforms: [esp32]
+
+build_vars:
+
 sources:
   - src
-  - include/vfs
-  - include/wear_levelling
-  - include/sdmmc
+  - /Users/bcouchman/esp/esp-idf/components/fatfs/src
+  - /Users/bcouchman/esp/esp-idf/components/wear_levelling
 includes:
   - include
-  - include/fatfs/src
-  - include/vfs/include
-  - include/wear_levelling/include
-  - include/wear_levelling/private_include
-  - include/driver/include
-  - include/sdmmc/include
+  - /Users/bcouchman/esp/esp-idf/components/esp32/include
+  - /Users/bcouchman/esp/esp-idf/components/freertos/include
+  - /Users/bcouchman/esp/esp-idf/components/log/include
+  - /Users/bcouchman/esp/esp-idf/components/mbedtls/include
+  - /Users/bcouchman/esp/esp-idf/components/nvs_flash/include
+  - /Users/bcouchman/esp/esp-idf/components/driver/include
+  - /Users/bcouchman/esp/esp-idf/components/spi_flash/include
+  - /Users/bcouchman/esp/esp-idf/components/lwip/include/lwip/
+  - /Users/bcouchman/esp/esp-idf/components/esp32
+  - /Users/bcouchman/esp/esp-idf/components/sdmmc/include
+  - /Users/bcouchman/esp/esp-idf/components/vfs/include
+  - /Users/bcouchman/esp/esp-idf/components/sdmmc/include
+  - /Users/bcouchman/esp/esp-idf/components/wear_levelling/include
+  - /Users/bcouchman/esp/esp-idf/components/wear_levelling/private_include
+  - /Users/bcouchman/esp/xtensa-esp32-elf/xtensa-esp32-elf/include
+  - /Users/bcouchman/esp/xtensa-esp32-elf/lib/gcc/xtensa-esp32-elf/5.2.0/include
 filesystem:
   - fs
 config_schema:
 libs:
 tags:
-  - arduino
   - c
   - js
   - hw

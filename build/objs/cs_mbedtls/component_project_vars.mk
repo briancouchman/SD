@@ -4,4 +4,4 @@ COMPONENT_LDFLAGS += -L$(BUILD_DIR_BASE)/cs_mbedtls /opt/cs_mbedtls/libcs_mbedtl
 COMPONENT_LINKER_DEPS += 
 COMPONENT_SUBMODULES += 
 COMPONENT_LIBRARIES += cs_mbedtls
-cs_mbedtls-build: 
+component-cs_mbedtls-build: 

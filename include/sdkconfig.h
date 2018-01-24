@@ -2,7 +2,6 @@
  *
  * Automatically generated file; DO NOT EDIT.
  * Espressif IoT Development Framework Configuration
- *
  */
 #define CONFIG_ESP32_PHY_MAX_TX_POWER 20
 #define CONFIG_TRACEMEM_RESERVE_DRAM 0x0

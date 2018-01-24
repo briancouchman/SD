@@ -3,17 +3,12 @@
 #include <stddef.h>
 #include "mgos_config.h"
 
-const struct mgos_conf_entry mgos_config_schema_[29] = {
-  {.type = CONF_TYPE_OBJECT, .key = "", .num_desc = 28},
-  {.type = CONF_TYPE_OBJECT, .key = "sntp", .num_desc = 5},
-  {.type = CONF_TYPE_BOOL, .key = "enable", .offset = offsetof(struct mgos_config, sntp.enable)},
-  {.type = CONF_TYPE_STRING, .key = "server", .offset = offsetof(struct mgos_config, sntp.server)},
-  {.type = CONF_TYPE_INT, .key = "retry_min", .offset = offsetof(struct mgos_config, sntp.retry_min)},
-  {.type = CONF_TYPE_INT, .key = "retry_max", .offset = offsetof(struct mgos_config, sntp.retry_max)},
-  {.type = CONF_TYPE_INT, .key = "update_interval", .offset = offsetof(struct mgos_config, sntp.update_interval)},
-  {.type = CONF_TYPE_OBJECT, .key = "device", .num_desc = 2},
+const struct mgos_conf_entry mgos_config_schema_[24] = {
+  {.type = CONF_TYPE_OBJECT, .key = "", .num_desc = 23},
+  {.type = CONF_TYPE_OBJECT, .key = "device", .num_desc = 3},
   {.type = CONF_TYPE_STRING, .key = "id", .offset = offsetof(struct mgos_config, device.id)},
   {.type = CONF_TYPE_STRING, .key = "password", .offset = offsetof(struct mgos_config, device.password)},
+  {.type = CONF_TYPE_STRING, .key = "shadow_impl", .offset = offsetof(struct mgos_config, device.shadow_impl)},
   {.type = CONF_TYPE_OBJECT, .key = "debug", .num_desc = 8},
   {.type = CONF_TYPE_STRING, .key = "udp_log_addr", .offset = offsetof(struct mgos_config, debug.udp_log_addr)},
   {.type = CONF_TYPE_INT, .key = "level", .offset = offsetof(struct mgos_config, debug.level)},
@@ -43,24 +38,6 @@ const struct mgos_conf_entry *mgos_config_schema() {
 struct mgos_config mgos_sys_config;
 
 /* Getters {{{ */
-const struct mgos_config_sntp *mgos_config_get_sntp(struct mgos_config *cfg) {
-  return &cfg->sntp;
-}
-int         mgos_config_get_sntp_enable(struct mgos_config *cfg) {
-  return cfg->sntp.enable;
-}
-const char *mgos_config_get_sntp_server(struct mgos_config *cfg) {
-  return cfg->sntp.server;
-}
-int         mgos_config_get_sntp_retry_min(struct mgos_config *cfg) {
-  return cfg->sntp.retry_min;
-}
-int         mgos_config_get_sntp_retry_max(struct mgos_config *cfg) {
-  return cfg->sntp.retry_max;
-}
-int         mgos_config_get_sntp_update_interval(struct mgos_config *cfg) {
-  return cfg->sntp.update_interval;
-}
 const struct mgos_config_device *mgos_config_get_device(struct mgos_config *cfg) {
   return &cfg->device;
 }
@@ -69,6 +46,9 @@ const char *mgos_config_get_device_id(struct mgos_config *cfg) {
 }
 const char *mgos_config_get_device_password(struct mgos_config *cfg) {
   return cfg->device.password;
+}
+const char *mgos_config_get_device_shadow_impl(struct mgos_config *cfg) {
+  return cfg->device.shadow_impl;
 }
 const struct mgos_config_debug *mgos_config_get_debug(struct mgos_config *cfg) {
   return &cfg->debug;
@@ -130,26 +110,14 @@ const char *mgos_config_get_conf_acl(struct mgos_config *cfg) {
 /* }}} */
 
 /* Setters {{{ */
-void mgos_config_set_sntp_enable(struct mgos_config *cfg, int         val) {
-  cfg->sntp.enable = val;
-}
-void mgos_config_set_sntp_server(struct mgos_config *cfg, const char *val) {
-  mgos_conf_set_str(&cfg->sntp.server, val);
-}
-void mgos_config_set_sntp_retry_min(struct mgos_config *cfg, int         val) {
-  cfg->sntp.retry_min = val;
-}
-void mgos_config_set_sntp_retry_max(struct mgos_config *cfg, int         val) {
-  cfg->sntp.retry_max = val;
-}
-void mgos_config_set_sntp_update_interval(struct mgos_config *cfg, int         val) {
-  cfg->sntp.update_interval = val;
-}
 void mgos_config_set_device_id(struct mgos_config *cfg, const char *val) {
   mgos_conf_set_str(&cfg->device.id, val);
 }
 void mgos_config_set_device_password(struct mgos_config *cfg, const char *val) {
   mgos_conf_set_str(&cfg->device.password, val);
+}
+void mgos_config_set_device_shadow_impl(struct mgos_config *cfg, const char *val) {
+  mgos_conf_set_str(&cfg->device.shadow_impl, val);
 }
 void mgos_config_set_debug_udp_log_addr(struct mgos_config *cfg, const char *val) {
   mgos_conf_set_str(&cfg->debug.udp_log_addr, val);

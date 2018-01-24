@@ -1,6 +1,7 @@
 mgos_SD_c.o: \
- /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/src/mgos_SD_c.c \
- /mongoose-os/fw/src/mgos.h /mongoose-os/common/json_utils.h \
+ /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/src/mgos_SD_c.c \
+ /Users/bcouchman/esp/xtensa-esp32-elf/lib/gcc/xtensa-esp32-elf/5.2.0/include/stdbool.h \
+ /mongoose-os/fw/include/mgos.h /mongoose-os/common/json_utils.h \
  /mongoose-os/common/mbuf.h \
  /opt/Espressif/esp-idf/components/newlib/include/stdlib.h \
  /opt/Espressif/esp-idf/components/newlib/include/machine/ieeefp.h \
@@ -9,6 +10,7 @@ mgos_SD_c.o: \
  /opt/Espressif/esp-idf/components/newlib/include/sys/config.h \
  /opt/Espressif/esp-idf/components/newlib/include/sys/features.h \
  /opt/Espressif/esp-idf/components/esp32/include/xtensa/config/core-isa.h \
+ /Users/bcouchman/esp/xtensa-esp32-elf/lib/gcc/xtensa-esp32-elf/5.2.0/include/stddef.h \
  /opt/Espressif/esp-idf/components/newlib/include/sys/reent.h \
  /opt/Espressif/esp-idf/components/newlib/include/_ansi.h \
  /opt/Espressif/esp-idf/components/newlib/include/sys/_types.h \
@@ -23,7 +25,7 @@ mgos_SD_c.o: \
  /mongoose-os/common/platforms/platform_windows.h \
  /mongoose-os/common/platforms/platform_esp32.h \
  /opt/Espressif/esp-idf/components/newlib/platform_include/assert.h \
- /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/objs/include/sdkconfig.h \
+ /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/include/sdkconfig.h \
  /opt/Espressif/esp-idf/components/newlib/include/assert.h \
  /opt/Espressif/esp-idf/components/newlib/include/ctype.h \
  /opt/Espressif/esp-idf/components/newlib/include/dirent.h \
@@ -57,12 +59,15 @@ mgos_SD_c.o: \
  /mongoose-os/common/platforms/platform_pic32.h \
  /mongoose-os/common/platforms/platform_stm32.h \
  /mongoose-os/common/mg_str.h /mongoose-os/frozen/frozen.h \
+ /Users/bcouchman/esp/xtensa-esp32-elf/lib/gcc/xtensa-esp32-elf/5.2.0/include/stdarg.h \
  /opt/Espressif/esp-idf/components/newlib/include/stdio.h \
  /opt/Espressif/esp-idf/components/newlib/include/sys/stdio.h \
  /mongoose-os/common/cs_dbg.h /mongoose-os/common/cs_file.h \
- /mongoose-os/fw/src/mgos_app.h /mongoose-os/fw/src/mgos_features.h \
- /mongoose-os/fw/src/mgos_bitbang.h \
- /mongoose-os/fw/src/mgos_config_util.h /mongoose-os/mongoose/mongoose.h \
+ /mongoose-os/fw/include/mgos_app.h \
+ /mongoose-os/fw/include/mgos_features.h \
+ /mongoose-os/fw/include/mgos_bitbang.h \
+ /mongoose-os/fw/include/mgos_config_util.h \
+ /mongoose-os/mongoose/mongoose.h \
  /opt/Espressif/esp-idf/components/lwip/include/lwip/lwip/opt.h \
  /opt/Espressif/esp-idf/components/lwip/include/lwip/port/lwipopts.h \
  /opt/Espressif/esp-idf/components/newlib/include/unistd.h \
@@ -118,6 +123,7 @@ mgos_SD_c.o: \
  /opt/Espressif/esp-idf/components/esp32/include/xtensa/config/specreg.h \
  /opt/Espressif/esp-idf/components/esp32/include/xtensa/xtruntime-core-state.h \
  /opt/Espressif/esp-idf/components/esp32/include/esp_crosscore_int.h \
+ /opt/Espressif/esp-idf/components/esp32/include/esp_timer.h \
  /opt/Espressif/esp-idf/components/heap/include/esp_heap_caps.h \
  /opt/Espressif/esp-idf/components/heap/include/multi_heap.h \
  /opt/Espressif/esp-idf/components/soc/include/soc/soc_memory_layout.h \
@@ -125,6 +131,7 @@ mgos_SD_c.o: \
  /opt/Espressif/esp-idf/components/freertos/include/freertos/mpu_wrappers.h \
  /opt/Espressif/esp-idf/components/freertos/include/freertos/task.h \
  /opt/Espressif/esp-idf/components/newlib/include/limits.h \
+ /Users/bcouchman/esp/xtensa-esp32-elf/xtensa-esp32-elf/include/limits.h \
  /opt/Espressif/esp-idf/components/freertos/include/freertos/list.h \
  /opt/Espressif/esp-idf/components/freertos/include/freertos/queue.h \
  /opt/Espressif/esp-idf/components/freertos/include/freertos/semphr.h \
@@ -139,25 +146,31 @@ mgos_SD_c.o: \
  /opt/Espressif/esp-idf/components/lwip/include/lwip/lwip/netdb.h \
  /opt/Espressif/esp-idf/components/lwip/include/lwip/lwip/sockets.h \
  /opt/Espressif/esp-idf/components/lwip/include/lwip/lwip/dns.h \
- /mongoose-os/fw/src/mgos_debug.h /mongoose-os/fw/src/mgos_init.h \
- /mongoose-os/fw/src/mgos_debug_hal.h /mongoose-os/fw/src/mgos_deps.h \
- /mongoose-os/fw/src/mgos_dlsym.h /mongoose-os/fw/src/mgos_gpio.h \
- /mongoose-os/fw/src/mgos_gpio_hal.h /mongoose-os/fw/src/mgos_hal.h \
- /mongoose-os/fw/src/mgos_system.h /mongoose-os/fw/src/mgos_hooks.h \
- /mongoose-os/fw/src/mgos_sys_config.h \
- /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/gen/mgos_config.h \
- /mongoose-os/fw/src/mgos_config_util.h \
- /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/gen/mgos_ro_vars.h \
- /mongoose-os/fw/src/mgos_updater_common.h \
- /mongoose-os/fw/src/mgos_timers.h /mongoose-os/fw/src/mgos_updater.h \
- /mongoose-os/fw/src/mgos_updater_hal.h /mongoose-os/fw/src/mgos_mdns.h \
- /mongoose-os/fw/src/mgos_mongoose.h /mongoose-os/fw/src/mgos_net.h \
- /mongoose-os/fw/src/mgos_sntp.h /mongoose-os/fw/src/mgos_uart.h \
+ /mongoose-os/fw/include/mgos_debug.h /mongoose-os/fw/include/mgos_init.h \
+ /mongoose-os/fw/include/mgos_dlsym.h \
+ /mongoose-os/fw/include/mgos_event.h /mongoose-os/fw/include/mgos_gpio.h \
+ /mongoose-os/fw/include/mgos_mdns.h \
+ /mongoose-os/fw/include/mgos_mongoose.h \
+ /mongoose-os/fw/include/mgos_net.h \
+ /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/gen/mgos_config.h \
+ /mongoose-os/fw/include/mgos_config_util.h \
+ /mongoose-os/fw/include/mgos_sys_config.h \
+ /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/gen/mgos_ro_vars.h \
+ /mongoose-os/fw/include/mgos_system.h \
+ /mongoose-os/fw/include/mgos_time.h \
+ /mongoose-os/fw/include/mgos_timers.h \
+ /mongoose-os/fw/include/mgos_uart.h \
  /mongoose-os/fw/platforms/esp32/src/esp32_uart.h \
- /mongoose-os/fw/src/mgos_uart_hal.h \
- /mongoose-os/fw/src/mgos_updater_util.h /mongoose-os/fw/src/mgos_utils.h
+ /mongoose-os/fw/src/mgos_updater.h \
+ /mongoose-os/fw/src/mgos_updater_common.h \
+ /mongoose-os/fw/include/mgos_timers.h /mongoose-os/fw/src/mgos_updater.h \
+ /mongoose-os/fw/src/mgos_updater_hal.h \
+ /mongoose-os/fw/src/mgos_updater_util.h \
+ /mongoose-os/fw/include/mgos_utils.h
 
-/mongoose-os/fw/src/mgos.h:
+/Users/bcouchman/esp/xtensa-esp32-elf/lib/gcc/xtensa-esp32-elf/5.2.0/include/stdbool.h:
+
+/mongoose-os/fw/include/mgos.h:
 
 /mongoose-os/common/json_utils.h:
 
@@ -176,6 +189,8 @@ mgos_SD_c.o: \
 /opt/Espressif/esp-idf/components/newlib/include/sys/features.h:
 
 /opt/Espressif/esp-idf/components/esp32/include/xtensa/config/core-isa.h:
+
+/Users/bcouchman/esp/xtensa-esp32-elf/lib/gcc/xtensa-esp32-elf/5.2.0/include/stddef.h:
 
 /opt/Espressif/esp-idf/components/newlib/include/sys/reent.h:
 
@@ -205,7 +220,7 @@ mgos_SD_c.o: \
 
 /opt/Espressif/esp-idf/components/newlib/platform_include/assert.h:
 
-/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/objs/include/sdkconfig.h:
+/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/include/sdkconfig.h:
 
 /opt/Espressif/esp-idf/components/newlib/include/assert.h:
 
@@ -275,6 +290,8 @@ mgos_SD_c.o: \
 
 /mongoose-os/frozen/frozen.h:
 
+/Users/bcouchman/esp/xtensa-esp32-elf/lib/gcc/xtensa-esp32-elf/5.2.0/include/stdarg.h:
+
 /opt/Espressif/esp-idf/components/newlib/include/stdio.h:
 
 /opt/Espressif/esp-idf/components/newlib/include/sys/stdio.h:
@@ -283,13 +300,13 @@ mgos_SD_c.o: \
 
 /mongoose-os/common/cs_file.h:
 
-/mongoose-os/fw/src/mgos_app.h:
+/mongoose-os/fw/include/mgos_app.h:
 
-/mongoose-os/fw/src/mgos_features.h:
+/mongoose-os/fw/include/mgos_features.h:
 
-/mongoose-os/fw/src/mgos_bitbang.h:
+/mongoose-os/fw/include/mgos_bitbang.h:
 
-/mongoose-os/fw/src/mgos_config_util.h:
+/mongoose-os/fw/include/mgos_config_util.h:
 
 /mongoose-os/mongoose/mongoose.h:
 
@@ -403,6 +420,8 @@ mgos_SD_c.o: \
 
 /opt/Espressif/esp-idf/components/esp32/include/esp_crosscore_int.h:
 
+/opt/Espressif/esp-idf/components/esp32/include/esp_timer.h:
+
 /opt/Espressif/esp-idf/components/heap/include/esp_heap_caps.h:
 
 /opt/Espressif/esp-idf/components/heap/include/multi_heap.h:
@@ -416,6 +435,8 @@ mgos_SD_c.o: \
 /opt/Espressif/esp-idf/components/freertos/include/freertos/task.h:
 
 /opt/Espressif/esp-idf/components/newlib/include/limits.h:
+
+/Users/bcouchman/esp/xtensa-esp32-elf/xtensa-esp32-elf/include/limits.h:
 
 /opt/Espressif/esp-idf/components/freertos/include/freertos/list.h:
 
@@ -445,56 +466,50 @@ mgos_SD_c.o: \
 
 /opt/Espressif/esp-idf/components/lwip/include/lwip/lwip/dns.h:
 
-/mongoose-os/fw/src/mgos_debug.h:
+/mongoose-os/fw/include/mgos_debug.h:
 
-/mongoose-os/fw/src/mgos_init.h:
+/mongoose-os/fw/include/mgos_init.h:
 
-/mongoose-os/fw/src/mgos_debug_hal.h:
+/mongoose-os/fw/include/mgos_dlsym.h:
 
-/mongoose-os/fw/src/mgos_deps.h:
+/mongoose-os/fw/include/mgos_event.h:
 
-/mongoose-os/fw/src/mgos_dlsym.h:
+/mongoose-os/fw/include/mgos_gpio.h:
 
-/mongoose-os/fw/src/mgos_gpio.h:
+/mongoose-os/fw/include/mgos_mdns.h:
 
-/mongoose-os/fw/src/mgos_gpio_hal.h:
+/mongoose-os/fw/include/mgos_mongoose.h:
 
-/mongoose-os/fw/src/mgos_hal.h:
+/mongoose-os/fw/include/mgos_net.h:
 
-/mongoose-os/fw/src/mgos_system.h:
+/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/gen/mgos_config.h:
 
-/mongoose-os/fw/src/mgos_hooks.h:
+/mongoose-os/fw/include/mgos_config_util.h:
 
-/mongoose-os/fw/src/mgos_sys_config.h:
+/mongoose-os/fw/include/mgos_sys_config.h:
 
-/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/gen/mgos_config.h:
+/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/gen/mgos_ro_vars.h:
 
-/mongoose-os/fw/src/mgos_config_util.h:
+/mongoose-os/fw/include/mgos_system.h:
 
-/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/gen/mgos_ro_vars.h:
+/mongoose-os/fw/include/mgos_time.h:
+
+/mongoose-os/fw/include/mgos_timers.h:
+
+/mongoose-os/fw/include/mgos_uart.h:
+
+/mongoose-os/fw/platforms/esp32/src/esp32_uart.h:
+
+/mongoose-os/fw/src/mgos_updater.h:
 
 /mongoose-os/fw/src/mgos_updater_common.h:
 
-/mongoose-os/fw/src/mgos_timers.h:
+/mongoose-os/fw/include/mgos_timers.h:
 
 /mongoose-os/fw/src/mgos_updater.h:
 
 /mongoose-os/fw/src/mgos_updater_hal.h:
 
-/mongoose-os/fw/src/mgos_mdns.h:
-
-/mongoose-os/fw/src/mgos_mongoose.h:
-
-/mongoose-os/fw/src/mgos_net.h:
-
-/mongoose-os/fw/src/mgos_sntp.h:
-
-/mongoose-os/fw/src/mgos_uart.h:
-
-/mongoose-os/fw/platforms/esp32/src/esp32_uart.h:
-
-/mongoose-os/fw/src/mgos_uart_hal.h:
-
 /mongoose-os/fw/src/mgos_updater_util.h:
 
-/mongoose-os/fw/src/mgos_utils.h:
+/mongoose-os/fw/include/mgos_utils.h:

@@ -2,39 +2,51 @@ type: lib
 version: "1.0"
 platform: esp32
 platforms:
-- cc3200
-- cc3220
 - esp32
-- esp8266
-- pic32
-- stm32
 author: Brian Couchman
 description: SD card reader
 sources:
-- /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/src/mgos_SD_c.c
-- /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/src/SD.cpp
-- /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/src/mgos_SD.cpp
-- /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/wear_levelling/Partition.cpp
-- /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/wear_levelling/SPI_Flash.cpp
-- /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/wear_levelling/WL_Ext_Perf.cpp
-- /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/wear_levelling/WL_Ext_Safe.cpp
-- /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/wear_levelling/WL_Flash.cpp
-- /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/wear_levelling/crc32.cpp
-- /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/wear_levelling/wear_levelling.cpp
-- /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/sdmmc/sdmmc_cmd.c
+- /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/src/mgos_SD_c.c
+- /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/src/SD.cpp
+- /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/src/mgos_SD.cpp
+- /Users/bcouchman/esp/esp-idf/components/fatfs/src/diskio.c
+- /Users/bcouchman/esp/esp-idf/components/fatfs/src/diskio_sdmmc.c
+- /Users/bcouchman/esp/esp-idf/components/fatfs/src/diskio_spiflash.c
+- /Users/bcouchman/esp/esp-idf/components/fatfs/src/ff.c
+- /Users/bcouchman/esp/esp-idf/components/fatfs/src/ffsystem.c
+- /Users/bcouchman/esp/esp-idf/components/fatfs/src/ffunicode.c
+- /Users/bcouchman/esp/esp-idf/components/fatfs/src/vfs_fat.c
+- /Users/bcouchman/esp/esp-idf/components/fatfs/src/vfs_fat_sdmmc.c
+- /Users/bcouchman/esp/esp-idf/components/fatfs/src/vfs_fat_spiflash.c
+- /Users/bcouchman/esp/esp-idf/components/wear_levelling/Partition.cpp
+- /Users/bcouchman/esp/esp-idf/components/wear_levelling/SPI_Flash.cpp
+- /Users/bcouchman/esp/esp-idf/components/wear_levelling/WL_Ext_Perf.cpp
+- /Users/bcouchman/esp/esp-idf/components/wear_levelling/WL_Ext_Safe.cpp
+- /Users/bcouchman/esp/esp-idf/components/wear_levelling/WL_Flash.cpp
+- /Users/bcouchman/esp/esp-idf/components/wear_levelling/crc32.cpp
+- /Users/bcouchman/esp/esp-idf/components/wear_levelling/wear_levelling.cpp
 includes:
-- /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include
-- /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/fatfs/src
-- /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/vfs/include
-- /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/wear_levelling/include
-- /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/wear_levelling/private_include
-- /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/driver/include
-- /Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/include/sdmmc/include
+- /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/include
+- /Users/bcouchman/esp/esp-idf/components/esp32/include
+- /Users/bcouchman/esp/esp-idf/components/freertos/include
+- /Users/bcouchman/esp/esp-idf/components/log/include
+- /Users/bcouchman/esp/esp-idf/components/mbedtls/include
+- /Users/bcouchman/esp/esp-idf/components/nvs_flash/include
+- /Users/bcouchman/esp/esp-idf/components/driver/include
+- /Users/bcouchman/esp/esp-idf/components/spi_flash/include
+- /Users/bcouchman/esp/esp-idf/components/lwip/include/lwip/
+- /Users/bcouchman/esp/esp-idf/components/esp32
+- /Users/bcouchman/esp/esp-idf/components/sdmmc/include
+- /Users/bcouchman/esp/esp-idf/components/vfs/include
+- /Users/bcouchman/esp/esp-idf/components/sdmmc/include
+- /Users/bcouchman/esp/esp-idf/components/wear_levelling/include
+- /Users/bcouchman/esp/esp-idf/components/wear_levelling/private_include
+- /Users/bcouchman/esp/xtensa-esp32-elf/xtensa-esp32-elf/include
+- /Users/bcouchman/esp/xtensa-esp32-elf/lib/gcc/xtensa-esp32-elf/5.2.0/include
 build_vars:
   ESP_IDF_EXTRA_COMPONENTS: ""
   ESP_IDF_SDKCONFIG_OPTS: ""
 tags:
-- arduino
 - c
 - js
 - hw

@@ -1,4 +1,6 @@
+#include "sdkconfig.h"
 #include "SD.h"
+
 
 
 SD::SD() {
@@ -85,9 +87,7 @@ int SD::write(const char *filename){
   FILE* f;
   uint32_t bufsize = 32;
   static uint8_t buf[MAX_BUFSIZE];
-  size_t len = 0;
   uint32_t loops;
-  struct stat _stat;
 
   f = fopen(filename, "w");
   if(!f){

@@ -1,6 +1,6 @@
 /*
  * Generated file - do not edit.
- * Command: /mongoose-os/fw/tools/gen_sys_config.py --c_name=mgos_config --c_global_name=mgos_sys_config --dest_dir=/Users/bcouchman/.mos/apps-1.23/meeio/deps/SD/build/gen/ /mongoose-os/fw/src/mgos_debug_udp_config.yaml /mongoose-os/fw/src/mgos_sntp_config.yaml /mongoose-os/fw/src/mgos_sys_config.yaml /mongoose-os/fw/platforms/esp32/src/esp32_sys_config.yaml
+ * Command: /mongoose-os/fw/tools/gen_sys_config.py --c_name=mgos_config --c_global_name=mgos_sys_config --dest_dir=/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/gen/ /mongoose-os/fw/src/mgos_debug_udp_config.yaml /mongoose-os/fw/src/mgos_sys_config.yaml /mongoose-os/fw/platforms/esp32/src/esp32_sys_config.yaml
  */
 
 #ifndef MGOS_CONFIG_H_
@@ -12,17 +12,10 @@
 extern "C" {
 #endif /* __cplusplus */
 
-struct mgos_config_sntp {
-  int enable;
-  char *server;
-  int retry_min;
-  int retry_max;
-  int update_interval;
-};
-
 struct mgos_config_device {
   char *id;
   char *password;
+  char *shadow_impl;
 };
 
 struct mgos_config_debug {
@@ -51,7 +44,6 @@ struct mgos_config_sys {
 };
 
 struct mgos_config {
-  struct mgos_config_sntp sntp;
   struct mgos_config_device device;
   struct mgos_config_debug debug;
   struct mgos_config_sys sys;
@@ -59,15 +51,10 @@ struct mgos_config {
 };
 
 /* Parametrized accessor prototypes {{{ */
-const struct mgos_config_sntp *mgos_config_get_sntp(struct mgos_config *cfg);
-int         mgos_config_get_sntp_enable(struct mgos_config *cfg);
-const char *mgos_config_get_sntp_server(struct mgos_config *cfg);
-int         mgos_config_get_sntp_retry_min(struct mgos_config *cfg);
-int         mgos_config_get_sntp_retry_max(struct mgos_config *cfg);
-int         mgos_config_get_sntp_update_interval(struct mgos_config *cfg);
 const struct mgos_config_device *mgos_config_get_device(struct mgos_config *cfg);
 const char *mgos_config_get_device_id(struct mgos_config *cfg);
 const char *mgos_config_get_device_password(struct mgos_config *cfg);
+const char *mgos_config_get_device_shadow_impl(struct mgos_config *cfg);
 const struct mgos_config_debug *mgos_config_get_debug(struct mgos_config *cfg);
 const char *mgos_config_get_debug_udp_log_addr(struct mgos_config *cfg);
 int         mgos_config_get_debug_level(struct mgos_config *cfg);
@@ -88,13 +75,9 @@ int         mgos_config_get_sys_wdt_timeout(struct mgos_config *cfg);
 const char *mgos_config_get_sys_tz_spec(struct mgos_config *cfg);
 const char *mgos_config_get_conf_acl(struct mgos_config *cfg);
 
-void mgos_config_set_sntp_enable(struct mgos_config *cfg, int         val);
-void mgos_config_set_sntp_server(struct mgos_config *cfg, const char *val);
-void mgos_config_set_sntp_retry_min(struct mgos_config *cfg, int         val);
-void mgos_config_set_sntp_retry_max(struct mgos_config *cfg, int         val);
-void mgos_config_set_sntp_update_interval(struct mgos_config *cfg, int         val);
 void mgos_config_set_device_id(struct mgos_config *cfg, const char *val);
 void mgos_config_set_device_password(struct mgos_config *cfg, const char *val);
+void mgos_config_set_device_shadow_impl(struct mgos_config *cfg, const char *val);
 void mgos_config_set_debug_udp_log_addr(struct mgos_config *cfg, const char *val);
 void mgos_config_set_debug_level(struct mgos_config *cfg, int         val);
 void mgos_config_set_debug_filter(struct mgos_config *cfg, const char *val);
@@ -115,15 +98,10 @@ void mgos_config_set_conf_acl(struct mgos_config *cfg, const char *val);
 
 extern struct mgos_config mgos_sys_config;
 
-static inline const struct mgos_config_sntp *mgos_sys_config_get_sntp(void) { return mgos_config_get_sntp(&mgos_sys_config); }
-static inline int         mgos_sys_config_get_sntp_enable(void) { return mgos_config_get_sntp_enable(&mgos_sys_config); }
-static inline const char *mgos_sys_config_get_sntp_server(void) { return mgos_config_get_sntp_server(&mgos_sys_config); }
-static inline int         mgos_sys_config_get_sntp_retry_min(void) { return mgos_config_get_sntp_retry_min(&mgos_sys_config); }
-static inline int         mgos_sys_config_get_sntp_retry_max(void) { return mgos_config_get_sntp_retry_max(&mgos_sys_config); }
-static inline int         mgos_sys_config_get_sntp_update_interval(void) { return mgos_config_get_sntp_update_interval(&mgos_sys_config); }
 static inline const struct mgos_config_device *mgos_sys_config_get_device(void) { return mgos_config_get_device(&mgos_sys_config); }
 static inline const char *mgos_sys_config_get_device_id(void) { return mgos_config_get_device_id(&mgos_sys_config); }
 static inline const char *mgos_sys_config_get_device_password(void) { return mgos_config_get_device_password(&mgos_sys_config); }
+static inline const char *mgos_sys_config_get_device_shadow_impl(void) { return mgos_config_get_device_shadow_impl(&mgos_sys_config); }
 static inline const struct mgos_config_debug *mgos_sys_config_get_debug(void) { return mgos_config_get_debug(&mgos_sys_config); }
 static inline const char *mgos_sys_config_get_debug_udp_log_addr(void) { return mgos_config_get_debug_udp_log_addr(&mgos_sys_config); }
 static inline int         mgos_sys_config_get_debug_level(void) { return mgos_config_get_debug_level(&mgos_sys_config); }
@@ -144,13 +122,9 @@ static inline int         mgos_sys_config_get_sys_wdt_timeout(void) { return mgo
 static inline const char *mgos_sys_config_get_sys_tz_spec(void) { return mgos_config_get_sys_tz_spec(&mgos_sys_config); }
 static inline const char *mgos_sys_config_get_conf_acl(void) { return mgos_config_get_conf_acl(&mgos_sys_config); }
 
-static inline void mgos_sys_config_set_sntp_enable(int         val) { mgos_config_set_sntp_enable(&mgos_sys_config, val); }
-static inline void mgos_sys_config_set_sntp_server(const char *val) { mgos_config_set_sntp_server(&mgos_sys_config, val); }
-static inline void mgos_sys_config_set_sntp_retry_min(int         val) { mgos_config_set_sntp_retry_min(&mgos_sys_config, val); }
-static inline void mgos_sys_config_set_sntp_retry_max(int         val) { mgos_config_set_sntp_retry_max(&mgos_sys_config, val); }
-static inline void mgos_sys_config_set_sntp_update_interval(int         val) { mgos_config_set_sntp_update_interval(&mgos_sys_config, val); }
 static inline void mgos_sys_config_set_device_id(const char *val) { mgos_config_set_device_id(&mgos_sys_config, val); }
 static inline void mgos_sys_config_set_device_password(const char *val) { mgos_config_set_device_password(&mgos_sys_config, val); }
+static inline void mgos_sys_config_set_device_shadow_impl(const char *val) { mgos_config_set_device_shadow_impl(&mgos_sys_config, val); }
 static inline void mgos_sys_config_set_debug_udp_log_addr(const char *val) { mgos_config_set_debug_udp_log_addr(&mgos_sys_config, val); }
 static inline void mgos_sys_config_set_debug_level(int         val) { mgos_config_set_debug_level(&mgos_sys_config, val); }
 static inline void mgos_sys_config_set_debug_filter(const char *val) { mgos_config_set_debug_filter(&mgos_sys_config, val); }

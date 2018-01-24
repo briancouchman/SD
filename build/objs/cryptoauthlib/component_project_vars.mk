@@ -4,4 +4,4 @@ COMPONENT_LDFLAGS += -L$(BUILD_DIR_BASE)/cryptoauthlib -lcryptoauthlib
 COMPONENT_LINKER_DEPS += 
 COMPONENT_SUBMODULES += 
 COMPONENT_LIBRARIES += cryptoauthlib
-cryptoauthlib-build: 
+component-cryptoauthlib-build: 

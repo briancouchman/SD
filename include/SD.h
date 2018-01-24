@@ -6,11 +6,13 @@
 #include "sdkconfig.h"
 #include "esp_err.h"
 #include "esp_log.h"
+#include "esp_vfs.h"
 #include "esp_vfs_fat.h"
 #include "freertos/task.h"
 #include "driver/sdmmc_host.h"
 #include "driver/sdspi_host.h"
 #include "sdmmc_cmd.h"
+// #include "dirent.h"
 
 #ifndef _SD_H_
 #define _SD_H_
