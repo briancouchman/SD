@@ -11,8 +11,6 @@ SD.o: \
  /opt/Espressif/esp-idf/components/esp32/include/xtensa/config/core-isa.h \
  /opt/Espressif/esp-idf/components/newlib/include/sys/cdefs.h \
  /opt/Espressif/esp-idf/components/newlib/include/machine/_default_types.h \
- /Users/bcouchman/esp/xtensa-esp32-elf/lib/gcc/xtensa-esp32-elf/5.2.0/include/stddef.h \
- /Users/bcouchman/esp/xtensa-esp32-elf/lib/gcc/xtensa-esp32-elf/5.2.0/include/stdarg.h \
  /opt/Espressif/esp-idf/components/newlib/include/sys/reent.h \
  /opt/Espressif/esp-idf/components/newlib/include/_ansi.h \
  /opt/Espressif/esp-idf/components/newlib/include/sys/_types.h \
@@ -40,13 +38,12 @@ SD.o: \
  /opt/Espressif/esp-idf/components/newlib/include/assert.h \
  /opt/Espressif/esp-idf/components/log/include/esp_log.h \
  /opt/Espressif/esp-idf/components/esp32/include/rom/ets_sys.h \
- /Users/bcouchman/esp/xtensa-esp32-elf/lib/gcc/xtensa-esp32-elf/5.2.0/include/stdbool.h \
  /opt/Espressif/esp-idf/components/soc/esp32/include/soc/soc.h \
  /opt/Espressif/esp-idf/components/esp32/include/esp_assert.h \
  /opt/Espressif/esp-idf/components/log/include/esp_log_internal.h \
  /opt/Espressif/esp-idf/components/vfs/include/esp_vfs.h \
  /opt/Espressif/esp-idf/components/newlib/include/dirent.h \
- /Users/bcouchman/esp/esp-idf/components/fatfs/src/esp_vfs_fat.h \
+ /opt/Espressif/esp-idf/components/fatfs/src/esp_vfs_fat.h \
  /opt/Espressif/esp-idf/components/driver/include/driver/gpio.h \
  /opt/Espressif/esp-idf/components/esp32/include/esp_types.h \
  /opt/Espressif/esp-idf/components/soc/esp32/include/soc/gpio_reg.h \
@@ -103,21 +100,20 @@ SD.o: \
  /opt/Espressif/esp-idf/components/soc/esp32/include/soc/spi_struct.h \
  /opt/Espressif/esp-idf/components/esp32/include/rom/lldesc.h \
  /opt/Espressif/esp-idf/components/esp32/include/rom/queue.h \
- /Users/bcouchman/esp/esp-idf/components/fatfs/src/ff.h \
- /Users/bcouchman/esp/esp-idf/components/fatfs/src/integer.h \
- /Users/bcouchman/esp/esp-idf/components/fatfs/src/ffconf.h \
+ /opt/Espressif/esp-idf/components/fatfs/src/ff.h \
+ /opt/Espressif/esp-idf/components/fatfs/src/integer.h \
+ /opt/Espressif/esp-idf/components/fatfs/src/ffconf.h \
  /opt/Espressif/esp-idf/components/newlib/include/sys/param.h \
  /opt/Espressif/esp-idf/components/newlib/include/sys/syslimits.h \
  /opt/Espressif/esp-idf/components/newlib/include/machine/endian.h \
  /opt/Espressif/esp-idf/components/newlib/include/machine/param.h \
- /Users/bcouchman/esp/esp-idf/components/wear_levelling/include/wear_levelling.h \
+ /opt/Espressif/esp-idf/components/wear_levelling/include/wear_levelling.h \
  /opt/Espressif/esp-idf/components/spi_flash/include/esp_partition.h \
  /opt/Espressif/esp-idf/components/spi_flash/include/esp_spi_flash.h \
  /opt/Espressif/esp-idf/components/freertos/include/freertos/task.h \
  /opt/Espressif/esp-idf/components/newlib/include/limits.h \
- /Users/bcouchman/esp/xtensa-esp32-elf/xtensa-esp32-elf/include/limits.h \
  /opt/Espressif/esp-idf/components/freertos/include/freertos/list.h \
- /Users/bcouchman/esp/esp-idf/components/sdmmc/include/sdmmc_cmd.h
+ /opt/Espressif/esp-idf/components/sdmmc/include/sdmmc_cmd.h
 
 /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/include/sdkconfig.h:
 
@@ -140,10 +136,6 @@ SD.o: \
 /opt/Espressif/esp-idf/components/newlib/include/sys/cdefs.h:
 
 /opt/Espressif/esp-idf/components/newlib/include/machine/_default_types.h:
-
-/Users/bcouchman/esp/xtensa-esp32-elf/lib/gcc/xtensa-esp32-elf/5.2.0/include/stddef.h:
-
-/Users/bcouchman/esp/xtensa-esp32-elf/lib/gcc/xtensa-esp32-elf/5.2.0/include/stdarg.h:
 
 /opt/Espressif/esp-idf/components/newlib/include/sys/reent.h:
 
@@ -199,8 +191,6 @@ SD.o: \
 
 /opt/Espressif/esp-idf/components/esp32/include/rom/ets_sys.h:
 
-/Users/bcouchman/esp/xtensa-esp32-elf/lib/gcc/xtensa-esp32-elf/5.2.0/include/stdbool.h:
-
 /opt/Espressif/esp-idf/components/soc/esp32/include/soc/soc.h:
 
 /opt/Espressif/esp-idf/components/esp32/include/esp_assert.h:
@@ -211,7 +201,7 @@ SD.o: \
 
 /opt/Espressif/esp-idf/components/newlib/include/dirent.h:
 
-/Users/bcouchman/esp/esp-idf/components/fatfs/src/esp_vfs_fat.h:
+/opt/Espressif/esp-idf/components/fatfs/src/esp_vfs_fat.h:
 
 /opt/Espressif/esp-idf/components/driver/include/driver/gpio.h:
 
@@ -325,11 +315,11 @@ SD.o: \
 
 /opt/Espressif/esp-idf/components/esp32/include/rom/queue.h:
 
-/Users/bcouchman/esp/esp-idf/components/fatfs/src/ff.h:
+/opt/Espressif/esp-idf/components/fatfs/src/ff.h:
 
-/Users/bcouchman/esp/esp-idf/components/fatfs/src/integer.h:
+/opt/Espressif/esp-idf/components/fatfs/src/integer.h:
 
-/Users/bcouchman/esp/esp-idf/components/fatfs/src/ffconf.h:
+/opt/Espressif/esp-idf/components/fatfs/src/ffconf.h:
 
 /opt/Espressif/esp-idf/components/newlib/include/sys/param.h:
 
@@ -339,7 +329,7 @@ SD.o: \
 
 /opt/Espressif/esp-idf/components/newlib/include/machine/param.h:
 
-/Users/bcouchman/esp/esp-idf/components/wear_levelling/include/wear_levelling.h:
+/opt/Espressif/esp-idf/components/wear_levelling/include/wear_levelling.h:
 
 /opt/Espressif/esp-idf/components/spi_flash/include/esp_partition.h:
 
@@ -349,8 +339,6 @@ SD.o: \
 
 /opt/Espressif/esp-idf/components/newlib/include/limits.h:
 
-/Users/bcouchman/esp/xtensa-esp32-elf/xtensa-esp32-elf/include/limits.h:
-
 /opt/Espressif/esp-idf/components/freertos/include/freertos/list.h:
 
-/Users/bcouchman/esp/esp-idf/components/sdmmc/include/sdmmc_cmd.h:
+/opt/Espressif/esp-idf/components/sdmmc/include/sdmmc_cmd.h:

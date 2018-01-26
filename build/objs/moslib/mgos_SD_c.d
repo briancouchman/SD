@@ -1,6 +1,5 @@
 mgos_SD_c.o: \
  /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/src/mgos_SD_c.c \
- /Users/bcouchman/esp/xtensa-esp32-elf/lib/gcc/xtensa-esp32-elf/5.2.0/include/stdbool.h \
  /mongoose-os/fw/include/mgos.h /mongoose-os/common/json_utils.h \
  /mongoose-os/common/mbuf.h \
  /opt/Espressif/esp-idf/components/newlib/include/stdlib.h \
@@ -10,7 +9,6 @@ mgos_SD_c.o: \
  /opt/Espressif/esp-idf/components/newlib/include/sys/config.h \
  /opt/Espressif/esp-idf/components/newlib/include/sys/features.h \
  /opt/Espressif/esp-idf/components/esp32/include/xtensa/config/core-isa.h \
- /Users/bcouchman/esp/xtensa-esp32-elf/lib/gcc/xtensa-esp32-elf/5.2.0/include/stddef.h \
  /opt/Espressif/esp-idf/components/newlib/include/sys/reent.h \
  /opt/Espressif/esp-idf/components/newlib/include/_ansi.h \
  /opt/Espressif/esp-idf/components/newlib/include/sys/_types.h \
@@ -59,7 +57,6 @@ mgos_SD_c.o: \
  /mongoose-os/common/platforms/platform_pic32.h \
  /mongoose-os/common/platforms/platform_stm32.h \
  /mongoose-os/common/mg_str.h /mongoose-os/frozen/frozen.h \
- /Users/bcouchman/esp/xtensa-esp32-elf/lib/gcc/xtensa-esp32-elf/5.2.0/include/stdarg.h \
  /opt/Espressif/esp-idf/components/newlib/include/stdio.h \
  /opt/Espressif/esp-idf/components/newlib/include/sys/stdio.h \
  /mongoose-os/common/cs_dbg.h /mongoose-os/common/cs_file.h \
@@ -131,7 +128,6 @@ mgos_SD_c.o: \
  /opt/Espressif/esp-idf/components/freertos/include/freertos/mpu_wrappers.h \
  /opt/Espressif/esp-idf/components/freertos/include/freertos/task.h \
  /opt/Espressif/esp-idf/components/newlib/include/limits.h \
- /Users/bcouchman/esp/xtensa-esp32-elf/xtensa-esp32-elf/include/limits.h \
  /opt/Espressif/esp-idf/components/freertos/include/freertos/list.h \
  /opt/Espressif/esp-idf/components/freertos/include/freertos/queue.h \
  /opt/Espressif/esp-idf/components/freertos/include/freertos/semphr.h \
@@ -168,8 +164,6 @@ mgos_SD_c.o: \
  /mongoose-os/fw/src/mgos_updater_util.h \
  /mongoose-os/fw/include/mgos_utils.h
 
-/Users/bcouchman/esp/xtensa-esp32-elf/lib/gcc/xtensa-esp32-elf/5.2.0/include/stdbool.h:
-
 /mongoose-os/fw/include/mgos.h:
 
 /mongoose-os/common/json_utils.h:
@@ -189,8 +183,6 @@ mgos_SD_c.o: \
 /opt/Espressif/esp-idf/components/newlib/include/sys/features.h:
 
 /opt/Espressif/esp-idf/components/esp32/include/xtensa/config/core-isa.h:
-
-/Users/bcouchman/esp/xtensa-esp32-elf/lib/gcc/xtensa-esp32-elf/5.2.0/include/stddef.h:
 
 /opt/Espressif/esp-idf/components/newlib/include/sys/reent.h:
 
@@ -289,8 +281,6 @@ mgos_SD_c.o: \
 /mongoose-os/common/mg_str.h:
 
 /mongoose-os/frozen/frozen.h:
-
-/Users/bcouchman/esp/xtensa-esp32-elf/lib/gcc/xtensa-esp32-elf/5.2.0/include/stdarg.h:
 
 /opt/Espressif/esp-idf/components/newlib/include/stdio.h:
 
@@ -435,8 +425,6 @@ mgos_SD_c.o: \
 /opt/Espressif/esp-idf/components/freertos/include/freertos/task.h:
 
 /opt/Espressif/esp-idf/components/newlib/include/limits.h:
-
-/Users/bcouchman/esp/xtensa-esp32-elf/xtensa-esp32-elf/include/limits.h:
 
 /opt/Espressif/esp-idf/components/freertos/include/freertos/list.h:
 

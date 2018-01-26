@@ -1,7 +1,24 @@
-#include "sdkconfig.h"
+#include "mgos.h"
+
+#include <stdio.h>
+#include <string.h>
+#include <sys/unistd.h>
+#include <sys/stat.h>
+#include <sys/dirent.h>
+//#include "sdkconfig.h"
+#include "esp_err.h"
+#include "esp_log.h"
+#include "esp_vfs.h"
+#include "esp_vfs_fat.h"
+//#include "freertos/task.h"
+//#include "driver/sdmmc_host.h"
+#include "driver/sdspi_host.h"
+#include "sdmmc_cmd.h"
+// #include "dirent.h"
+
 #include "SD.h"
 
-
+static const char *TAG = "sd";
 
 SD::SD() {
 
@@ -50,61 +67,79 @@ int SD::init(int pin_num_miso, int pin_num_mosi, int pin_num_clk, int pin_num_cs
   return 1;
 }
 
-int SD::init(){
-  return init(PIN_NUM_MISO, PIN_NUM_MOSI, PIN_NUM_CLK, PIN_NUM_CS);
+// int SD::init(){
+//   return init(PIN_NUM_MISO, PIN_NUM_MOSI, PIN_NUM_CLK, PIN_NUM_CS);
+// }
+
+FILE* SD::openFile(const char *filename, const char *mode="r"){
+  return fopen((char*)filename, mode);
 }
 
-int SD::read(const char *filename){
+void SD::closeFile(FILE* f){
+  fclose(f);
+}
+
+
+int SD::readFile(const char *filename, uint8_t** buf){
   FILE* f;
   uint32_t bufsize = 32;
-  static uint8_t buf[MAX_BUFSIZE];
-  size_t len = 0;
+  // static uint8_t buf[MAX_BUFSIZE];
   struct stat _stat;
-
   f = fopen(filename, "r");
   if(f){
-      stat(filename,&_stat);
+      stat(filename, &_stat);
 
-      len = _stat.st_size;
-      while(len){
-          size_t toRead = len;
+      size_t length = _stat.st_size;
+      size_t remaining = _stat.st_size;
+
+      *buf = (uint8_t*)malloc(length+1);
+      int buf_idx = 0;
+      while(remaining){
+
+          size_t toRead = remaining;
           if(toRead > bufsize){
               toRead = bufsize;
           }
-          fread(buf, toRead, 1, f);
-          len -= toRead;
+          fread(*buf + buf_idx, toRead, 1, f);
+          buf_idx += toRead;
+          remaining -= toRead;
       }
+      (*buf)[length] = '\0';
+
       fclose(f);
-      return 1;
+      return length;
   } else {
     ESP_LOGE(TAG, "Failed to open file for reading");
-    return 0;
+    return -1;
   }
 }
 
-
-int SD::write(const char *filename){
-  FILE* f;
-  uint32_t bufsize = 32;
-  static uint8_t buf[MAX_BUFSIZE];
-  uint32_t loops;
-
-  f = fopen(filename, "w");
-  if(!f){
-    ESP_LOGE(TAG, "Failed to open file for writing");
-      return 0;
-  }
-
-  size_t i;
-  loops = 1048576 / bufsize;
-  // ESP_LOGI(TAG,"loops %u bufsize (%d)", loops, bufsize);
-
-  for(i=0; i<loops; i++){
-    fwrite(buf, bufsize, 1, f);
-  }
-  fclose(f);
-  return 1;
+int SD::read(FILE *f, uint8_t* buf, size_t toRead){
+  return fread(buf, 1, toRead, f);
 }
+
+
+// int SD::write(FILE *f, uint8_t* buf){
+//   uint32_t bufsize = 32;
+//   //static uint8_t buf[MAX_BUFSIZE];
+//   uint32_t loops;
+//
+//   f = fopen(filename, "w");
+//   if(!f){
+//     ESP_LOGE(TAG, "Failed to open file for writing");
+//       return 0;
+//   }
+//
+//   size_t i;
+//   loops = 1048576 / bufsize;
+//   // ESP_LOGI(TAG,"loops %u bufsize (%d)", loops, bufsize);
+//
+//   for(i=0; i<loops; i++){
+//     fwrite(buf, bufsize, 1, f);
+//   }
+//   fclose(f);
+//   return 1;
+// }
 
 void SD::listFiles(){
   struct dirent *pDirent;

@@ -9,42 +9,10 @@ sources:
 - /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/src/mgos_SD_c.c
 - /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/src/SD.cpp
 - /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/src/mgos_SD.cpp
-- /Users/bcouchman/esp/esp-idf/components/fatfs/src/diskio.c
-- /Users/bcouchman/esp/esp-idf/components/fatfs/src/diskio_sdmmc.c
-- /Users/bcouchman/esp/esp-idf/components/fatfs/src/diskio_spiflash.c
-- /Users/bcouchman/esp/esp-idf/components/fatfs/src/ff.c
-- /Users/bcouchman/esp/esp-idf/components/fatfs/src/ffsystem.c
-- /Users/bcouchman/esp/esp-idf/components/fatfs/src/ffunicode.c
-- /Users/bcouchman/esp/esp-idf/components/fatfs/src/vfs_fat.c
-- /Users/bcouchman/esp/esp-idf/components/fatfs/src/vfs_fat_sdmmc.c
-- /Users/bcouchman/esp/esp-idf/components/fatfs/src/vfs_fat_spiflash.c
-- /Users/bcouchman/esp/esp-idf/components/wear_levelling/Partition.cpp
-- /Users/bcouchman/esp/esp-idf/components/wear_levelling/SPI_Flash.cpp
-- /Users/bcouchman/esp/esp-idf/components/wear_levelling/WL_Ext_Perf.cpp
-- /Users/bcouchman/esp/esp-idf/components/wear_levelling/WL_Ext_Safe.cpp
-- /Users/bcouchman/esp/esp-idf/components/wear_levelling/WL_Flash.cpp
-- /Users/bcouchman/esp/esp-idf/components/wear_levelling/crc32.cpp
-- /Users/bcouchman/esp/esp-idf/components/wear_levelling/wear_levelling.cpp
 includes:
 - /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/include
-- /Users/bcouchman/esp/esp-idf/components/esp32/include
-- /Users/bcouchman/esp/esp-idf/components/freertos/include
-- /Users/bcouchman/esp/esp-idf/components/log/include
-- /Users/bcouchman/esp/esp-idf/components/mbedtls/include
-- /Users/bcouchman/esp/esp-idf/components/nvs_flash/include
-- /Users/bcouchman/esp/esp-idf/components/driver/include
-- /Users/bcouchman/esp/esp-idf/components/spi_flash/include
-- /Users/bcouchman/esp/esp-idf/components/lwip/include/lwip/
-- /Users/bcouchman/esp/esp-idf/components/esp32
-- /Users/bcouchman/esp/esp-idf/components/sdmmc/include
-- /Users/bcouchman/esp/esp-idf/components/vfs/include
-- /Users/bcouchman/esp/esp-idf/components/sdmmc/include
-- /Users/bcouchman/esp/esp-idf/components/wear_levelling/include
-- /Users/bcouchman/esp/esp-idf/components/wear_levelling/private_include
-- /Users/bcouchman/esp/xtensa-esp32-elf/xtensa-esp32-elf/include
-- /Users/bcouchman/esp/xtensa-esp32-elf/lib/gcc/xtensa-esp32-elf/5.2.0/include
 build_vars:
-  ESP_IDF_EXTRA_COMPONENTS: ""
+  ESP_IDF_EXTRA_COMPONENTS: ' fatfs wear_levelling sdmmc'
   ESP_IDF_SDKCONFIG_OPTS: ""
 tags:
 - c

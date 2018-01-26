@@ -21,15 +21,30 @@ int mgos_sd_begin(SD *sd, int pin_num_miso, int pin_num_mosi, int pin_num_clk, i
   return sd->init(pin_num_miso, pin_num_mosi, pin_num_clk, pin_num_cs);
 }
 
-int mgos_sd_read(SD *sd, const char *filename) {
-  if (sd == nullptr) return 0;
-  return sd->read(filename);
+FILE* mgos_sd_openFile(SD *sd, const char *filename, const char *mode){
+  if (sd == nullptr) return NULL;
+  return sd->openFile(filename, mode);
 }
 
-int mgos_sd_write(SD *sd, const char *filename) {
-  if (sd == nullptr) return 0;
-  return sd->write(filename);
+void mgos_sd_closeFile(SD *sd, FILE *f){
+  if (sd == nullptr) return;
+  sd->closeFile(f);
 }
+
+int mgos_sd_readFile(SD *sd, const char *filename, uint8_t** buffer) {
+  if (sd == nullptr) return 0;
+  return sd->readFile(filename, buffer);
+}
+
+int mgos_sd_read(SD *sd, FILE *f, uint8_t* buffer, size_t toRead) {
+  if (sd == nullptr) return 0;
+  return sd->read(f, buffer, toRead);
+}
+//
+// int mgos_sd_write(SD *sd, FILE *f, uint8_t* buffer) {
+//   if (sd == nullptr) return 0;
+//   return sd->write(f, buffer);
+// }
 
 void mgos_sd_listFiles(SD *sd) {
   if (sd == nullptr) return;

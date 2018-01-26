@@ -1,6 +1,6 @@
 The flag --repo is not given, going to use mongoose-os repository
-Sources: [/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/src/mgos_SD_c.c /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/src/SD.cpp /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/src/mgos_SD.cpp /Users/bcouchman/esp/esp-idf/components/fatfs/src/diskio.c /Users/bcouchman/esp/esp-idf/components/fatfs/src/diskio_sdmmc.c /Users/bcouchman/esp/esp-idf/components/fatfs/src/diskio_spiflash.c /Users/bcouchman/esp/esp-idf/components/fatfs/src/ff.c /Users/bcouchman/esp/esp-idf/components/fatfs/src/ffsystem.c /Users/bcouchman/esp/esp-idf/components/fatfs/src/ffunicode.c /Users/bcouchman/esp/esp-idf/components/fatfs/src/vfs_fat.c /Users/bcouchman/esp/esp-idf/components/fatfs/src/vfs_fat_sdmmc.c /Users/bcouchman/esp/esp-idf/components/fatfs/src/vfs_fat_spiflash.c /Users/bcouchman/esp/esp-idf/components/wear_levelling/Partition.cpp /Users/bcouchman/esp/esp-idf/components/wear_levelling/SPI_Flash.cpp /Users/bcouchman/esp/esp-idf/components/wear_levelling/WL_Ext_Perf.cpp /Users/bcouchman/esp/esp-idf/components/wear_levelling/WL_Ext_Safe.cpp /Users/bcouchman/esp/esp-idf/components/wear_levelling/WL_Flash.cpp /Users/bcouchman/esp/esp-idf/components/wear_levelling/crc32.cpp /Users/bcouchman/esp/esp-idf/components/wear_levelling/wear_levelling.cpp]
-Include dirs: [/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/include /Users/bcouchman/esp/esp-idf/components/esp32/include /Users/bcouchman/esp/esp-idf/components/freertos/include /Users/bcouchman/esp/esp-idf/components/log/include /Users/bcouchman/esp/esp-idf/components/mbedtls/include /Users/bcouchman/esp/esp-idf/components/nvs_flash/include /Users/bcouchman/esp/esp-idf/components/driver/include /Users/bcouchman/esp/esp-idf/components/spi_flash/include /Users/bcouchman/esp/esp-idf/components/lwip/include/lwip/ /Users/bcouchman/esp/esp-idf/components/esp32 /Users/bcouchman/esp/esp-idf/components/sdmmc/include /Users/bcouchman/esp/esp-idf/components/vfs/include /Users/bcouchman/esp/esp-idf/components/sdmmc/include /Users/bcouchman/esp/esp-idf/components/wear_levelling/include /Users/bcouchman/esp/esp-idf/components/wear_levelling/private_include /Users/bcouchman/esp/xtensa-esp32-elf/xtensa-esp32-elf/include /Users/bcouchman/esp/xtensa-esp32-elf/lib/gcc/xtensa-esp32-elf/5.2.0/include]
+Sources: [/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/src/mgos_SD_c.c /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/src/SD.cpp /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/src/mgos_SD.cpp]
+Include dirs: [/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/include]
 Binary libs: []
 Building...
 mount from "/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD" to "/app"
@@ -8,61 +8,8 @@ mount from "/Users/bcouchman/.mos/modules-1.24/mongoose-os-1.24" to "/mongoose-o
 mount from "/Users/bcouchman/.mos/modules-1.24/mongoose-os-1.24" to "/Users/bcouchman/.mos/modules-1.24/mongoose-os-1.24"
 mount from "/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build" to "/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build"
 mount from "/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/src" to "/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/src"
-mount from "/Users/bcouchman/esp/esp-idf/components/fatfs/src" to "/Users/bcouchman/esp/esp-idf/components/fatfs/src"
-mount from "/Users/bcouchman/esp/esp-idf/components/wear_levelling" to "/Users/bcouchman/esp/esp-idf/components/wear_levelling"
 mount from "/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/include" to "/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/include"
-mount from "/Users/bcouchman/esp/esp-idf/components/esp32/include" to "/Users/bcouchman/esp/esp-idf/components/esp32/include"
-mount from "/Users/bcouchman/esp/esp-idf/components/freertos/include" to "/Users/bcouchman/esp/esp-idf/components/freertos/include"
-mount from "/Users/bcouchman/esp/esp-idf/components/log/include" to "/Users/bcouchman/esp/esp-idf/components/log/include"
-mount from "/Users/bcouchman/esp/esp-idf/components/mbedtls/include" to "/Users/bcouchman/esp/esp-idf/components/mbedtls/include"
-mount from "/Users/bcouchman/esp/esp-idf/components/nvs_flash/include" to "/Users/bcouchman/esp/esp-idf/components/nvs_flash/include"
-mount from "/Users/bcouchman/esp/esp-idf/components/driver/include" to "/Users/bcouchman/esp/esp-idf/components/driver/include"
-mount from "/Users/bcouchman/esp/esp-idf/components/spi_flash/include" to "/Users/bcouchman/esp/esp-idf/components/spi_flash/include"
-mount from "/Users/bcouchman/esp/esp-idf/components/lwip/include/lwip/" to "/Users/bcouchman/esp/esp-idf/components/lwip/include/lwip"
-mount from "/Users/bcouchman/esp/esp-idf/components/esp32" to "/Users/bcouchman/esp/esp-idf/components/esp32"
-mount from "/Users/bcouchman/esp/esp-idf/components/sdmmc/include" to "/Users/bcouchman/esp/esp-idf/components/sdmmc/include"
-mount from "/Users/bcouchman/esp/esp-idf/components/vfs/include" to "/Users/bcouchman/esp/esp-idf/components/vfs/include"
-mount from "/Users/bcouchman/esp/esp-idf/components/sdmmc/include" to "/Users/bcouchman/esp/esp-idf/components/sdmmc/include"
-mount from "/Users/bcouchman/esp/esp-idf/components/wear_levelling/include" to "/Users/bcouchman/esp/esp-idf/components/wear_levelling/include"
-mount from "/Users/bcouchman/esp/esp-idf/components/wear_levelling/private_include" to "/Users/bcouchman/esp/esp-idf/components/wear_levelling/private_include"
-mount from "/Users/bcouchman/esp/xtensa-esp32-elf/xtensa-esp32-elf/include" to "/Users/bcouchman/esp/xtensa-esp32-elf/xtensa-esp32-elf/include"
-mount from "/Users/bcouchman/esp/xtensa-esp32-elf/lib/gcc/xtensa-esp32-elf/5.2.0/include" to "/Users/bcouchman/esp/xtensa-esp32-elf/lib/gcc/xtensa-esp32-elf/5.2.0/include"
-Docker arguments: run --name mos_build_2018-01-24T13-20-54-00_3999966516349377676 --rm -i -v /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build:/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build -v /Users/bcouchman/esp/esp-idf/components/sdmmc/include:/Users/bcouchman/esp/esp-idf/components/sdmmc/include -v /Users/bcouchman/.mos/modules-1.24/mongoose-os-1.24:/Users/bcouchman/.mos/modules-1.24/mongoose-os-1.24 -v /Users/bcouchman/esp/esp-idf/components/wear_levelling:/Users/bcouchman/esp/esp-idf/components/wear_levelling -v /Users/bcouchman/esp/esp-idf/components/driver/include:/Users/bcouchman/esp/esp-idf/components/driver/include -v /Users/bcouchman/esp/esp-idf/components/spi_flash/include:/Users/bcouchman/esp/esp-idf/components/spi_flash/include -v /Users/bcouchman/esp/esp-idf/components/vfs/include:/Users/bcouchman/esp/esp-idf/components/vfs/include -v /Users/bcouchman/esp/esp-idf/components/wear_levelling/include:/Users/bcouchman/esp/esp-idf/components/wear_levelling/include -v /Users/bcouchman/esp/xtensa-esp32-elf/lib/gcc/xtensa-esp32-elf/5.2.0/include:/Users/bcouchman/esp/xtensa-esp32-elf/lib/gcc/xtensa-esp32-elf/5.2.0/include -v /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD:/app -v /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/include:/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/include -v /Users/bcouchman/esp/esp-idf/components/freertos/include:/Users/bcouchman/esp/esp-idf/components/freertos/include -v /Users/bcouchman/esp/esp-idf/components/lwip/include/lwip/:/Users/bcouchman/esp/esp-idf/components/lwip/include/lwip -v /Users/bcouchman/esp/esp-idf/components/esp32:/Users/bcouchman/esp/esp-idf/components/esp32 -v /Users/bcouchman/esp/esp-idf/components/wear_levelling/private_include:/Users/bcouchman/esp/esp-idf/components/wear_levelling/private_include -v /Users/bcouchman/.mos/modules-1.24/mongoose-os-1.24:/mongoose-os -v /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/src:/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/src -v /Users/bcouchman/esp/esp-idf/components/fatfs/src:/Users/bcouchman/esp/esp-idf/components/fatfs/src -v /Users/bcouchman/esp/esp-idf/components/esp32/include:/Users/bcouchman/esp/esp-idf/components/esp32/include -v /Users/bcouchman/esp/esp-idf/components/log/include:/Users/bcouchman/esp/esp-idf/components/log/include -v /Users/bcouchman/esp/esp-idf/components/mbedtls/include:/Users/bcouchman/esp/esp-idf/components/mbedtls/include -v /Users/bcouchman/esp/esp-idf/components/nvs_flash/include:/Users/bcouchman/esp/esp-idf/components/nvs_flash/include -v /Users/bcouchman/esp/xtensa-esp32-elf/xtensa-esp32-elf/include:/Users/bcouchman/esp/xtensa-esp32-elf/xtensa-esp32-elf/include docker.cesanta.com/esp32-build:3.0-rc1-r1 /bin/bash -c nice make '-j' '8' '-C' '/app' '-f' '/mongoose-os/fw/platforms/esp32/Makefile.build' '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/moslib/libmoslib.a' 'FS_STAGING_DIR=build/fs' 'BUILD_DIR=/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs' 'MGOS_PATH=/mongoose-os' 'APP_VERSION=1.0' 'APP_INCLUDES=/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/include /Users/bcouchman/esp/esp-idf/components/esp32/include /Users/bcouchman/esp/esp-idf/components/freertos/include /Users/bcouchman/esp/esp-idf/components/log/include /Users/bcouchman/esp/esp-idf/components/mbedtls/include /Users/bcouchman/esp/esp-idf/components/nvs_flash/include /Users/bcouchman/esp/esp-idf/components/driver/include /Users/bcouchman/esp/esp-idf/components/spi_flash/include /Users/bcouchman/esp/esp-idf/components/lwip/include/lwip /Users/bcouchman/esp/esp-idf/components/esp32 /Users/bcouchman/esp/esp-idf/components/sdmmc/include /Users/bcouchman/esp/esp-idf/components/vfs/include /Users/bcouchman/esp/esp-idf/components/sdmmc/include /Users/bcouchman/esp/esp-idf/components/wear_levelling/include /Users/bcouchman/esp/esp-idf/components/wear_levelling/private_include /Users/bcouchman/esp/xtensa-esp32-elf/xtensa-esp32-elf/include /Users/bcouchman/esp/xtensa-esp32-elf/lib/gcc/xtensa-esp32-elf/5.2.0/include' 'GEN_DIR=/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/gen' 'FW_DIR=build/fw' 'APP_BIN_LIBS=' 'APP_SOURCES=/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/src/mgos_SD_c.c /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/src/SD.cpp /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/src/mgos_SD.cpp /Users/bcouchman/esp/esp-idf/components/fatfs/src/diskio.c /Users/bcouchman/esp/esp-idf/components/fatfs/src/diskio_sdmmc.c /Users/bcouchman/esp/esp-idf/components/fatfs/src/diskio_spiflash.c /Users/bcouchman/esp/esp-idf/components/fatfs/src/ff.c /Users/bcouchman/esp/esp-idf/components/fatfs/src/ffsystem.c /Users/bcouchman/esp/esp-idf/components/fatfs/src/ffunicode.c /Users/bcouchman/esp/esp-idf/components/fatfs/src/vfs_fat.c /Users/bcouchman/esp/esp-idf/components/fatfs/src/vfs_fat_sdmmc.c /Users/bcouchman/esp/esp-idf/components/fatfs/src/vfs_fat_spiflash.c /Users/bcouchman/esp/esp-idf/components/wear_levelling/Partition.cpp /Users/bcouchman/esp/esp-idf/components/wear_levelling/SPI_Flash.cpp /Users/bcouchman/esp/esp-idf/components/wear_levelling/WL_Ext_Perf.cpp /Users/bcouchman/esp/esp-idf/components/wear_levelling/WL_Ext_Safe.cpp /Users/bcouchman/esp/esp-idf/components/wear_levelling/WL_Flash.cpp /Users/bcouchman/esp/esp-idf/components/wear_levelling/crc32.cpp /Users/bcouchman/esp/esp-idf/components/wear_levelling/wear_levelling.cpp' 'APP_CXXFLAGS=' 'APP=SD' 'FFI_SYMBOLS=' 'ESP_IDF_EXTRA_COMPONENTS=' 'ESP_IDF_SDKCONFIG_OPTS=' 'APP_FS_FILES=' 'APP_CFLAGS=' 'MANIFEST_FINAL=/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/gen/mos_final.yml' 'PLATFORM=esp32' 'MGOS_MAIN_COMPONENT=moslib'
-Unable to find image 'docker.cesanta.com/esp32-build:3.0-rc1-r1' locally
-3.0-rc1-r1: Pulling from esp32-build
-bd97b43c27e3: Already exists
-6960dc1aba18: Already exists
-2b61829b0db5: Already exists
-1f88dc826b14: Already exists
-73b3859b1e43: Already exists
-22ad2716d481: Already exists
-b918807cc5b7: Already exists
-ad953c81867a: Already exists
-111cdeee9798: Already exists
-33f92f92fbba: Already exists
-0f8ddf969027: Pulling fs layer
-d7f8af58685f: Pulling fs layer
-2b6d0aaecced: Pulling fs layer
-02565c0f21e8: Pulling fs layer
-a2c51666c566: Pulling fs layer
-a2c51666c566: Waiting
-02565c0f21e8: Waiting
-d7f8af58685f: Verifying Checksum
-d7f8af58685f: Download complete
-2b6d0aaecced: Verifying Checksum
-2b6d0aaecced: Download complete
-02565c0f21e8: Download complete
-a2c51666c566: Verifying Checksum
-a2c51666c566: Download complete
-0f8ddf969027: Verifying Checksum
-0f8ddf969027: Download complete
-0f8ddf969027: Pull complete
-d7f8af58685f: Pull complete
-2b6d0aaecced: Pull complete
-02565c0f21e8: Pull complete
-a2c51666c566: Pull complete
-Digest: sha256:40a07d0e11522e3f510ef7dd039acd9a871b53dcdd69218c96a4749f5dbb8c94
-Status: Downloaded newer image for docker.cesanta.com/esp32-build:3.0-rc1-r1
+Docker arguments: run --name mos_build_2018-01-25T08-34-35-00_7186859872831283994 --rm -i -v /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD:/app -v /Users/bcouchman/.mos/modules-1.24/mongoose-os-1.24:/mongoose-os -v /Users/bcouchman/.mos/modules-1.24/mongoose-os-1.24:/Users/bcouchman/.mos/modules-1.24/mongoose-os-1.24 -v /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build:/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build -v /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/src:/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/src -v /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/include:/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/include docker.cesanta.com/esp32-build:3.0-rc1-r1 /bin/bash -c nice make '-j' '8' '-C' '/app' '-f' '/mongoose-os/fw/platforms/esp32/Makefile.build' '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/moslib/libmoslib.a' 'MGOS_PATH=/mongoose-os' 'APP_FS_FILES=' 'APP_BIN_LIBS=' 'APP_CXXFLAGS=' 'MANIFEST_FINAL=/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/gen/mos_final.yml' 'APP_CFLAGS=' 'FS_STAGING_DIR=build/fs' 'APP=SD' 'FFI_SYMBOLS=' 'APP_VERSION=1.0' 'ESP_IDF_SDKCONFIG_OPTS=' 'ESP_IDF_EXTRA_COMPONENTS= fatfs wear_levelling sdmmc' 'APP_SOURCES=/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/src/mgos_SD_c.c /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/src/SD.cpp /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/src/mgos_SD.cpp' 'FW_DIR=build/fw' 'BUILD_DIR=/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs' 'PLATFORM=esp32' 'APP_INCLUDES=/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/include' 'GEN_DIR=/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/gen' 'MGOS_MAIN_COMPONENT=moslib'
 make: Entering directory '/app'
 including /opt/Espressif/esp-idf/components/bootloader/Makefile.projbuild...
 including /opt/Espressif/esp-idf/components/bootloader_support/Makefile.projbuild...
@@ -76,276 +23,72 @@ including /opt/Espressif/esp-idf/components/partition_table/Makefile.projbuild..
 #
 # configuration written to /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/gen/sdkconfig
 #
-make[1]: Entering directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/tcpip_adapter'
 make[1]: Entering directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/cs_mbedtls'
+make[1]: Entering directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/sdmmc'
 make[1]: Entering directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/xtensa-debug-module'
-make[1]: Entering directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/vfs'
+make[1]: Entering directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/wear_levelling'
+make[1]: Entering directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/fatfs'
 make[1]: Entering directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/spiffs'
-make[1]: Leaving directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/tcpip_adapter'
 make[1]: Leaving directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/cs_mbedtls'
-make[1]: Entering directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/cryptoauthlib'
+make[1]: Leaving directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/sdmmc'
 make[1]: Leaving directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/xtensa-debug-module'
-make[1]: Leaving directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/vfs'
-make[1]: Entering directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/wpa_supplicant'
-make[1]: Entering directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/pthread'
-make[1]: Entering directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/spi_flash'
-make[1]: Entering directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/partition_table'
-make[1]: Leaving directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/partition_table'
+make[1]: Entering directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/cryptoauthlib'
+make[1]: Leaving directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/wear_levelling'
+make[1]: Leaving directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/fatfs'
+make[1]: Entering directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/tcpip_adapter'
+make[1]: Entering directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/vfs'
 make[1]: Leaving directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/spiffs'
+make[1]: Entering directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/spi_flash'
+make[1]: Entering directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/pthread'
 make[1]: Entering directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/soc'
 make[1]: Leaving directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/cryptoauthlib'
-make[1]: Entering directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/newlib'
-make[1]: Entering directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/nvs_flash'
-make[1]: Leaving directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/soc'
-make[1]: Entering directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/micro-ecc'
-make[1]: Leaving directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/spi_flash'
-make[1]: Leaving directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/pthread'
-make[1]: Leaving directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/wpa_supplicant'
+make[1]: Leaving directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/vfs'
+make[1]: Leaving directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/tcpip_adapter'
 make[1]: Entering directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/moslib'
-make[1]: Entering directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/log'
-make[1]: Leaving directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/nvs_flash'
-make[1]: Leaving directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/newlib'
-make[1]: Entering directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/heap'
+make[1]: Entering directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/wpa_supplicant'
+make[1]: Entering directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/partition_table'
+make[1]: Leaving directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/soc'
+make[1]: Leaving directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/pthread'
+make[1]: Entering directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/newlib'
+make[1]: Leaving directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/partition_table'
+make[1]: Entering directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/nvs_flash'
+make[1]: Leaving directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/spi_flash'
 make[1]: Leaving directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/moslib'
+make[1]: Entering directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/micro-ecc'
+make[1]: Entering directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/log'
+make[1]: Entering directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/heap'
+make[1]: Leaving directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/wpa_supplicant'
+make[1]: Leaving directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/newlib'
+make[1]: Leaving directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/nvs_flash'
 make[1]: Leaving directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/micro-ecc'
 make[1]: Leaving directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/log'
-make[1]: Entering directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/expat'
 make[1]: Entering directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/freertos'
-make[1]: Entering directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/ethernet'
 make[1]: Entering directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/esptool_py'
-make[1]: Entering directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/esp_adc_cal'
-make[1]: Leaving directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/heap'
+make[1]: Entering directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/ethernet'
 make[1]: Leaving directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/esptool_py'
-make[1]: Leaving directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/ethernet'
-make[1]: Leaving directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/expat'
-make[1]: Leaving directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/freertos'
+make[1]: Leaving directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/heap'
+make[1]: Entering directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/expat'
 make[1]: Entering directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/cxx'
+make[1]: Entering directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/esp_adc_cal'
+make[1]: Leaving directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/ethernet'
+make[1]: Leaving directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/freertos'
+make[1]: Leaving directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/expat'
+make[1]: Entering directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/driver'
+make[1]: Leaving directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/cxx'
 make[1]: Leaving directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/esp_adc_cal'
 make[1]: Entering directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/lwip'
 make[1]: Entering directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/bootloader'
 make[1]: Entering directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/app_update'
 make[1]: Leaving directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/bootloader'
-make[1]: Entering directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/bootloader_support'
-make[1]: Entering directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/driver'
-make[1]: Leaving directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/cxx'
 make[1]: Entering directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/app_trace'
-make[1]: Entering directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/esp32'
-make[1]: Leaving directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/app_update'
-make[1]: Leaving directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/lwip'
-make[1]: Leaving directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/bootloader_support'
-make[1]: Leaving directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/driver'
-make[1]: Leaving directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/app_trace'
-make[1]: Leaving directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/esp32'
-including /opt/Espressif/esp-idf/components/bootloader/Makefile.projbuild...
-including /opt/Espressif/esp-idf/components/bootloader_support/Makefile.projbuild...
-including /opt/Espressif/esp-idf/components/esp32/Makefile.projbuild...
-including /opt/Espressif/esp-idf/components/esptool_py/Makefile.projbuild...
-including /opt/Espressif/esp-idf/components/partition_table/Makefile.projbuild...
-make[1]: Entering directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/cs_mbedtls'
-make[1]: Entering directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/xtensa-debug-module'
-make[1]: Entering directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/vfs'
-make[1]: Entering directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/tcpip_adapter'
-make[1]: Leaving directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/cs_mbedtls'
-make[1]: Entering directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/spiffs'
-make[1]: Leaving directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/xtensa-debug-module'
-make[1]: Entering directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/cryptoauthlib'
-make[1]: Leaving directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/tcpip_adapter'
-make[1]: Leaving directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/vfs'
-make[1]: Entering directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/spi_flash'
-make[1]: Entering directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/wpa_supplicant'
-make[1]: Leaving directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/spiffs'
-make[1]: Leaving directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/cryptoauthlib'
-make[1]: Leaving directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/spi_flash'
-make[1]: Leaving directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/wpa_supplicant'
-make[1]: Entering directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/partition_table'
-make[1]: Entering directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/pthread'
-make[1]: Leaving directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/partition_table'
-make[1]: Entering directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/newlib'
-make[1]: Entering directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/moslib'
-make[1]: Entering directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/soc'
-make[1]: Entering directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/nvs_flash'
-make[1]: Entering directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/micro-ecc'
-make[1]: Entering directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/log'
-make[1]: Leaving directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/pthread'
-make[1]: Leaving directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/newlib'
-make[1]: Leaving directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/moslib'
-make[1]: Leaving directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/nvs_flash'
-make[1]: Leaving directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/soc'
-make[1]: Leaving directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/micro-ecc'
-make[1]: Leaving directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/log'
-make[1]: Entering directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/heap'
-make[1]: Entering directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/ethernet'
-make[1]: Entering directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/esp_adc_cal'
-make[1]: Entering directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/esptool_py'
-make[1]: Entering directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/lwip'
-make[1]: Entering directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/expat'
-make[1]: Leaving directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/esptool_py'
-make[1]: Entering directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/freertos'
-make[1]: Leaving directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/heap'
-make[1]: Leaving directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/ethernet'
-make[1]: Leaving directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/lwip'
-make[1]: Leaving directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/esp_adc_cal'
-make[1]: Entering directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/cxx'
-make[1]: Leaving directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/freertos'
-make[1]: Leaving directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/expat'
-make[1]: Entering directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/bootloader'
-make[1]: Entering directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/app_update'
-make[1]: Entering directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/esp32'
-make[1]: Leaving directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/bootloader'
-make[1]: Entering directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/driver'
 make[1]: Entering directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/bootloader_support'
-make[1]: Entering directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/app_trace'
-make[1]: Leaving directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/cxx'
-make[1]: Leaving directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/app_update'
-make[1]: Leaving directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/esp32'
-make[1]: Leaving directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/driver'
-make[1]: Leaving directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/bootloader_support'
-make[1]: Leaving directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/app_trace'
-including /opt/Espressif/esp-idf/components/bootloader/Makefile.projbuild...
-including /opt/Espressif/esp-idf/components/bootloader_support/Makefile.projbuild...
-including /opt/Espressif/esp-idf/components/esp32/Makefile.projbuild...
-including /opt/Espressif/esp-idf/components/esptool_py/Makefile.projbuild...
-including /opt/Espressif/esp-idf/components/partition_table/Makefile.projbuild...
-make[1]: Entering directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/cs_mbedtls'
-make[1]: Entering directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/xtensa-debug-module'
-make[1]: Entering directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/vfs'
-make[1]: Entering directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/tcpip_adapter'
-make[1]: Entering directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/spiffs'
-make[1]: Leaving directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/cs_mbedtls'
-make[1]: Entering directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/cryptoauthlib'
-make[1]: Leaving directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/xtensa-debug-module'
-make[1]: Leaving directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/vfs'
-make[1]: Entering directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/spi_flash'
-make[1]: Leaving directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/spiffs'
-make[1]: Entering directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/wpa_supplicant'
-make[1]: Leaving directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/tcpip_adapter'
-make[1]: Leaving directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/cryptoauthlib'
-make[1]: Entering directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/soc'
-make[1]: Entering directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/partition_table'
-make[1]: Leaving directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/partition_table'
-make[1]: Entering directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/pthread'
-make[1]: Entering directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/nvs_flash'
-make[1]: Leaving directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/spi_flash'
-make[1]: Entering directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/micro-ecc'
-make[1]: Entering directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/newlib'
-make[1]: Leaving directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/wpa_supplicant'
-make[1]: Leaving directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/soc'
-make[1]: Leaving directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/pthread'
-make[1]: Leaving directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/micro-ecc'
-make[1]: Leaving directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/nvs_flash'
-make[1]: Entering directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/log'
-make[1]: Entering directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/heap'
-make[1]: Leaving directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/newlib'
-make[1]: Entering directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/moslib'
-make[1]: Entering directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/ethernet'
-make[1]: Entering directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/expat'
-make[1]: Entering directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/esptool_py'
-make[1]: Leaving directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/esptool_py'
-make[1]: Leaving directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/log'
-make[1]: Leaving directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/moslib'
-make[1]: Entering directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/freertos'
-make[1]: Entering directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/lwip'
-make[1]: Leaving directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/expat'
-make[1]: Leaving directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/ethernet'
-make[1]: Leaving directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/heap'
-make[1]: Entering directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/esp_adc_cal'
-make[1]: Entering directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/bootloader'
-make[1]: Entering directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/cxx'
-make[1]: Leaving directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/bootloader'
 make[1]: Leaving directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/lwip'
-make[1]: Leaving directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/freertos'
-make[1]: Entering directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/driver'
-make[1]: Leaving directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/esp_adc_cal'
-make[1]: Entering directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/bootloader_support'
-make[1]: Entering directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/app_update'
-make[1]: Leaving directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/cxx'
-make[1]: Entering directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/esp32'
-make[1]: Entering directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/app_trace'
 make[1]: Leaving directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/driver'
 make[1]: Leaving directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/app_update'
-make[1]: Leaving directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/bootloader_support'
-make[1]: Leaving directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/app_trace'
-make[1]: Leaving directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/esp32'
-including /opt/Espressif/esp-idf/components/bootloader/Makefile.projbuild...
-including /opt/Espressif/esp-idf/components/bootloader_support/Makefile.projbuild...
-including /opt/Espressif/esp-idf/components/esp32/Makefile.projbuild...
-including /opt/Espressif/esp-idf/components/esptool_py/Makefile.projbuild...
-including /opt/Espressif/esp-idf/components/partition_table/Makefile.projbuild...
-make[1]: Entering directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/cs_mbedtls'
-make[1]: Entering directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/tcpip_adapter'
-make[1]: Entering directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/xtensa-debug-module'
-make[1]: Entering directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/vfs'
-make[1]: Entering directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/spiffs'
-make[1]: Leaving directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/cs_mbedtls'
-make[1]: Entering directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/cryptoauthlib'
-make[1]: Leaving directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/vfs'
-make[1]: Entering directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/wpa_supplicant'
-make[1]: Leaving directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/tcpip_adapter'
-make[1]: Leaving directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/xtensa-debug-module'
-make[1]: Leaving directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/spiffs'
-make[1]: Leaving directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/cryptoauthlib'
-make[1]: Entering directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/soc'
-make[1]: Entering directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/spi_flash'
-make[1]: Entering directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/partition_table'
-make[1]: Entering directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/pthread'
-make[1]: Leaving directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/wpa_supplicant'
-make[1]: Leaving directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/partition_table'
-make[1]: Entering directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/nvs_flash'
-make[1]: Entering directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/newlib'
-make[1]: Entering directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/micro-ecc'
-make[1]: Leaving directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/spi_flash'
-make[1]: Leaving directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/soc'
-make[1]: Entering directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/moslib'
-make[1]: Entering directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/log'
-make[1]: Leaving directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/pthread'
-make[1]: Leaving directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/newlib'
-make[1]: Entering directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/heap'
-make[1]: Leaving directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/nvs_flash'
-make[1]: Leaving directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/micro-ecc'
-make[1]: Leaving directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/log'
-make[1]: Entering directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/expat'
-make[1]: Leaving directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/moslib'
-make[1]: Entering directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/esptool_py'
-make[1]: Leaving directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/esptool_py'
-make[1]: Entering directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/ethernet'
-make[1]: Leaving directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/heap'
-make[1]: Entering directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/freertos'
-make[1]: Leaving directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/expat'
-make[1]: Entering directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/esp_adc_cal'
-make[1]: Entering directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/cxx'
-make[1]: Leaving directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/ethernet'
-make[1]: Entering directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/lwip'
-make[1]: Entering directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/driver'
 make[1]: Entering directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/esp32'
-make[1]: Entering directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/bootloader'
-make[1]: Entering directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/bootloader_support'
-make[1]: Leaving directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/bootloader'
-make[1]: Leaving directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/cxx'
-make[1]: Leaving directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/esp_adc_cal'
-make[1]: Leaving directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/freertos'
-make[1]: Entering directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/app_update'
-make[1]: Leaving directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/esp32'
-make[1]: Leaving directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/driver'
-make[1]: Leaving directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/lwip'
-make[1]: Leaving directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/bootloader_support'
-make[1]: Entering directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/app_trace'
-make[1]: Leaving directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/app_update'
 make[1]: Leaving directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/app_trace'
-including /opt/Espressif/esp-idf/components/bootloader/Makefile.projbuild...
-including /opt/Espressif/esp-idf/components/bootloader_support/Makefile.projbuild...
-including /opt/Espressif/esp-idf/components/esp32/Makefile.projbuild...
-including /opt/Espressif/esp-idf/components/esptool_py/Makefile.projbuild...
-including /opt/Espressif/esp-idf/components/partition_table/Makefile.projbuild...
-make[1]: Entering directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/cs_mbedtls'
-make[1]: Entering directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/xtensa-debug-module'
-make[1]: Entering directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/vfs'
-make[1]: Entering directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/tcpip_adapter'
-make[1]: Entering directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/spiffs'
-make[1]: Leaving directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/cs_mbedtls'
-make[1]: Leaving directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/xtensa-debug-module'
-make[1]: Leaving directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/tcpip_adapter'
-make[1]: Leaving directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/vfs'
-make[1]: Leaving directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/spiffs'
+make[1]: Leaving directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/bootloader_support'
+make[1]: Leaving directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/esp32'
 including /opt/Espressif/esp-idf/components/bootloader/Makefile.projbuild...
 including /opt/Espressif/esp-idf/components/bootloader_support/Makefile.projbuild...
 including /opt/Espressif/esp-idf/components/esp32/Makefile.projbuild...
@@ -356,19 +99,14 @@ make[1]: Entering directory '/Users/bcouchman/Documents/Perso/projects/meeio/ele
   GEN   /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/gen/mgos_ro_vars.c
 CC mgos_SD_c.o
 CXX SD.o
-CC diskio.o
 CXX mgos_SD.o
-CC diskio_sdmmc.o
-CC diskio_spiflash.o
-CC ff.o
-CC ffsystem.o
 In file included from /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/include/SD.h:6:0,
                  from /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/src/SD.cpp:2:
 /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/include/sdkconfig.h:24:0: warning: "CONFIG_ESPTOOLPY_FLASHSIZE" redefined
  #define CONFIG_ESPTOOLPY_FLASHSIZE "2MB"
  ^
 In file included from /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/src/SD.cpp:1:0:
-/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/include/sdkconfig.h:19:0: note: this is the location of the previous definition
+/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/include/sdkconfig.h:22:0: note: this is the location of the previous definition
  #define CONFIG_ESPTOOLPY_FLASHSIZE "4MB"
  ^
 In file included from /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/include/SD.h:6:0,
@@ -377,7 +115,7 @@ In file included from /Users/bcouchman/Documents/Perso/projects/meeio/electronic
  #define CONFIG_TIMER_TASK_STACK_DEPTH 2048
  ^
 In file included from /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/src/SD.cpp:1:0:
-/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/include/sdkconfig.h:36:0: note: this is the location of the previous definition
+/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/include/sdkconfig.h:40:0: note: this is the location of the previous definition
  #define CONFIG_TIMER_TASK_STACK_DEPTH 3072
  ^
 In file included from /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/include/SD.h:6:0,
@@ -386,7 +124,7 @@ In file included from /Users/bcouchman/Documents/Perso/projects/meeio/electronic
  #define CONFIG_TCPIP_TASK_STACK_SIZE 2048
  ^
 In file included from /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/src/SD.cpp:1:0:
-/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/include/sdkconfig.h:60:0: note: this is the location of the previous definition
+/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/include/sdkconfig.h:65:0: note: this is the location of the previous definition
  #define CONFIG_TCPIP_TASK_STACK_SIZE 3072
  ^
 In file included from /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/include/SD.h:6:0,
@@ -395,7 +133,7 @@ In file included from /Users/bcouchman/Documents/Perso/projects/meeio/electronic
  #define CONFIG_ESP32_WIFI_DYNAMIC_RX_BUFFER_NUM 32
  ^
 In file included from /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/src/SD.cpp:1:0:
-/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/include/sdkconfig.h:73:0: note: this is the location of the previous definition
+/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/include/sdkconfig.h:79:0: note: this is the location of the previous definition
  #define CONFIG_ESP32_WIFI_DYNAMIC_RX_BUFFER_NUM 0
  ^
 In file included from /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/include/SD.h:6:0,
@@ -404,7 +142,7 @@ In file included from /Users/bcouchman/Documents/Perso/projects/meeio/electronic
  #define CONFIG_PARTITION_TABLE_FILENAME "partitions_singleapp.csv"
  ^
 In file included from /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/src/SD.cpp:1:0:
-/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/include/sdkconfig.h:84:0: note: this is the location of the previous definition
+/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/include/sdkconfig.h:90:0: note: this is the location of the previous definition
  #define CONFIG_PARTITION_TABLE_FILENAME "src/partitions_mgos.csv"
  ^
 In file included from /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/include/SD.h:6:0,
@@ -413,7 +151,7 @@ In file included from /Users/bcouchman/Documents/Perso/projects/meeio/electronic
  #define CONFIG_SYSTEM_EVENT_TASK_STACK_SIZE 2048
  ^
 In file included from /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/src/SD.cpp:1:0:
-/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/include/sdkconfig.h:90:0: note: this is the location of the previous definition
+/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/include/sdkconfig.h:96:0: note: this is the location of the previous definition
  #define CONFIG_SYSTEM_EVENT_TASK_STACK_SIZE 3072
  ^
 In file included from /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/include/SD.h:6:0,
@@ -422,7 +160,7 @@ In file included from /Users/bcouchman/Documents/Perso/projects/meeio/electronic
  #define CONFIG_ESP32_DEEP_SLEEP_WAKEUP_DELAY 2000
  ^
 In file included from /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/src/SD.cpp:1:0:
-/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/include/sdkconfig.h:91:0: note: this is the location of the previous definition
+/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/include/sdkconfig.h:97:0: note: this is the location of the previous definition
  #define CONFIG_ESP32_DEEP_SLEEP_WAKEUP_DELAY 0
  ^
 In file included from /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/include/SD.h:6:0,
@@ -431,16 +169,8 @@ In file included from /Users/bcouchman/Documents/Perso/projects/meeio/electronic
  #define CONFIG_ESP32_XTAL_FREQ 40
  ^
 In file included from /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/src/SD.cpp:1:0:
-/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/include/sdkconfig.h:103:0: note: this is the location of the previous definition
+/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/include/sdkconfig.h:109:0: note: this is the location of the previous definition
  #define CONFIG_ESP32_XTAL_FREQ 0
- ^
-In file included from /opt/Espressif/esp-idf/components/newlib/platform_include/assert.h:20:0,
-                 from /opt/Espressif/esp-idf/components/esp32/include/esp_err.h:18,
-                 from /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/include/SD.h:7,
-                 from /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/include/mgos_SD.h:1,
-                 from /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/src/mgos_SD.cpp:1:
-/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/include/sdkconfig.h:19:0: warning: "CONFIG_ESPTOOLPY_FLASHSIZE" redefined
- #define CONFIG_ESPTOOLPY_FLASHSIZE "4MB"
  ^
 In file included from /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/include/SD.h:6:0,
                  from /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/src/SD.cpp:2:
@@ -448,132 +178,14 @@ In file included from /Users/bcouchman/Documents/Perso/projects/meeio/electronic
  #define CONFIG_PARTITION_TABLE_CUSTOM_FILENAME "partitions.csv"
  ^
 In file included from /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/src/SD.cpp:1:0:
-/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/include/sdkconfig.h:123:0: note: this is the location of the previous definition
+/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/include/sdkconfig.h:130:0: note: this is the location of the previous definition
  #define CONFIG_PARTITION_TABLE_CUSTOM_FILENAME "src/partitions_mgos.csv"
- ^
-In file included from /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/include/SD.h:6:0,
-                 from /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/include/mgos_SD.h:1,
-                 from /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/src/mgos_SD.cpp:1:
-/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/include/sdkconfig.h:24:0: note: this is the location of the previous definition
- #define CONFIG_ESPTOOLPY_FLASHSIZE "2MB"
- ^
-In file included from /opt/Espressif/esp-idf/components/newlib/platform_include/assert.h:20:0,
-                 from /opt/Espressif/esp-idf/components/esp32/include/esp_err.h:18,
-                 from /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/include/SD.h:7,
-                 from /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/include/mgos_SD.h:1,
-                 from /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/src/mgos_SD.cpp:1:
-/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/include/sdkconfig.h:36:0: warning: "CONFIG_TIMER_TASK_STACK_DEPTH" redefined
- #define CONFIG_TIMER_TASK_STACK_DEPTH 3072
- ^
-In file included from /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/include/SD.h:6:0,
-                 from /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/include/mgos_SD.h:1,
-                 from /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/src/mgos_SD.cpp:1:
-/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/include/sdkconfig.h:55:0: note: this is the location of the previous definition
- #define CONFIG_TIMER_TASK_STACK_DEPTH 2048
- ^
-In file included from /opt/Espressif/esp-idf/components/newlib/platform_include/assert.h:20:0,
-                 from /opt/Espressif/esp-idf/components/esp32/include/esp_err.h:18,
-                 from /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/include/SD.h:7,
-                 from /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/include/mgos_SD.h:1,
-                 from /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/src/mgos_SD.cpp:1:
-/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/include/sdkconfig.h:60:0: warning: "CONFIG_TCPIP_TASK_STACK_SIZE" redefined
- #define CONFIG_TCPIP_TASK_STACK_SIZE 3072
- ^
-In file included from /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/include/SD.h:6:0,
-                 from /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/include/mgos_SD.h:1,
-                 from /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/src/mgos_SD.cpp:1:
-/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/include/sdkconfig.h:87:0: note: this is the location of the previous definition
- #define CONFIG_TCPIP_TASK_STACK_SIZE 2048
- ^
-In file included from /opt/Espressif/esp-idf/components/newlib/platform_include/assert.h:20:0,
-                 from /opt/Espressif/esp-idf/components/esp32/include/esp_err.h:18,
-                 from /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/include/SD.h:7,
-                 from /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/include/mgos_SD.h:1,
-                 from /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/src/mgos_SD.cpp:1:
-/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/include/sdkconfig.h:73:0: warning: "CONFIG_ESP32_WIFI_DYNAMIC_RX_BUFFER_NUM" redefined
- #define CONFIG_ESP32_WIFI_DYNAMIC_RX_BUFFER_NUM 0
- ^
-In file included from /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/include/SD.h:6:0,
-                 from /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/include/mgos_SD.h:1,
-                 from /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/src/mgos_SD.cpp:1:
-/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/include/sdkconfig.h:103:0: note: this is the location of the previous definition
- #define CONFIG_ESP32_WIFI_DYNAMIC_RX_BUFFER_NUM 32
- ^
-In file included from /opt/Espressif/esp-idf/components/newlib/platform_include/assert.h:20:0,
-                 from /opt/Espressif/esp-idf/components/esp32/include/esp_err.h:18,
-                 from /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/include/SD.h:7,
-                 from /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/include/mgos_SD.h:1,
-                 from /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/src/mgos_SD.cpp:1:
-/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/include/sdkconfig.h:84:0: warning: "CONFIG_PARTITION_TABLE_FILENAME" redefined
- #define CONFIG_PARTITION_TABLE_FILENAME "src/partitions_mgos.csv"
- ^
-In file included from /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/include/SD.h:6:0,
-                 from /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/include/mgos_SD.h:1,
-                 from /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/src/mgos_SD.cpp:1:
-/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/include/sdkconfig.h:119:0: note: this is the location of the previous definition
- #define CONFIG_PARTITION_TABLE_FILENAME "partitions_singleapp.csv"
- ^
-In file included from /opt/Espressif/esp-idf/components/newlib/platform_include/assert.h:20:0,
-                 from /opt/Espressif/esp-idf/components/esp32/include/esp_err.h:18,
-                 from /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/include/SD.h:7,
-                 from /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/include/mgos_SD.h:1,
-                 from /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/src/mgos_SD.cpp:1:
-/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/include/sdkconfig.h:90:0: warning: "CONFIG_SYSTEM_EVENT_TASK_STACK_SIZE" redefined
- #define CONFIG_SYSTEM_EVENT_TASK_STACK_SIZE 3072
- ^
-In file included from /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/include/SD.h:6:0,
-                 from /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/include/mgos_SD.h:1,
-                 from /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/src/mgos_SD.cpp:1:
-/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/include/sdkconfig.h:131:0: note: this is the location of the previous definition
- #define CONFIG_SYSTEM_EVENT_TASK_STACK_SIZE 2048
- ^
-In file included from /opt/Espressif/esp-idf/components/newlib/platform_include/assert.h:20:0,
-                 from /opt/Espressif/esp-idf/components/esp32/include/esp_err.h:18,
-                 from /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/include/SD.h:7,
-                 from /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/include/mgos_SD.h:1,
-                 from /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/src/mgos_SD.cpp:1:
-/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/include/sdkconfig.h:91:0: warning: "CONFIG_ESP32_DEEP_SLEEP_WAKEUP_DELAY" redefined
- #define CONFIG_ESP32_DEEP_SLEEP_WAKEUP_DELAY 0
- ^
-In file included from /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/include/SD.h:6:0,
-                 from /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/include/mgos_SD.h:1,
-                 from /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/src/mgos_SD.cpp:1:
-/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/include/sdkconfig.h:132:0: note: this is the location of the previous definition
- #define CONFIG_ESP32_DEEP_SLEEP_WAKEUP_DELAY 2000
- ^
-In file included from /opt/Espressif/esp-idf/components/newlib/platform_include/assert.h:20:0,
-                 from /opt/Espressif/esp-idf/components/esp32/include/esp_err.h:18,
-                 from /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/include/SD.h:7,
-                 from /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/include/mgos_SD.h:1,
-                 from /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/src/mgos_SD.cpp:1:
-/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/include/sdkconfig.h:103:0: warning: "CONFIG_ESP32_XTAL_FREQ" redefined
- #define CONFIG_ESP32_XTAL_FREQ 0
- ^
-In file included from /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/include/SD.h:6:0,
-                 from /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/include/mgos_SD.h:1,
-                 from /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/src/mgos_SD.cpp:1:
-/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/include/sdkconfig.h:152:0: note: this is the location of the previous definition
- #define CONFIG_ESP32_XTAL_FREQ 40
- ^
-In file included from /opt/Espressif/esp-idf/components/newlib/platform_include/assert.h:20:0,
-                 from /opt/Espressif/esp-idf/components/esp32/include/esp_err.h:18,
-                 from /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/include/SD.h:7,
-                 from /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/include/mgos_SD.h:1,
-                 from /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/src/mgos_SD.cpp:1:
-/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/include/sdkconfig.h:123:0: warning: "CONFIG_PARTITION_TABLE_CUSTOM_FILENAME" redefined
- #define CONFIG_PARTITION_TABLE_CUSTOM_FILENAME "src/partitions_mgos.csv"
- ^
-In file included from /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/include/SD.h:6:0,
-                 from /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/include/mgos_SD.h:1,
-                 from /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/src/mgos_SD.cpp:1:
-/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/include/sdkconfig.h:179:0: note: this is the location of the previous definition
- #define CONFIG_PARTITION_TABLE_CUSTOM_FILENAME "partitions.csv"
  ^
 In file included from /opt/Espressif/esp-idf/components/newlib/platform_include/assert.h:20:0,
                  from /opt/Espressif/esp-idf/components/esp32/include/esp_err.h:18,
                  from /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/include/SD.h:7,
                  from /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/src/SD.cpp:2:
-/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/include/sdkconfig.h:19:0: warning: "CONFIG_ESPTOOLPY_FLASHSIZE" redefined
+/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/include/sdkconfig.h:22:0: warning: "CONFIG_ESPTOOLPY_FLASHSIZE" redefined
  #define CONFIG_ESPTOOLPY_FLASHSIZE "4MB"
  ^
 In file included from /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/include/SD.h:6:0,
@@ -585,7 +197,7 @@ In file included from /opt/Espressif/esp-idf/components/newlib/platform_include/
                  from /opt/Espressif/esp-idf/components/esp32/include/esp_err.h:18,
                  from /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/include/SD.h:7,
                  from /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/src/SD.cpp:2:
-/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/include/sdkconfig.h:36:0: warning: "CONFIG_TIMER_TASK_STACK_DEPTH" redefined
+/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/include/sdkconfig.h:40:0: warning: "CONFIG_TIMER_TASK_STACK_DEPTH" redefined
  #define CONFIG_TIMER_TASK_STACK_DEPTH 3072
  ^
 In file included from /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/include/SD.h:6:0,
@@ -597,7 +209,7 @@ In file included from /opt/Espressif/esp-idf/components/newlib/platform_include/
                  from /opt/Espressif/esp-idf/components/esp32/include/esp_err.h:18,
                  from /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/include/SD.h:7,
                  from /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/src/SD.cpp:2:
-/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/include/sdkconfig.h:60:0: warning: "CONFIG_TCPIP_TASK_STACK_SIZE" redefined
+/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/include/sdkconfig.h:65:0: warning: "CONFIG_TCPIP_TASK_STACK_SIZE" redefined
  #define CONFIG_TCPIP_TASK_STACK_SIZE 3072
  ^
 In file included from /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/include/SD.h:6:0,
@@ -609,7 +221,7 @@ In file included from /opt/Espressif/esp-idf/components/newlib/platform_include/
                  from /opt/Espressif/esp-idf/components/esp32/include/esp_err.h:18,
                  from /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/include/SD.h:7,
                  from /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/src/SD.cpp:2:
-/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/include/sdkconfig.h:73:0: warning: "CONFIG_ESP32_WIFI_DYNAMIC_RX_BUFFER_NUM" redefined
+/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/include/sdkconfig.h:79:0: warning: "CONFIG_ESP32_WIFI_DYNAMIC_RX_BUFFER_NUM" redefined
  #define CONFIG_ESP32_WIFI_DYNAMIC_RX_BUFFER_NUM 0
  ^
 In file included from /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/include/SD.h:6:0,
@@ -621,7 +233,7 @@ In file included from /opt/Espressif/esp-idf/components/newlib/platform_include/
                  from /opt/Espressif/esp-idf/components/esp32/include/esp_err.h:18,
                  from /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/include/SD.h:7,
                  from /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/src/SD.cpp:2:
-/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/include/sdkconfig.h:84:0: warning: "CONFIG_PARTITION_TABLE_FILENAME" redefined
+/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/include/sdkconfig.h:90:0: warning: "CONFIG_PARTITION_TABLE_FILENAME" redefined
  #define CONFIG_PARTITION_TABLE_FILENAME "src/partitions_mgos.csv"
  ^
 In file included from /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/include/SD.h:6:0,
@@ -633,7 +245,7 @@ In file included from /opt/Espressif/esp-idf/components/newlib/platform_include/
                  from /opt/Espressif/esp-idf/components/esp32/include/esp_err.h:18,
                  from /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/include/SD.h:7,
                  from /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/src/SD.cpp:2:
-/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/include/sdkconfig.h:90:0: warning: "CONFIG_SYSTEM_EVENT_TASK_STACK_SIZE" redefined
+/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/include/sdkconfig.h:96:0: warning: "CONFIG_SYSTEM_EVENT_TASK_STACK_SIZE" redefined
  #define CONFIG_SYSTEM_EVENT_TASK_STACK_SIZE 3072
  ^
 In file included from /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/include/SD.h:6:0,
@@ -645,7 +257,7 @@ In file included from /opt/Espressif/esp-idf/components/newlib/platform_include/
                  from /opt/Espressif/esp-idf/components/esp32/include/esp_err.h:18,
                  from /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/include/SD.h:7,
                  from /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/src/SD.cpp:2:
-/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/include/sdkconfig.h:91:0: warning: "CONFIG_ESP32_DEEP_SLEEP_WAKEUP_DELAY" redefined
+/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/include/sdkconfig.h:97:0: warning: "CONFIG_ESP32_DEEP_SLEEP_WAKEUP_DELAY" redefined
  #define CONFIG_ESP32_DEEP_SLEEP_WAKEUP_DELAY 0
  ^
 In file included from /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/include/SD.h:6:0,
@@ -657,7 +269,7 @@ In file included from /opt/Espressif/esp-idf/components/newlib/platform_include/
                  from /opt/Espressif/esp-idf/components/esp32/include/esp_err.h:18,
                  from /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/include/SD.h:7,
                  from /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/src/SD.cpp:2:
-/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/include/sdkconfig.h:103:0: warning: "CONFIG_ESP32_XTAL_FREQ" redefined
+/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/include/sdkconfig.h:109:0: warning: "CONFIG_ESP32_XTAL_FREQ" redefined
  #define CONFIG_ESP32_XTAL_FREQ 0
  ^
 In file included from /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/include/SD.h:6:0,
@@ -669,7 +281,7 @@ In file included from /opt/Espressif/esp-idf/components/newlib/platform_include/
                  from /opt/Espressif/esp-idf/components/esp32/include/esp_err.h:18,
                  from /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/include/SD.h:7,
                  from /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/src/SD.cpp:2:
-/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/include/sdkconfig.h:123:0: warning: "CONFIG_PARTITION_TABLE_CUSTOM_FILENAME" redefined
+/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/include/sdkconfig.h:130:0: warning: "CONFIG_PARTITION_TABLE_CUSTOM_FILENAME" redefined
  #define CONFIG_PARTITION_TABLE_CUSTOM_FILENAME "src/partitions_mgos.csv"
  ^
 In file included from /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/include/SD.h:6:0,
@@ -677,26 +289,137 @@ In file included from /Users/bcouchman/Documents/Perso/projects/meeio/electronic
 /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/include/sdkconfig.h:179:0: note: this is the location of the previous definition
  #define CONFIG_PARTITION_TABLE_CUSTOM_FILENAME "partitions.csv"
  ^
-CC ffunicode.o
-CC vfs_fat.o
-CC vfs_fat_sdmmc.o
+In file included from /opt/Espressif/esp-idf/components/newlib/platform_include/assert.h:20:0,
+                 from /opt/Espressif/esp-idf/components/esp32/include/esp_err.h:18,
+                 from /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/include/SD.h:7,
+                 from /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/include/mgos_SD.h:1,
+                 from /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/src/mgos_SD.cpp:1:
+/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/include/sdkconfig.h:22:0: warning: "CONFIG_ESPTOOLPY_FLASHSIZE" redefined
+ #define CONFIG_ESPTOOLPY_FLASHSIZE "4MB"
+ ^
+In file included from /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/include/SD.h:6:0,
+                 from /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/include/mgos_SD.h:1,
+                 from /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/src/mgos_SD.cpp:1:
+/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/include/sdkconfig.h:24:0: note: this is the location of the previous definition
+ #define CONFIG_ESPTOOLPY_FLASHSIZE "2MB"
+ ^
+In file included from /opt/Espressif/esp-idf/components/newlib/platform_include/assert.h:20:0,
+                 from /opt/Espressif/esp-idf/components/esp32/include/esp_err.h:18,
+                 from /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/include/SD.h:7,
+                 from /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/include/mgos_SD.h:1,
+                 from /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/src/mgos_SD.cpp:1:
+/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/include/sdkconfig.h:40:0: warning: "CONFIG_TIMER_TASK_STACK_DEPTH" redefined
+ #define CONFIG_TIMER_TASK_STACK_DEPTH 3072
+ ^
+In file included from /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/include/SD.h:6:0,
+                 from /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/include/mgos_SD.h:1,
+                 from /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/src/mgos_SD.cpp:1:
+/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/include/sdkconfig.h:55:0: note: this is the location of the previous definition
+ #define CONFIG_TIMER_TASK_STACK_DEPTH 2048
+ ^
+In file included from /opt/Espressif/esp-idf/components/newlib/platform_include/assert.h:20:0,
+                 from /opt/Espressif/esp-idf/components/esp32/include/esp_err.h:18,
+                 from /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/include/SD.h:7,
+                 from /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/include/mgos_SD.h:1,
+                 from /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/src/mgos_SD.cpp:1:
+/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/include/sdkconfig.h:65:0: warning: "CONFIG_TCPIP_TASK_STACK_SIZE" redefined
+ #define CONFIG_TCPIP_TASK_STACK_SIZE 3072
+ ^
+In file included from /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/include/SD.h:6:0,
+                 from /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/include/mgos_SD.h:1,
+                 from /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/src/mgos_SD.cpp:1:
+/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/include/sdkconfig.h:87:0: note: this is the location of the previous definition
+ #define CONFIG_TCPIP_TASK_STACK_SIZE 2048
+ ^
+In file included from /opt/Espressif/esp-idf/components/newlib/platform_include/assert.h:20:0,
+                 from /opt/Espressif/esp-idf/components/esp32/include/esp_err.h:18,
+                 from /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/include/SD.h:7,
+                 from /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/include/mgos_SD.h:1,
+                 from /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/src/mgos_SD.cpp:1:
+/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/include/sdkconfig.h:79:0: warning: "CONFIG_ESP32_WIFI_DYNAMIC_RX_BUFFER_NUM" redefined
+ #define CONFIG_ESP32_WIFI_DYNAMIC_RX_BUFFER_NUM 0
+ ^
+In file included from /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/include/SD.h:6:0,
+                 from /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/include/mgos_SD.h:1,
+                 from /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/src/mgos_SD.cpp:1:
+/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/include/sdkconfig.h:103:0: note: this is the location of the previous definition
+ #define CONFIG_ESP32_WIFI_DYNAMIC_RX_BUFFER_NUM 32
+ ^
+In file included from /opt/Espressif/esp-idf/components/newlib/platform_include/assert.h:20:0,
+                 from /opt/Espressif/esp-idf/components/esp32/include/esp_err.h:18,
+                 from /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/include/SD.h:7,
+                 from /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/include/mgos_SD.h:1,
+                 from /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/src/mgos_SD.cpp:1:
+/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/include/sdkconfig.h:90:0: warning: "CONFIG_PARTITION_TABLE_FILENAME" redefined
+ #define CONFIG_PARTITION_TABLE_FILENAME "src/partitions_mgos.csv"
+ ^
+In file included from /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/include/SD.h:6:0,
+                 from /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/include/mgos_SD.h:1,
+                 from /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/src/mgos_SD.cpp:1:
+/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/include/sdkconfig.h:119:0: note: this is the location of the previous definition
+ #define CONFIG_PARTITION_TABLE_FILENAME "partitions_singleapp.csv"
+ ^
+In file included from /opt/Espressif/esp-idf/components/newlib/platform_include/assert.h:20:0,
+                 from /opt/Espressif/esp-idf/components/esp32/include/esp_err.h:18,
+                 from /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/include/SD.h:7,
+                 from /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/include/mgos_SD.h:1,
+                 from /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/src/mgos_SD.cpp:1:
+/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/include/sdkconfig.h:96:0: warning: "CONFIG_SYSTEM_EVENT_TASK_STACK_SIZE" redefined
+ #define CONFIG_SYSTEM_EVENT_TASK_STACK_SIZE 3072
+ ^
+In file included from /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/include/SD.h:6:0,
+                 from /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/include/mgos_SD.h:1,
+                 from /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/src/mgos_SD.cpp:1:
+/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/include/sdkconfig.h:131:0: note: this is the location of the previous definition
+ #define CONFIG_SYSTEM_EVENT_TASK_STACK_SIZE 2048
+ ^
+In file included from /opt/Espressif/esp-idf/components/newlib/platform_include/assert.h:20:0,
+                 from /opt/Espressif/esp-idf/components/esp32/include/esp_err.h:18,
+                 from /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/include/SD.h:7,
+                 from /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/include/mgos_SD.h:1,
+                 from /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/src/mgos_SD.cpp:1:
+/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/include/sdkconfig.h:97:0: warning: "CONFIG_ESP32_DEEP_SLEEP_WAKEUP_DELAY" redefined
+ #define CONFIG_ESP32_DEEP_SLEEP_WAKEUP_DELAY 0
+ ^
+In file included from /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/include/SD.h:6:0,
+                 from /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/include/mgos_SD.h:1,
+                 from /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/src/mgos_SD.cpp:1:
+/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/include/sdkconfig.h:132:0: note: this is the location of the previous definition
+ #define CONFIG_ESP32_DEEP_SLEEP_WAKEUP_DELAY 2000
+ ^
+In file included from /opt/Espressif/esp-idf/components/newlib/platform_include/assert.h:20:0,
+                 from /opt/Espressif/esp-idf/components/esp32/include/esp_err.h:18,
+                 from /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/include/SD.h:7,
+                 from /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/include/mgos_SD.h:1,
+                 from /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/src/mgos_SD.cpp:1:
+/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/include/sdkconfig.h:109:0: warning: "CONFIG_ESP32_XTAL_FREQ" redefined
+ #define CONFIG_ESP32_XTAL_FREQ 0
+ ^
+In file included from /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/include/SD.h:6:0,
+                 from /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/include/mgos_SD.h:1,
+                 from /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/src/mgos_SD.cpp:1:
+/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/include/sdkconfig.h:152:0: note: this is the location of the previous definition
+ #define CONFIG_ESP32_XTAL_FREQ 40
+ ^
+In file included from /opt/Espressif/esp-idf/components/newlib/platform_include/assert.h:20:0,
+                 from /opt/Espressif/esp-idf/components/esp32/include/esp_err.h:18,
+                 from /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/include/SD.h:7,
+                 from /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/include/mgos_SD.h:1,
+                 from /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/src/mgos_SD.cpp:1:
+/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/include/sdkconfig.h:130:0: warning: "CONFIG_PARTITION_TABLE_CUSTOM_FILENAME" redefined
+ #define CONFIG_PARTITION_TABLE_CUSTOM_FILENAME "src/partitions_mgos.csv"
+ ^
+In file included from /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/include/SD.h:6:0,
+                 from /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/include/mgos_SD.h:1,
+                 from /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/src/mgos_SD.cpp:1:
+/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/include/sdkconfig.h:179:0: note: this is the location of the previous definition
+ #define CONFIG_PARTITION_TABLE_CUSTOM_FILENAME "partitions.csv"
+ ^
 In file included from /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/include/mgos_SD.h:1:0,
                  from /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/src/mgos_SD.cpp:1:
 /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/include/SD.h:42:20: warning: 'TAG' defined but not used [-Wunused-variable]
  static const char *TAG = "sd";
                     ^
-CC vfs_fat_spiflash.o
-CXX Partition.o
-CXX SPI_Flash.o
-CXX WL_Ext_Perf.o
-CXX WL_Ext_Safe.o
-CXX WL_Flash.o
-CXX crc32.o
-CXX wear_levelling.o
-/Users/bcouchman/esp/esp-idf/components/wear_levelling/wear_levelling.cpp: In function 'esp_err_t wl_mount(const esp_partition_t*, wl_handle_t*)':
-/Users/bcouchman/esp/esp-idf/components/wear_levelling/wear_levelling.cpp:65:11: warning: unused variable 'wl_flash_ptr' [-Wunused-variable]
-     void *wl_flash_ptr = NULL;
-           ^
 AR /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/moslib/libmoslib.a
 make[1]: Leaving directory '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/moslib'
 Target 'component-moslib-build' responsible for '/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/SD/build/objs/moslib/libmoslib.a'
