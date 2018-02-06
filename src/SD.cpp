@@ -100,7 +100,7 @@ int SD::readFile(const char *filename, uint8_t** buf){
           if(toRead > bufsize){
               toRead = bufsize;
           }
-          fread(*buf + buf_idx, toRead, 1, f);
+          fread(*buf + buf_idx, 1, toRead, f);
           buf_idx += toRead;
           remaining -= toRead;
       }
