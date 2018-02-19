@@ -32,6 +32,7 @@ int SD::init(int pin_num_miso, int pin_num_mosi, int pin_num_clk, int pin_num_cs
   slot_config.gpio_mosi = (gpio_num_t)pin_num_mosi;
   slot_config.gpio_sck  = (gpio_num_t)pin_num_clk;
   slot_config.gpio_cs   = (gpio_num_t)pin_num_cs;
+  slot_config.dma_channel = 0;
   // This initializes the slot without card detect (CD) and write protect (WP) signals.
   // Modify slot_config.gpio_cd and slot_config.gpio_wp if your board has these signals.
 
