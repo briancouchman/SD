@@ -26,6 +26,12 @@ int mgos_sd_readFile(SD *sd, const char *filename, uint8_t** buffer);
 
 int mgos_sd_read(SD *sd, FILE *f, uint8_t* buffer, size_t toRead);
 
+//int mgos_sd_read_from_position(SD *sd, FILE *f, int position, uint8_t* buffer, size_t toRead);
+
+int mgos_sd_get_position(SD *sd, FILE *f);
+
+int mgos_sd_go_to_position(SD *sd, FILE *f, int pos);
+
 // int mgos_sd_write(SD *sd, FILE *f, int* buffer);
 //
 void mgos_sd_listFiles(SD *sd);

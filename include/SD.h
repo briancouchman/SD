@@ -35,9 +35,12 @@ public:
     FILE* openFile(const char *filename, const char *mode);
     void closeFile(FILE* f);
     int read(FILE* f, uint8_t* buf, size_t toRead);
+//    int readFromPosition(FILE* f, int position, uint8_t* buf, size_t toRead);
+    int goToPosition(FILE* f, int pos);
+    int getPosition(FILE* f);
     // int write(const char *filename);
     void listFiles();
-    void close();
+    int close();
 };
 
 #endif

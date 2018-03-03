@@ -6,6 +6,7 @@ SD *mgos_sd_create() {
 
 void mgos_sd_close(SD *sd) {
   if (sd != nullptr) {
+    sd->close();
     delete sd;
     sd = nullptr;
   }
@@ -39,6 +40,21 @@ int mgos_sd_readFile(SD *sd, const char *filename, uint8_t** buffer) {
 int mgos_sd_read(SD *sd, FILE *f, uint8_t* buffer, size_t toRead) {
   if (sd == nullptr) return 0;
   return sd->read(f, buffer, toRead);
+}
+
+//int mgos_sd_read_from_position(SD *sd, FILE *f, int position, uint8_t* buffer, size_t toRead) {
+//    if (sd == nullptr) return 0;
+//    return sd->readFromPosition(f, position, buffer, toRead);
+//}
+
+int mgos_sd_get_position(SD *sd, FILE *f) {
+  if (sd == nullptr) return -1;
+  return sd->getPosition(f);
+}
+
+int mgos_sd_go_to_position(SD *sd, FILE *f, int pos) {
+  if (sd == nullptr) return -1;
+  return sd->goToPosition(f, pos);
 }
 //
 // int mgos_sd_write(SD *sd, FILE *f, uint8_t* buffer) {

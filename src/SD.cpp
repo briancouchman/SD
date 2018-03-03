@@ -27,12 +27,17 @@ SD::SD() {
 
 int SD::init(int pin_num_miso, int pin_num_mosi, int pin_num_clk, int pin_num_cs){
   sdmmc_host_t host = SDSPI_HOST_DEFAULT();
+//  host.slot = VSPI_HOST;
+//  host.flags = SDMMC_HOST_FLAG_SPI;
+//  host.max_freq_khz = 400;
+//  host.max_freq_khz = 5000;
+//  host.slot         = HSPI_HOST;
   sdspi_slot_config_t slot_config = SDSPI_SLOT_CONFIG_DEFAULT();
   slot_config.gpio_miso = (gpio_num_t)pin_num_miso;
   slot_config.gpio_mosi = (gpio_num_t)pin_num_mosi;
   slot_config.gpio_sck  = (gpio_num_t)pin_num_clk;
   slot_config.gpio_cs   = (gpio_num_t)pin_num_cs;
-  slot_config.dma_channel = 0;
+//  slot_config.dma_channel = 0;
   // This initializes the slot without card detect (CD) and write protect (WP) signals.
   // Modify slot_config.gpio_cd and slot_config.gpio_wp if your board has these signals.
 
@@ -44,6 +49,11 @@ int SD::init(int pin_num_miso, int pin_num_mosi, int pin_num_clk, int pin_num_cs
       .format_if_mount_failed = false,
       .max_files = 5
   };
+
+  mgos_gpio_set_pull(pin_num_miso, MGOS_GPIO_PULL_UP);
+  mgos_gpio_set_pull(pin_num_mosi, MGOS_GPIO_PULL_UP);
+  mgos_gpio_set_pull(pin_num_clk, MGOS_GPIO_PULL_UP);
+  mgos_gpio_set_pull(pin_num_cs, MGOS_GPIO_PULL_UP);
 
   // Use settings defined above to initialize SD card and mount FAT filesystem.
   // Note: esp_vfs_fat_sdmmc_mount is an all-in-one convenience function.
@@ -120,6 +130,15 @@ int SD::read(FILE *f, uint8_t* buf, size_t toRead){
 }
 
 
+int SD::goToPosition(FILE *f, int pos) {
+    return fseek(f, pos, SEEK_SET);
+}
+
+int SD::getPosition(FILE *f) {
+    return ftell(f);
+}
+
+
 // int SD::write(FILE *f, uint8_t* buf){
 //   uint32_t bufsize = 32;
 //   //static uint8_t buf[MAX_BUFSIZE];
@@ -164,4 +183,21 @@ void SD::listFiles(){
     }
   }
   closedir (pDir);
+}
+
+
+
+int SD::close(){
+    esp_err_t ret = esp_vfs_fat_sdmmc_unmount();
+    if (ret != ESP_OK) {
+          if (ret == ESP_FAIL) {
+              ESP_LOGE(TAG, "Failed to unmount filesystem. "
+                  "If you want the card to be formatted, set format_if_mount_failed = true.");
+          } else {
+              ESP_LOGE(TAG, "Failed to de-initialize the card (%d). "
+                  "Make sure SD card lines have pull-up resistors in place.", ret);
+          }
+          return 0;
+    }
+    return 1;
 }
